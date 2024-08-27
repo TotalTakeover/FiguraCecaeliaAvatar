@@ -1,5 +1,20 @@
 {
-  "name":"Octopus Merling",
-  "authors":["UndeniableGay#0145 (Model Maker/Animatior)","Detrilogue#2208 (Original Merling Code)","KitCat#0962 (Updated Merling Code/Pings/Armor)","Grandpa Scout#8739 (Blending Animation Code)","InkGecko#0654 (Helped with animations)","Total Takeover#0042 (Combined Everything Together/Texture Maker)"],
-  "autoscripts":["script"]
+	"name": "Cecaelia",
+	"description": "\"Come on, you poor unfortunate soul.\"",
+	"authors": [
+		"TakenByDumplings",
+		"Detrilogue",
+		"Total",
+		"§f§nCredits§r",
+		"InkGecko",
+		"Arber",
+		"Jimmy",
+		"PoolloverNathan",
+		"§f§nLibraries§r",
+		"Grandpa Scout (GSAnimBlend, GSCarrier)",
+		"Squishy (SquAPI)",
+		"Katt (OriginsAPI, KattArmor, DynamicCrosshair)",
+		"4P5 (GroundCheck)"
+	],
+	"version": "0.1.4"
 }

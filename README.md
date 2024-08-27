@@ -3,13 +3,21 @@
 This Figura avatar is a template designed around turning the user into a Cecaelia.
 
 ### Authors:
-- Section under construction
+- TakenByDumplings
+- Detrilogue
+- Total
 
 ### Credits:
-- Section under construction
+- InkGecko
+- Arber
+- Jimmy
+- PoolloverNathan
 
 ### Libraries:
-- Section under construction
+- Grandpa Scout (GSAnimBlend, GSCarrier)
+- Squishy (SquAPI)
+- Katt (OriginsAPI, KattArmor, DynamicCrosshair)
+- 4P5 (GroundCheck)
 
 ## Features
 Section under construction
