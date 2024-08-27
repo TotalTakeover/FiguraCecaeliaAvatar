@@ -45,7 +45,7 @@ kattArmor.Armor.Boots:addParts(
 )
 
 kattArmor.Materials.leather
-    :setTexture(textures["textures.armor.leather"])
+    :setTexture(textures["textures.armor.leatherArmor"] or textures["Cecaelia.leather"])
     :addParts(kattArmor.Armor.Helmet,
       modelRoot.Head.Helmet.HelmetLeather
     )
@@ -70,12 +70,12 @@ kattArmor.Materials.leather
       modelRoot.Tail.Tentacle7.T7_1.T7_2.T7_3.BootsLeather,
       modelRoot.Tail.Tentacle8.T8_1.T8_2.T8_3.BootsLeather
     )
-kattArmor.Materials.chainmail:setTexture(textures["textures.armor.chainmail"])
-kattArmor.Materials.iron:setTexture(textures["textures.armor.iron"])
-kattArmor.Materials.golden:setTexture(textures["textures.armor.golden"])
-kattArmor.Materials.diamond:setTexture(textures["textures.armor.diamond"])
-kattArmor.Materials.netherite:setTexture(textures["textures.armor.netherite"])
-kattArmor.Materials.turtle:setTexture(textures["textures.armor.turtle"])
+kattArmor.Materials.chainmail:setTexture(textures["textures.armor.chainmailArmor"] or textures["Cecaelia.chainmail"])
+kattArmor.Materials.iron:setTexture(textures["textures.armor.iron"] or textures["Cecaelia.iron"])
+kattArmor.Materials.golden:setTexture(textures["textures.armor.golden"] or textures["Cecaelia.golden"])
+kattArmor.Materials.diamond:setTexture(textures["textures.armor.diamond"] or textures["Cecaelia.diamond"])
+kattArmor.Materials.netherite:setTexture(textures["textures.armor.netherite"] or textures["Cecaelia.netherite"])
+kattArmor.Materials.turtle:setTexture(textures["textures.armor.turtle"] or textures["Cecaelia.turtle"])
 
 local armorPage = action_wheel:newPage()
 
