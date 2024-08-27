@@ -1,5 +1,5 @@
 # [Cecaelia](https://github.com/TotalTakeover/FiguraCecaeliaAvatar)
-### Version: v1.7.0
+### Version: v2.0.0
 This Figura avatar is a template designed around turning the user into a Cecaelia.
 
 ### Authors:
