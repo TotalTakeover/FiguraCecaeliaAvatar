@@ -6,7 +6,7 @@ local model = models.OctopusMerling
 local modelRoot = model.Player
 
 --Register parts that act as armor
-local kattArmor = require("lib.KattArmor")
+local kattArmor = require("lib.KattArmor")()
 kattArmor.Armor.Helmet:addParts(modelRoot.Head.Helmet.Helmet)
 kattArmor.Armor.Chestplate:addParts(
   modelRoot.Body.Chestplate,

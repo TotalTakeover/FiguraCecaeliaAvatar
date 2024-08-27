@@ -1,3 +1,5 @@
+---v1.0.1
+
 local originsAPI = {}
 ---@alias Origin {Origin:string,Layer:string}
 ---@alias OriginPower {Type:string,Sources:string[],Data:OriginPowerData}
@@ -9,7 +11,7 @@ local originsAPI = {}
 ---@param originLayer? string Optionally, only return true if the origin is from this layer
 ---@return boolean
 function originsAPI.hasOrigin(playr, origin, originLayer)
-  local nbt = playr:getNbt()
+  local nbt=playr:getNbt()
   local origins = nbt.cardinal_components and nbt.cardinal_components["origins:origin"] and
       nbt.cardinal_components["origins:origin"].OriginLayers --[[@as Origin[] ]]
   if not origins then return false end
@@ -27,7 +29,7 @@ end
 ---@param powerSource? string Optionally, only return true if the power has this source
 ---@return boolean
 function originsAPI.hasPower(playr, power, powerSource)
-  local nbt = playr:getNbt()
+  local nbt=playr:getNbt()
   local powers = nbt.cardinal_components and nbt.cardinal_components["apoli:powers"] and
       nbt.cardinal_components["apoli:powers"].Powers --[[@as OriginPower[] ]]
   if not powers then return false end
@@ -51,7 +53,7 @@ end
 ---@return OriginPowerData?
 function originsAPI.getPowerData(playr, power, powerSource)
   if not originsAPI.hasPower(playr, power, powerSource) then return end
-  local nbt = playr:getNbt()
+  local nbt=playr:getNbt()
   local powers = nbt.cardinal_components and nbt.cardinal_components["apoli:powers"] and
       nbt.cardinal_components["apoli:powers"].Powers --[[@as OriginPower[] ]]
   for _, _power in ipairs(powers) do
