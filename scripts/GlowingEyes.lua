@@ -1,4 +1,4 @@
-local model = models.OctopusMerling.Player.Head
+local model = models.Cecaelia.Player.Head
 local eyeParts = {
   model.Eyes,
 }

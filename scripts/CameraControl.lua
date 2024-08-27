@@ -1,4 +1,4 @@
-local model = models.OctopusMerling.Player
+local model = models.Cecaelia.Player
 local headY = 0
 local dir = 0
 function events.RENDER(delta)

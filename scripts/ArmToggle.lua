@@ -1,4 +1,4 @@
-local model = models.OctopusMerling.Player
+local model = models.Cecaelia.Player
 
 local tentacleHeldItems = require("Config").tentacleHeldItems or false
 local function setTentacleHeldItems(boolean)

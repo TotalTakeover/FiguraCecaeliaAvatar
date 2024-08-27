@@ -1,9 +1,9 @@
 local syncedVariables = require("scripts.SyncedVariables")
 local ticksOutOfWater = require("scripts.TicksOutOfWater")
 
-local model = models.OctopusMerling.Player
+local model = models.Cecaelia.Player
 local tail = model.Tail
-local animation = animations.OctopusMerling
+local animation = animations.Cecaelia
 
 -- Animation lengths
 animation.elytra:length(2)

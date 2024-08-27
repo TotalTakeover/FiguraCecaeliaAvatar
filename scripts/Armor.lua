@@ -1,7 +1,7 @@
 --Script that handles registering parts to the ArmorAPI and it's modules
 
 --Change this if you change the model's name
-local model = models.OctopusMerling
+local model = models.Cecaelia
 --Minor optimization. sames like 20 instructions
 local modelRoot = model.Player
 

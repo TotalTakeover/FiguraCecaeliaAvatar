@@ -1,6 +1,6 @@
 local Config = require("Config")
 local hurt = require("scripts.HurtSound")
-local model = models.OctopusMerling.Player.Tail
+local model = models.Cecaelia.Player.Tail
 
 -- Shoots ink
 local inkColor

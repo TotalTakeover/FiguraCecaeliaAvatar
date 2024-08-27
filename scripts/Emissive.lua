@@ -1,4 +1,4 @@
-local model = models.OctopusMerling.Player
+local model = models.Cecaelia.Player
 local tail = model.Tail
 local emissive = {
   tail.LowerBody_Glow,

@@ -1,7 +1,7 @@
 --Configures the ModelParts that mimic vanilla parts.
 
 --Change this if you change the bbmodel's name
-local model = models.OctopusMerling
+local model = models.Cecaelia
 --Minor optimization. Saves like 20 instructions lol
 local modelRoot = model.Player
 
