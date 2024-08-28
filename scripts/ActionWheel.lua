@@ -226,9 +226,8 @@ pages.dry
 
 -- Whirlpool actions
 pages.whirlpool
-	--:action( -1, whirlpool.bubbleAct)
-	--:action( -1, whirlpool.dolphinsGraceAct)
-	:action( -1, require("scripts.WhirlpoolEffect"))
+	:action( -1, whirlpool.bubbleAct)
+	:action( -1, whirlpool.dolphinsGraceAct)
 	:action( -1, backAct)
 
 -- Glowing actions
