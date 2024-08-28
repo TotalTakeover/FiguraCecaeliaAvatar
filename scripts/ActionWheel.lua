@@ -242,11 +242,10 @@ pages.glow
 
 -- Eye glow actions
 pages.eyes
-	--:action( -1, eyes.toggleAct)
-	--:action( -1, eyes.powerAct)
-	--:action( -1, eyes.nightVisionAct)
-	--:action( -1, eyes.waterAct)
-	:action( -1, require("scripts.GlowingEyes"))
+	:action( -1, eyes.toggleAct)
+	:action( -1, eyes.powerAct)
+	:action( -1, eyes.nightVisionAct)
+	:action( -1, eyes.waterAct)
 	:action( -1, backAct)
 
 -- Animation actions
