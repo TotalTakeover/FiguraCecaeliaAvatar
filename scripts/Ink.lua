@@ -1,5 +1,5 @@
 local Config = require("Config")
-local hurt = require("scripts.HurtSound")
+--local hurt = require("scripts.HurtSound")
 local model = models.Cecaelia.Player.Tail
 
 -- Shoots ink
@@ -54,7 +54,7 @@ end
 local inkCooldown = 0
 local onCooldown = false
 function events.TICK()
-  shootInk(hurt.amount)
+  --shootInk(hurt.amount)
   if inkKeyActive and not onCooldown then
     shootInk(math.random(10,15))
     inkCooldown = inkCooldown + 1
