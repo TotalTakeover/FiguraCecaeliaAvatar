@@ -204,8 +204,8 @@ pages.armor
 
 -- Camera actions
 pages.camera
-	--:action( -1, camera.posAct)
-	--:action( -1, camera.eyeAct)
+	:action( -1, camera.posAct)
+	:action( -1, camera.eyeAct)
 	:action( -1, backAct)
 
 -- Octopus actions
