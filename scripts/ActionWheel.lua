@@ -187,8 +187,8 @@ pages.main
 
 -- Avatar actions
 pages.avatar
-	--:action( -1, avatar.vanillaSkinAct)
-	--:action( -1, avatar.modelAct)
+	:action( -1, avatar.vanillaSkinAct)
+	:action( -1, avatar.modelAct)
 	:action( -1, pageActs.armor)
 	:action( -1, pageActs.camera)
 	:action( -1, backAct)
@@ -210,17 +210,16 @@ pages.camera
 
 -- Octopus actions
 pages.octopus
-	--:action( -1, tail.waterAct)
-	--:action( -1, tail.smallAct)
+	:action( -1, tail.waterAct)
+	:action( -1, tail.smallAct)
 	:action( -1, pageActs.dry)
 	:action( -1, pageActs.whirlpool)
 	:action( -1, backAct)
 
 -- Dry actions
 pages.dry
-	--:action( -1, tail.dryAct)
-	--:action( -1, tail.soundAct)
-	:action( -1, require("scripts.FlopSound"))
+	:action( -1, tail.dryAct)
+	:action( -1, tail.soundAct)
 	:action( -1, backAct)
 
 -- Whirlpool actions
@@ -231,11 +230,10 @@ pages.whirlpool
 
 -- Glowing actions
 pages.glow
-	--:action( -1, glow.toggleAct)
-	--:action( -1, glow.dynamicAct)
-	--:action( -1, glow.waterAct)
-	--:action( -1, glow.uniqueAct)
-	:action( -1, require("scripts.Emissive"))
+	:action( -1, glow.toggleAct)
+	:action( -1, glow.dynamicAct)
+	:action( -1, glow.waterAct)
+	:action( -1, glow.uniqueAct)
 	:action( -1, pageActs.eyes)
 	:action( -1, backAct)
 
@@ -250,5 +248,4 @@ pages.eyes
 -- Animation actions
 pages.anims
 	--:action( -1, squapi.armsAct)
-	:action( -1, require("scripts.ArmToggle"))
 	:action( -1, backAct)

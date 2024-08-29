@@ -1,10 +1,11 @@
+--[[
 require("lib.GSAnimBlend")
 local ticksOutOfWater = require("scripts.TicksOutOfWater")
 
 local model = models.Cecaelia.Player
 local animation = animations.Cecaelia
-local leftPivotPoint = model.Tail.Tentacle8.T8_1.T8_2.T8_3.T8_4.T8_5.LeftItemPivot2
-local rightPivotPoint = model.Tail.Tentacle2.T2_1.T2_2.T2_3.T2_4.T2_5.RightItemPivot2
+local leftPivotPoint = model.Octopus.Tentacle8.T8_1.T8_2.T8_3.T8_4.T8_5.LeftItemPivot2
+local rightPivotPoint = model.Octopus.Tentacle2.T2_1.T2_2.T2_3.T2_4.T2_5.RightItemPivot2
 
 -- Not Enough Animations Check
 local nEA = client.hasResource("notenoughanimations:icon.png")
@@ -242,3 +243,4 @@ function events.RENDER(delta)
     end
   end
 end
+--]]

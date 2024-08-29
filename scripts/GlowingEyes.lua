@@ -127,7 +127,7 @@ local s, color = pcall(require, "scripts.ColorProperties")
 if not s then color = {} end
 
 -- Glow eyes keybind
-local toggleBind   = config:load("EyesToggleKeybind") or "key.keyboard.keypad.4"
+local toggleBind   = config:load("EyesToggleKeybind") or "key.keyboard.keypad.3"
 local setToggleKey = keybinds:newKeybind("Glowing Eyes Toggle"):onPress(function() pings.setEyesToggle(not toggle) end):key(toggleBind)
 
 -- Keybind updater

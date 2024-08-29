@@ -1,3 +1,4 @@
+--[[
 local syncedVariables = require("scripts.SyncedVariables")
 local ticksOutOfWater = require("scripts.TicksOutOfWater")
 
@@ -248,3 +249,4 @@ animation.ride:onBlend("easeOutQuad")
 animation.sleep:onBlend("easeOutQuad")
 animation.jump:onBlend("easeOutQuad")
 animation.fall:onBlend("easeOutQuad")
+--]]

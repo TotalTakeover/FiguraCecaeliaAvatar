@@ -10,34 +10,34 @@ kattArmor.Armor.Leggings
 	:addParts(table.unpack(parts:createTable(function(part) return part:getName() == "Leggings" end)))
 	:addTrimParts(table.unpack(parts:createTable(function(part) return part:getName() == "LeggingsTrim" end)))
 kattArmor.Armor.Boots
-	:addParts(table.unpack(parts:createTable(function(part) return part:getName() == "Boots" end)))
-	:addTrimParts(table.unpack(parts:createTable(function(part) return part:getName() == "BootsTrim" end)))
+	:addParts(table.unpack(parts:createTable(function(part) return part:getName() == "Boot" end)))
+	:addTrimParts(table.unpack(parts:createTable(function(part) return part:getName() == "BootTrim" end)))
 
 -- Leather armor
 kattArmor.Materials.leather
-	:setTexture(textures["textures.armor.leather_overlay"] or textures["Cecaelia.leather_overlay"])
+	:setTexture(textures["textures.armor.leatherOverlay"] or textures["Cecaelia.leatherOverlay"])
 	:addParts(kattArmor.Armor.Leggings, table.unpack(parts:createTable(function(part) return part:getName() == "LeggingsLeather" end)))
-	:addParts(kattArmor.Armor.Boots,    table.unpack(parts:createTable(function(part) return part:getName() == "BootsLeather" end)))
+	:addParts(kattArmor.Armor.Boots,    table.unpack(parts:createTable(function(part) return part:getName() == "BootLeather" end)))
 
 -- Chainmail armor
 kattArmor.Materials.chainmail
-	:setTexture(textures["textures.armor.chainmail"] or textures["Cecaelia.chainmail"])
+	:setTexture(textures["textures.armor.chainmailArmor"] or textures["Cecaelia.chainmailArmor"])
 
 -- Iron armor
 kattArmor.Materials.iron
-	:setTexture(textures["textures.armor.iron"] or textures["Cecaelia.iron"])
+	:setTexture(textures["textures.armor.ironArmor"] or textures["Cecaelia.ironArmor"])
 
 -- Golden armor
 kattArmor.Materials.golden
-	:setTexture(textures["textures.armor.golden"] or textures["Cecaelia.golden"])
+	:setTexture(textures["textures.armor.goldenArmor"] or textures["Cecaelia.goldenArmor"])
 
 -- Diamond armor
 kattArmor.Materials.diamond
-	:setTexture(textures["textures.armor.diamond"] or textures["Cecaelia.diamond"])
+	:setTexture(textures["textures.armor.diamondArmor"] or textures["Cecaelia.diamondArmor"])
 
 -- Netherite armor
 kattArmor.Materials.netherite
-	:setTexture(textures["textures.armor.netherite"] or textures["Cecaelia.netherite"])
+	:setTexture(textures["textures.armor.netheriteArmor"] or textures["Cecaelia.netheriteArmor"])
 
 -- Config setup
 config:name("Cecaelia")
@@ -76,7 +76,7 @@ local leggingsGroups = {
 local bootsGroups = {
 	
 	vanilla_model.BOOTS,
-	table.unpack(parts:createTable(function(part) return part:getName():find("ArmorBoots") end))
+	table.unpack(parts:createTable(function(part) return part:getName():find("ArmorBoot") end))
 	
 }
 

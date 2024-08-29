@@ -8,10 +8,10 @@ local slim        = config:load("AvatarSlim") or false
 if vanillaSkin == nil then vanillaSkin = true end
 
 -- Reenabled parts
---parts.group.LeftLeg :visible(true)
---parts.group.RightLeg:visible(true)
---parts.group.Skull   :visible(true)
---parts.group.Portrait:visible(true)
+parts.group.LeftLeg :visible(true)
+parts.group.RightLeg:visible(true)
+parts.group.Skull   :visible(true)
+parts.group.Portrait:visible(true)
 
 -- Arm parts
 local defaultParts = parts:createTable(function(part) return part:getName():find("ArmDefault") end)
