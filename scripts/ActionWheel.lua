@@ -247,5 +247,5 @@ pages.eyes
 
 -- Animation actions
 pages.anims
-	--:action( -1, squapi.armsAct)
+	:action( -1, squapi.armsAct)
 	:action( -1, backAct)
