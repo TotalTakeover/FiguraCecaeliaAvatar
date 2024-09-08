@@ -53,11 +53,17 @@ function events.TICK()
 	local drinkingL   = activeness == leftActive and using and leftItem:getUseAction() == "DRINK"
 	local drinkingR   = activeness == rightActive and using and rightItem:getUseAction() == "DRINK"
 	
+	-- Control how fast drying occurs
+	local dryRate = player:getItem(1).id == "minecraft:sponge" and 10 or 1
+	
+	-- Zero check
+	local modDryTimer = math.max(tail.dry, 1)
+	
 	-- Set glow target
 	-- Toggle check
 	for _, index in ipairs(glowingParts) do
 		
-		if toggle then
+		if toggle and index.part:getVisible() then
 			
 			-- Init apply
 			index.glow.target = 1
@@ -111,18 +117,13 @@ function events.TICK()
 				
 				-- Adjust timer
 				if wet then
-					index.timer = tail.dry
+					index.timer = modDryTimer
 				else
-					index.timer = math.max(index.timer - 1, 0)
-				end
-				
-				-- Timer should not exceed the max default timer
-				if index.timer > tail.dry then
-					index.timer = tail.dry
+					index.timer = math.clamp(index.timer - 1 * dryRate, 0, modDryTimer)
 				end
 				
 				-- Apply
-				index.glow.target = index.glow.target * (index.timer / tail.dry)
+				index.glow.target = index.glow.target * (index.timer / modDryTimer)
 				
 			end
 			
@@ -132,6 +133,8 @@ function events.TICK()
 			index.glow.target = 0
 			
 		end
+		
+		index.glow.enabled = index.part:getVisible()
 		
 	end
 	

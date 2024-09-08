@@ -213,7 +213,7 @@ pages.camera
 
 -- Octopus actions
 pages.octopus
-	:action( -1, tail.waterAct)
+	:action( -1, tail.tailAct)
 	:action( -1, tail.smallAct)
 	:action( -1, membrane.toggleAct)
 	:action( -1, pageActs.dry)
