@@ -1,3 +1,35 @@
+-- Required scripts
+require("lib.GSAnimBlend")
+local parts   = require("lib.PartsAPI")
+local lerp    = require("lib.LerpAPI")
+local ground  = require("lib.GroundCheck")
+local tail    = require("scripts.Tail")
+local pose    = require("scripts.Posing")
+local effects = require("scripts.SyncedVariables")
+
+-- Animations setup
+local anims = animations.Cecaelia
+
+-- Config setup
+config:name("Cecaelia")
+
+function events.TICK()
+	
+end
+
+function events.RENDER(delta, context)
+	
+end
+
+-- GS Blending Setup
+local blendAnims = {
+}
+
+-- Apply GS Blending
+for _, blend in ipairs(blendAnims) do
+	blend.anim:blendTime(table.unpack(blend.ticks)):onBlend("easeOutQuad")
+end
+
 --[[
 local syncedVariables = require("scripts.SyncedVariables")
 local ticksOutOfWater = require("scripts.TicksOutOfWater")
