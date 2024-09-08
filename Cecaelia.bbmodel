@@ -17768,15 +17768,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 65.51859,
-									"y": -1.89497,
-									"z": -6.44074
+									"x": "70",
+									"y": "0",
+									"z": "0"
 								}
 							],
-							"uuid": "a2029ac1-3d5e-410b-80d2-83d373a8f03e",
+							"uuid": "9351e95f-46b2-5a0c-a083-510e2de8e6e1",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17796,7 +17796,7 @@
 							"uuid": "78c268aa-0aea-c047-c5be-0a26611b545f",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17816,7 +17816,7 @@
 							"uuid": "d4bf3926-94b1-c868-c96c-25b4a7a83d1f",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17828,15 +17828,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
-									"y": -5,
-									"z": -70
+									"x": "70",
+									"y": "0",
+									"z": "0"
 								}
 							],
-							"uuid": "16b3efa8-ced3-3be3-711a-fdd8ff75cbf2",
+							"uuid": "a7b7de9f-04f1-3d70-1948-224a57de2ae0",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17856,7 +17856,7 @@
 							"uuid": "2139da0d-066f-ce2f-34f9-8bbc5e9eaa75",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17876,7 +17876,7 @@
 							"uuid": "84659ffb-1dec-21ef-490e-2ffc8bb0f1ec",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17888,15 +17888,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -105.10082,
-									"y": -88.49003,
-									"z": -173.16557
+									"x": "70",
+									"y": "0",
+									"z": "0"
 								}
 							],
-							"uuid": "ef500083-2ce1-7778-f2a8-3a71e42c04b9",
+							"uuid": "07bda66a-c1fa-eecd-55a3-9c0a2efee0e0",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17916,7 +17916,7 @@
 							"uuid": "7c17a195-fb97-93b3-3739-dac7ae1b5b70",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17936,7 +17936,7 @@
 							"uuid": "31515922-841a-fa0b-4387-0aa6b238be1b",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17950,13 +17950,13 @@
 								{
 									"x": "70",
 									"y": "0",
-									"z": 5
+									"z": "0"
 								}
 							],
-							"uuid": "3a6c5990-7e0a-f734-1c30-ebca23477c93",
+							"uuid": "b35a2544-5c6c-bf58-8d1a-8da4e8996c6a",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17976,7 +17976,7 @@
 							"uuid": "404e27f3-1957-83c3-92ab-7888befde79e",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -17996,7 +17996,7 @@
 							"uuid": "cce806d6-160b-3213-8d41-6a76b2870b49",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18008,15 +18008,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 245.51859,
-									"y": 91.89497,
-									"z": -173.55926
+									"x": "70",
+									"y": "0",
+									"z": "0"
 								}
 							],
-							"uuid": "8da6f161-8530-9291-2295-d52b5feae507",
+							"uuid": "e9a51c94-3d87-a419-f3e2-54edf2cec483",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18036,7 +18036,7 @@
 							"uuid": "380dbff2-1135-6055-34dc-466902fed1d6",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18056,7 +18056,7 @@
 							"uuid": "6c9acccb-640c-92ae-787a-1f5e78e934f7",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18076,7 +18076,7 @@
 							"uuid": "3117c1ed-06c7-a148-3161-016eaa2ae8dd",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18096,7 +18096,7 @@
 							"uuid": "545b6505-de10-31b6-962d-00fd8b2041a5",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18108,15 +18108,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 74.89918,
-									"y": -1.50997,
-									"z": -6.83443
+									"x": "70",
+									"y": "0",
+									"z": "0"
 								}
 							],
-							"uuid": "37d93934-cab1-750c-ad15-3be865d670a8",
+							"uuid": "70831fe4-a2f5-d4b7-b803-a3a9e46bac12",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18136,7 +18136,7 @@
 							"uuid": "4607e1bf-ce73-3cfa-5a97-56d2c213d0fb",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18156,7 +18156,7 @@
 							"uuid": "946d3f66-b241-4dc0-931e-c24188ac8e75",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18176,7 +18176,7 @@
 							"uuid": "79d0d9a1-ce76-03eb-01d8-cdd579fd6945",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18196,7 +18196,7 @@
 							"uuid": "7dab40f4-2545-d8d1-0a78-b69b9fcc3d20",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18216,7 +18216,7 @@
 							"uuid": "ef27e952-37c4-7b6c-10aa-1f3293a5b05f",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18236,7 +18236,7 @@
 							"uuid": "74f62984-caa4-1976-4c8b-d899d0262064",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18256,7 +18256,7 @@
 							"uuid": "3ed97673-8468-7e5b-a39c-56c67c2dd233",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18276,7 +18276,7 @@
 							"uuid": "a3218581-3187-c751-5c15-a7437c5a29ed",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18296,7 +18296,7 @@
 							"uuid": "2b40efdc-33ca-5ad1-9601-160978786f92",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18316,7 +18316,7 @@
 							"uuid": "7d497257-ca23-fc91-2598-be196759c87d",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18336,7 +18336,7 @@
 							"uuid": "e0bcb8b3-b4ae-5dee-25fc-e384bcc3acb7",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18356,7 +18356,7 @@
 							"uuid": "89bba582-5138-59a0-c84c-01f455f1f0e5",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18376,7 +18376,7 @@
 							"uuid": "4871ef43-eb19-0672-2c21-2dd3e1876799",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18396,7 +18396,7 @@
 							"uuid": "783f5efc-34a4-65ab-ac1d-26257006294c",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18416,7 +18416,7 @@
 							"uuid": "3607b37e-8756-e219-3c2b-eceba002f2f2",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18436,7 +18436,7 @@
 							"uuid": "af1cf589-1209-cea4-2972-bed4d25f3f5f",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18456,7 +18456,7 @@
 							"uuid": "ae8bd461-499a-dbfe-8f82-18eed9aae652",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18476,7 +18476,7 @@
 							"uuid": "6c4bbaa8-6e6d-7253-e615-e2759fdbb3e8",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18496,7 +18496,7 @@
 							"uuid": "27457aa5-13fc-bd86-00c5-d6fe15d92d3c",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18516,7 +18516,7 @@
 							"uuid": "00908efb-5eaa-acf4-5fdc-431816800738",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18536,7 +18536,7 @@
 							"uuid": "e3d01541-ddde-97d9-4a94-04d77ec3e1b3",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18556,7 +18556,7 @@
 							"uuid": "92ac6231-fe5e-0334-b4c1-817a43e45d29",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18576,7 +18576,7 @@
 							"uuid": "e4d96dcc-4166-761f-d758-c84322bfebf2",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18588,15 +18588,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": 0,
-									"y": -5,
-									"z": 70
+									"x": "70",
+									"y": "0",
+									"z": "0"
 								}
 							],
-							"uuid": "b16284df-7eb2-7568-c895-d99989b51d1a",
+							"uuid": "7cd7dfb7-7cb3-d42e-344b-4c2bf5509004",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18610,13 +18610,13 @@
 								{
 									"x": "70",
 									"y": "0",
-									"z": -5
+									"z": "0"
 								}
 							],
 							"uuid": "8f151d99-13e6-2ce3-6ac5-86afc351107a",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18636,7 +18636,7 @@
 							"uuid": "11c1b201-cf79-6d83-c35d-5db20e85efeb",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18656,7 +18656,7 @@
 							"uuid": "6c17805f-1845-8790-4ee7-8b411b9516c7",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18676,7 +18676,7 @@
 							"uuid": "5dbbfb14-d61a-dc99-e6ec-0f475344b740",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18696,7 +18696,7 @@
 							"uuid": "28886426-73e1-54cc-d1fa-931c79ff85b5",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -18716,7 +18716,7 @@
 							"uuid": "6c37fdf9-269c-6dd8-d744-0bc576a5e5aa",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				}
