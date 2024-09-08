@@ -38,8 +38,8 @@ local splash = false
 function events.ON_PLAY_SOUND(id, pos, vol, pitch, loop, category, path)
 	
 	if player:isLoaded() then
-		local atPos      = pos < player:getPos() + 2 and pos > player:getPos() - 2
-		local splashID   = id == "minecraft:entity.splash_potion.break" or id == "minecraft:entity.lingering_potion.break"
+		local atPos    = pos < player:getPos() + 2 and pos > player:getPos() - 2
+		local splashID = id == "minecraft:entity.splash_potion.break" or id == "minecraft:entity.lingering_potion.break"
 		splash = atPos and splashID and path
 	end
 	
