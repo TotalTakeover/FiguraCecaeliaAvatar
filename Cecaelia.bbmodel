@@ -13699,7 +13699,7 @@
 			"override": false,
 			"length": 2,
 			"snapping": 24,
-			"selected": true,
+			"selected": false,
 			"anim_time_update": "",
 			"blend_weight": "",
 			"start_delay": "",
