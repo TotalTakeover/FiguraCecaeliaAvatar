@@ -11460,7 +11460,7 @@
 					"uuid": "96e8141e-d7ff-9913-c1f6-bf96d993c12a",
 					"export": true,
 					"mirror_uv": false,
-					"isOpen": true,
+					"isOpen": false,
 					"locked": false,
 					"visibility": true,
 					"autouv": 0,
