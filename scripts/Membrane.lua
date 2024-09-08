@@ -2,6 +2,17 @@
 local parts    = require("lib.PartsAPI")
 local membrane = require("lib.MembraneAPI")
 
+-- Membrane parts
+local membraneParts = parts:createTable(function(part) return part:getName():find("Membrane") end)
+
+-- Only run script if permission level is met
+if avatar:getPermissionLevel() ~= "MAX" then
+	for _, part in ipairs(membraneParts) do
+		part:visible(false)
+	end
+	return {}
+end
+
 -- Config setup
 config:name("Cecaelia")
 local toggle = config:load("MembraneToggle") or false
@@ -27,9 +38,6 @@ local function makeNames(name)
 	}
 	
 end
-
--- Membrane parts
-local membraneParts = parts:createTable(function(part) return part:getName():find("Membrane") end)
 
 for _, part in ipairs(membraneParts) do
 	
@@ -102,7 +110,9 @@ function events.RENDER(delta, context)
 			:title(toJson
 				{"",
 				{text = "Toggle Membrane\n\n", bold = true, color = color.primary},
-				{text = "Toggles the visibility of the membrane.", color = color.secondary}}
+				{text = "Toggles the visibility of the membrane.\n\n", color = color.secondary},
+				{text = "Notice:\n", bold = true, color = "gold"},
+				{text = "This feature requires MAX permission level to be viewed.", color = "yellow"}}
 			)
 		
 		for _, page in pairs(t) do
