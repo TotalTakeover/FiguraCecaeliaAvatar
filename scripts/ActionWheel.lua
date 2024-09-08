@@ -16,6 +16,9 @@ if not s then camera = {} end
 local s, _, tail = pcall(require, "scripts.Tail")
 if not s then tail = {} end
 
+local s, membrane = pcall(require, "scripts.Membrane")
+if not s then membrane = {} end
+
 local s, whirlpool = pcall(require, "scripts.WhirlpoolEffect")
 if not s then whirlpool = {} end
 
@@ -212,6 +215,7 @@ pages.camera
 pages.octopus
 	:action( -1, tail.waterAct)
 	:action( -1, tail.smallAct)
+	:action( -1, membrane.toggleAct)
 	:action( -1, pageActs.dry)
 	:action( -1, pageActs.whirlpool)
 	:action( -1, backAct)
