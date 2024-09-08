@@ -41,6 +41,16 @@ for _, blend in ipairs(blendAnims) do
 	blend.anim:blendTime(table.unpack(blend.ticks)):onBlend("easeOutQuad")
 end
 
+-- Fixing spyglass jank
+function events.RENDER(delta, context)
+	
+	local rot = vanilla_model.HEAD:getOriginRot()
+	rot.x = math.clamp(rot.x, -90, 30)
+	parts.group.Spyglass:offsetRot(rot)
+		:pos(pose.crouch and vec(0, -4, 0) or nil)
+	
+end
+
 --[[
 local syncedVariables = require("scripts.SyncedVariables")
 local ticksOutOfWater = require("scripts.TicksOutOfWater")
