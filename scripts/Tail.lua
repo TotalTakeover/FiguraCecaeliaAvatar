@@ -14,7 +14,7 @@ if small     == nil then small = true end
 if fallSound == nil then fallSound = true end
 
 -- Variables setup
-local legsForm  = 0.75
+local legsForm  = 0.5
 local tailTimer = 0
 local wasInAir  = false
 
@@ -116,7 +116,7 @@ end
 function events.RENDER(delta, context)
 	
 	-- Variables
-	local tailApply = tailScale.currPos * math.map(smallScale.currPos, 0, 1, 1, 0.5) + smallScale.currPos * 0.5
+	local tailApply = tailScale.currPos * math.map(smallScale.currPos, 0, 1, 1, 0.4) + smallScale.currPos * 0.6
 	local legsApply = legsScale.currPos
 	
 	-- Apply tail

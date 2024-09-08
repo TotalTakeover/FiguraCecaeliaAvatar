@@ -15,6 +15,16 @@ config:name("Cecaelia")
 
 function events.TICK()
 	
+	-- Animation variables
+	local largeTail = tail.large >= tail.swap
+	local smallTail = tail.small >= tail.swap or tail.large <= tail.swap
+	
+	-- Animation states
+	local small = smallTail and not largeTail
+	
+	-- Animations
+	anims.small:playing(small)
+	
 end
 
 function events.RENDER(delta, context)
@@ -23,6 +33,7 @@ end
 
 -- GS Blending Setup
 local blendAnims = {
+	{ anim = anims.small, ticks = {7,7} }
 }
 
 -- Apply GS Blending
