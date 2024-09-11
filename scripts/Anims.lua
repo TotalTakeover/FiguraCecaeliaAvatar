@@ -13,11 +13,22 @@ local anims = animations.Cecaelia
 -- Config setup
 config:name("Cecaelia")
 
+-- Table setup
+v = {}
+
+-- Animation variables
+v.time = 0
+
+-- Lerps
+local time = lerp:new(1)
+
 function events.TICK()
 	
 	-- Animation variables
 	local largeTail = tail.large >= tail.swap
 	local smallTail = tail.small >= tail.swap or tail.large <= tail.swap
+	
+	time.target = time.target + 0.1
 	
 	-- Animation states
 	local small = smallTail and not largeTail
@@ -28,6 +39,11 @@ function events.TICK()
 end
 
 function events.RENDER(delta, context)
+	
+	parts.group.Octopus:offsetRot(-vanilla_model.BODY:getOriginRot(delta).x, 0, 0)
+	
+	-- Store animation variables
+	v.time = time.currPos
 	
 end
 

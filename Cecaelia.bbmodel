@@ -11450,42 +11450,12 @@
 							"visibility": true,
 							"autouv": 0,
 							"children": []
-						}
-					]
-				},
-				{
-					"name": "Octopus",
-					"origin": [0, 14, 0],
-					"color": 0,
-					"uuid": "96e8141e-d7ff-9913-c1f6-bf96d993c12a",
-					"export": true,
-					"mirror_uv": false,
-					"isOpen": false,
-					"locked": false,
-					"visibility": true,
-					"autouv": 0,
-					"children": [
-						"3f94b392-f4ac-76da-bcb4-61a1af707f2a",
-						"1130b49f-7301-240b-a920-99114011cc0e",
-						{
-							"name": "MantleArmorLeggings",
-							"origin": [0, 0, 0],
-							"color": 0,
-							"uuid": "38cc68e5-b165-c832-e8b9-93ab5d5cf819",
-							"export": true,
-							"mirror_uv": false,
-							"isOpen": false,
-							"locked": false,
-							"visibility": false,
-							"autouv": 0,
-							"children": ["b523babb-68d1-14e9-0fbd-8dc6a358a8ee", "cabc24a3-05eb-78f6-9dde-74f5906bb185"]
 						},
 						{
-							"name": "Ten1Seg1",
-							"origin": [1.9, 11, -4.6],
-							"rotation": [90, -22.5, 0],
+							"name": "Octopus",
+							"origin": [0, 14, 0],
 							"color": 0,
-							"uuid": "cd64365c-06f6-1bf8-70ec-8f73217b60c0",
+							"uuid": "96e8141e-d7ff-9913-c1f6-bf96d993c12a",
 							"export": true,
 							"mirror_uv": false,
 							"isOpen": false,
@@ -11493,27 +11463,27 @@
 							"visibility": true,
 							"autouv": 0,
 							"children": [
-								"fc465dd3-22b8-a648-38f7-8fb1353f514d",
-								"1dbf9957-0bec-d4bb-2053-91d121a60356",
-								"cacf2dd7-2eb9-b86c-18d1-376b9b3a0980",
+								"3f94b392-f4ac-76da-bcb4-61a1af707f2a",
+								"1130b49f-7301-240b-a920-99114011cc0e",
 								{
-									"name": "Ten1Seg1ArmorLeggings",
+									"name": "MantleArmorLeggings",
 									"origin": [0, 0, 0],
 									"color": 0,
-									"uuid": "94cdd716-480f-7cbf-a818-968c72a106b6",
+									"uuid": "38cc68e5-b165-c832-e8b9-93ab5d5cf819",
 									"export": true,
 									"mirror_uv": false,
 									"isOpen": false,
 									"locked": false,
 									"visibility": false,
 									"autouv": 0,
-									"children": ["c8476e11-d727-aa14-412d-3a912d1044c5", "5ca6b023-8b8c-79ad-f055-9eddb6c070c5"]
+									"children": ["b523babb-68d1-14e9-0fbd-8dc6a358a8ee", "cabc24a3-05eb-78f6-9dde-74f5906bb185"]
 								},
 								{
-									"name": "Ten1Seg2",
-									"origin": [1.9, 6, -3.6],
+									"name": "Ten1Seg1",
+									"origin": [1.9, 11, -4.6],
+									"rotation": [90, -22.5, 0],
 									"color": 0,
-									"uuid": "c456c686-4ed5-0808-97de-78074b632be5",
+									"uuid": "cd64365c-06f6-1bf8-70ec-8f73217b60c0",
 									"export": true,
 									"mirror_uv": false,
 									"isOpen": false,
@@ -11521,27 +11491,27 @@
 									"visibility": true,
 									"autouv": 0,
 									"children": [
-										"16f47c08-e7ce-b5d3-c24a-d6e452ae703f",
-										"eb3a612a-ff12-a989-567d-fb485d4cff92",
-										"8db2c7a3-098f-9ca5-4102-ae748a158b96",
+										"fc465dd3-22b8-a648-38f7-8fb1353f514d",
+										"1dbf9957-0bec-d4bb-2053-91d121a60356",
+										"cacf2dd7-2eb9-b86c-18d1-376b9b3a0980",
 										{
-											"name": "Ten1Seg2ArmorLeggings",
+											"name": "Ten1Seg1ArmorLeggings",
 											"origin": [0, 0, 0],
 											"color": 0,
-											"uuid": "d6ad5ae7-93c3-aa17-ac0b-ec941dac5f61",
+											"uuid": "94cdd716-480f-7cbf-a818-968c72a106b6",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
 											"locked": false,
 											"visibility": false,
 											"autouv": 0,
-											"children": ["0b7a8067-b4c8-00aa-42ca-4297c15b6e9d", "14000358-66ed-c611-7594-607984375279"]
+											"children": ["c8476e11-d727-aa14-412d-3a912d1044c5", "5ca6b023-8b8c-79ad-f055-9eddb6c070c5"]
 										},
 										{
-											"name": "Ten1Seg3",
-											"origin": [1.9, 0, -3.6],
+											"name": "Ten1Seg2",
+											"origin": [1.9, 6, -3.6],
 											"color": 0,
-											"uuid": "29b9595f-a57e-6545-e6c3-f1e434346b8a",
+											"uuid": "c456c686-4ed5-0808-97de-78074b632be5",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
@@ -11549,27 +11519,27 @@
 											"visibility": true,
 											"autouv": 0,
 											"children": [
-												"aa7b7d5d-34ea-e62d-4a71-44eb71211791",
-												"863e659f-b0d3-cdf4-ed4b-720172018700",
-												"31d08e92-c3d6-cb59-448a-e04ef053a7a6",
+												"16f47c08-e7ce-b5d3-c24a-d6e452ae703f",
+												"eb3a612a-ff12-a989-567d-fb485d4cff92",
+												"8db2c7a3-098f-9ca5-4102-ae748a158b96",
 												{
-													"name": "Ten1Seg3ArmorLeggings",
+													"name": "Ten1Seg2ArmorLeggings",
 													"origin": [0, 0, 0],
 													"color": 0,
-													"uuid": "ccd6bb5b-525c-b77a-14a0-e6dd651c6729",
+													"uuid": "d6ad5ae7-93c3-aa17-ac0b-ec941dac5f61",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
 													"locked": false,
 													"visibility": false,
 													"autouv": 0,
-													"children": ["b08b74b6-44e0-6553-ef8c-2061b1ee1123", "491958b8-0216-b4bf-fe6f-638fd81a0d2e"]
+													"children": ["0b7a8067-b4c8-00aa-42ca-4297c15b6e9d", "14000358-66ed-c611-7594-607984375279"]
 												},
 												{
-													"name": "Ten1Seg4",
-													"origin": [1.9, -4.7, -3.6],
+													"name": "Ten1Seg3",
+													"origin": [1.9, 0, -3.6],
 													"color": 0,
-													"uuid": "0e39b7b3-1c72-88a9-59ab-968d5a72984e",
+													"uuid": "29b9595f-a57e-6545-e6c3-f1e434346b8a",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
@@ -11577,27 +11547,27 @@
 													"visibility": true,
 													"autouv": 0,
 													"children": [
-														"a791e8e0-153c-0430-e22e-bbb60d11a1c8",
-														"76874fe5-518d-a2dc-880a-32269b5b598c",
-														"b322891e-ef4c-7644-4a20-b2a1c050574f",
+														"aa7b7d5d-34ea-e62d-4a71-44eb71211791",
+														"863e659f-b0d3-cdf4-ed4b-720172018700",
+														"31d08e92-c3d6-cb59-448a-e04ef053a7a6",
 														{
-															"name": "Ten1Seg4ArmorBoot",
+															"name": "Ten1Seg3ArmorLeggings",
 															"origin": [0, 0, 0],
 															"color": 0,
-															"uuid": "d19a0efe-7ed7-dfd0-42e5-e4da3a689d75",
+															"uuid": "ccd6bb5b-525c-b77a-14a0-e6dd651c6729",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
 															"locked": false,
 															"visibility": false,
 															"autouv": 0,
-															"children": ["d0373ef0-108d-8abf-0d40-6c7881ee0a74", "c9923b2b-ba48-9fdd-b6db-3740dc0a0e8c"]
+															"children": ["b08b74b6-44e0-6553-ef8c-2061b1ee1123", "491958b8-0216-b4bf-fe6f-638fd81a0d2e"]
 														},
 														{
-															"name": "Ten1Seg5",
-															"origin": [1.9, -9.4, -3.6],
+															"name": "Ten1Seg4",
+															"origin": [1.9, -4.7, -3.6],
 															"color": 0,
-															"uuid": "c6d06f7e-3555-a078-994a-c70ef16c1517",
+															"uuid": "0e39b7b3-1c72-88a9-59ab-968d5a72984e",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
@@ -11605,27 +11575,27 @@
 															"visibility": true,
 															"autouv": 0,
 															"children": [
-																"93186caa-f6fb-8547-b8cf-f9ae1eccac00",
-																"c3d57a92-8219-2ddf-f953-b771fabad1cd",
-																"bc13d3fa-5459-7dc7-6493-4b258f03ae7b",
+																"a791e8e0-153c-0430-e22e-bbb60d11a1c8",
+																"76874fe5-518d-a2dc-880a-32269b5b598c",
+																"b322891e-ef4c-7644-4a20-b2a1c050574f",
 																{
-																	"name": "Ten1Seg5ArmorBoot",
+																	"name": "Ten1Seg4ArmorBoot",
 																	"origin": [0, 0, 0],
 																	"color": 0,
-																	"uuid": "e504913e-58db-b13b-0cb0-00864dfdf77c",
+																	"uuid": "d19a0efe-7ed7-dfd0-42e5-e4da3a689d75",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
 																	"locked": false,
 																	"visibility": false,
 																	"autouv": 0,
-																	"children": ["3e012ab9-42ad-495f-eff3-cb41669aaf92", "c7c233db-a44f-7d4d-7c11-e767d3caba8e"]
+																	"children": ["d0373ef0-108d-8abf-0d40-6c7881ee0a74", "c9923b2b-ba48-9fdd-b6db-3740dc0a0e8c"]
 																},
 																{
-																	"name": "Ten1Seg6",
-																	"origin": [1.9, -13.4, -3.6],
+																	"name": "Ten1Seg5",
+																	"origin": [1.9, -9.4, -3.6],
 																	"color": 0,
-																	"uuid": "80cf0fb4-106c-e867-3548-deba07e9a319",
+																	"uuid": "c6d06f7e-3555-a078-994a-c70ef16c1517",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
@@ -11633,20 +11603,50 @@
 																	"visibility": true,
 																	"autouv": 0,
 																	"children": [
-																		"68ea688b-4e24-52cd-aa92-78b2a9e79b89",
-																		"16c3a1ec-2f3c-32ad-e9e4-2dfbde7a51e7",
+																		"93186caa-f6fb-8547-b8cf-f9ae1eccac00",
+																		"c3d57a92-8219-2ddf-f953-b771fabad1cd",
+																		"bc13d3fa-5459-7dc7-6493-4b258f03ae7b",
 																		{
-																			"name": "Ten1Seg6ArmorBoot",
+																			"name": "Ten1Seg5ArmorBoot",
 																			"origin": [0, 0, 0],
 																			"color": 0,
-																			"uuid": "2b5a83d5-ff0f-085b-9d7d-cb0a8bb659dc",
+																			"uuid": "e504913e-58db-b13b-0cb0-00864dfdf77c",
 																			"export": true,
 																			"mirror_uv": false,
 																			"isOpen": false,
 																			"locked": false,
 																			"visibility": false,
 																			"autouv": 0,
-																			"children": ["64543728-73c8-4919-7390-d001de13b59d", "216b484e-51de-a7cd-d7a5-438f18099d76"]
+																			"children": ["3e012ab9-42ad-495f-eff3-cb41669aaf92", "c7c233db-a44f-7d4d-7c11-e767d3caba8e"]
+																		},
+																		{
+																			"name": "Ten1Seg6",
+																			"origin": [1.9, -13.4, -3.6],
+																			"color": 0,
+																			"uuid": "80cf0fb4-106c-e867-3548-deba07e9a319",
+																			"export": true,
+																			"mirror_uv": false,
+																			"isOpen": false,
+																			"locked": false,
+																			"visibility": true,
+																			"autouv": 0,
+																			"children": [
+																				"68ea688b-4e24-52cd-aa92-78b2a9e79b89",
+																				"16c3a1ec-2f3c-32ad-e9e4-2dfbde7a51e7",
+																				{
+																					"name": "Ten1Seg6ArmorBoot",
+																					"origin": [0, 0, 0],
+																					"color": 0,
+																					"uuid": "2b5a83d5-ff0f-085b-9d7d-cb0a8bb659dc",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": false,
+																					"autouv": 0,
+																					"children": ["64543728-73c8-4919-7390-d001de13b59d", "216b484e-51de-a7cd-d7a5-438f18099d76"]
+																				}
+																			]
 																		}
 																	]
 																}
@@ -11657,43 +11657,13 @@
 											]
 										}
 									]
-								}
-							]
-						},
-						{
-							"name": "Ten2Seg1",
-							"origin": [4.6, 11, -1.9],
-							"rotation": [90, -67.5, 0],
-							"color": 0,
-							"uuid": "86e02479-bfde-60a4-a645-e3c48575ceff",
-							"export": true,
-							"mirror_uv": false,
-							"isOpen": false,
-							"locked": false,
-							"visibility": true,
-							"autouv": 0,
-							"children": [
-								"27910897-0055-941a-0403-c0fc0f84fe97",
-								"5b780605-22b3-28cb-4337-52b7f0fc81e5",
-								"609cb932-71e7-7e62-fa83-8fdf181142aa",
-								{
-									"name": "Ten2Seg1ArmorLeggings",
-									"origin": [0, 0, 0],
-									"color": 0,
-									"uuid": "12b03a47-10fe-e769-0e42-4d17d3c96918",
-									"export": true,
-									"mirror_uv": false,
-									"isOpen": false,
-									"locked": false,
-									"visibility": false,
-									"autouv": 0,
-									"children": ["2e26ac62-5e40-153e-0a73-58d38cecaab3", "4cbceaa4-761a-1b81-2eb4-5d25b8a2f27b"]
 								},
 								{
-									"name": "Ten2Seg2",
-									"origin": [4.6, 6, -0.9],
+									"name": "Ten2Seg1",
+									"origin": [4.6, 11, -1.9],
+									"rotation": [90, -67.5, 0],
 									"color": 0,
-									"uuid": "ffbc8070-d1d1-7fce-bccf-0597ee4b5c8b",
+									"uuid": "86e02479-bfde-60a4-a645-e3c48575ceff",
 									"export": true,
 									"mirror_uv": false,
 									"isOpen": false,
@@ -11701,27 +11671,27 @@
 									"visibility": true,
 									"autouv": 0,
 									"children": [
-										"a3c273df-5c94-548c-539e-9a2d1758e8bb",
-										"4db508b6-4dd7-5fb7-a15d-273891023832",
-										"3451ca50-26ab-40fd-1d61-cbb34900eafd",
+										"27910897-0055-941a-0403-c0fc0f84fe97",
+										"5b780605-22b3-28cb-4337-52b7f0fc81e5",
+										"609cb932-71e7-7e62-fa83-8fdf181142aa",
 										{
-											"name": "Ten2Seg2ArmorLeggings",
+											"name": "Ten2Seg1ArmorLeggings",
 											"origin": [0, 0, 0],
 											"color": 0,
-											"uuid": "1bb222b2-ccb1-3ddd-d971-ae4f7378a8f7",
+											"uuid": "12b03a47-10fe-e769-0e42-4d17d3c96918",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
 											"locked": false,
 											"visibility": false,
 											"autouv": 0,
-											"children": ["2529e475-8efd-3062-d572-781d33ae4796", "18a8d2e4-6119-0ecc-3380-9580377b12bc"]
+											"children": ["2e26ac62-5e40-153e-0a73-58d38cecaab3", "4cbceaa4-761a-1b81-2eb4-5d25b8a2f27b"]
 										},
 										{
-											"name": "Ten2Seg3",
-											"origin": [4.6, 0, -0.9],
+											"name": "Ten2Seg2",
+											"origin": [4.6, 6, -0.9],
 											"color": 0,
-											"uuid": "86155eaa-c371-686d-8503-d843658af453",
+											"uuid": "ffbc8070-d1d1-7fce-bccf-0597ee4b5c8b",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
@@ -11729,27 +11699,27 @@
 											"visibility": true,
 											"autouv": 0,
 											"children": [
-												"b3cc9a5f-43b3-9e4e-e6e8-40427e4e9b15",
-												"744d516c-da13-fbb2-d5f5-b4c72a874969",
-												"6445019b-c496-a875-a7bb-e082784a3cc7",
+												"a3c273df-5c94-548c-539e-9a2d1758e8bb",
+												"4db508b6-4dd7-5fb7-a15d-273891023832",
+												"3451ca50-26ab-40fd-1d61-cbb34900eafd",
 												{
-													"name": "Ten2Seg3ArmorLeggnings",
+													"name": "Ten2Seg2ArmorLeggings",
 													"origin": [0, 0, 0],
 													"color": 0,
-													"uuid": "a31e2f1c-c396-3f05-d92a-bb7909262a72",
+													"uuid": "1bb222b2-ccb1-3ddd-d971-ae4f7378a8f7",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
 													"locked": false,
 													"visibility": false,
 													"autouv": 0,
-													"children": ["13cb95c0-b7f0-7145-3127-881a6e5e2b75", "54273a8f-a372-1dc2-3a78-cf944d8422cd"]
+													"children": ["2529e475-8efd-3062-d572-781d33ae4796", "18a8d2e4-6119-0ecc-3380-9580377b12bc"]
 												},
 												{
-													"name": "Ten2Seg4",
-													"origin": [4.6, -4.7, -0.9],
+													"name": "Ten2Seg3",
+													"origin": [4.6, 0, -0.9],
 													"color": 0,
-													"uuid": "71da56e5-5e25-48a9-8e42-62fdcf3d5f7a",
+													"uuid": "86155eaa-c371-686d-8503-d843658af453",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
@@ -11757,27 +11727,27 @@
 													"visibility": true,
 													"autouv": 0,
 													"children": [
-														"bc2e8e05-9da1-70bc-c48c-aa98f7356066",
-														"1970f405-6385-f6c2-68ca-7ff94027a0a5",
-														"24c9c001-dd7a-6d7c-6923-75199f751273",
+														"b3cc9a5f-43b3-9e4e-e6e8-40427e4e9b15",
+														"744d516c-da13-fbb2-d5f5-b4c72a874969",
+														"6445019b-c496-a875-a7bb-e082784a3cc7",
 														{
-															"name": "Ten2Seg4ArmorBoot",
+															"name": "Ten2Seg3ArmorLeggnings",
 															"origin": [0, 0, 0],
 															"color": 0,
-															"uuid": "d74aa0f5-c65f-646e-74db-49b5b2737b27",
+															"uuid": "a31e2f1c-c396-3f05-d92a-bb7909262a72",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
 															"locked": false,
 															"visibility": false,
 															"autouv": 0,
-															"children": ["ecd9e811-e1f7-218d-97a6-943a1f7fed8a", "91a148ed-ebb0-15b5-868b-2873c072c719"]
+															"children": ["13cb95c0-b7f0-7145-3127-881a6e5e2b75", "54273a8f-a372-1dc2-3a78-cf944d8422cd"]
 														},
 														{
-															"name": "Ten2Seg5",
-															"origin": [4.6, -9.4, -0.9],
+															"name": "Ten2Seg4",
+															"origin": [4.6, -4.7, -0.9],
 															"color": 0,
-															"uuid": "8d6ac267-8533-ef9c-e011-f391275b77e6",
+															"uuid": "71da56e5-5e25-48a9-8e42-62fdcf3d5f7a",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
@@ -11785,27 +11755,27 @@
 															"visibility": true,
 															"autouv": 0,
 															"children": [
-																"7b744b33-f8d3-8ddf-cee6-9bf5a10b3ee5",
-																"9d487948-1812-570b-1d2a-e755fb03579d",
-																"4127608f-cbc6-94de-7eb8-0d8ef0411944",
+																"bc2e8e05-9da1-70bc-c48c-aa98f7356066",
+																"1970f405-6385-f6c2-68ca-7ff94027a0a5",
+																"24c9c001-dd7a-6d7c-6923-75199f751273",
 																{
-																	"name": "Ten2Seg5ArmorBoot",
+																	"name": "Ten2Seg4ArmorBoot",
 																	"origin": [0, 0, 0],
 																	"color": 0,
-																	"uuid": "09375082-c0e0-440d-7681-9a0d9dcc0ded",
+																	"uuid": "d74aa0f5-c65f-646e-74db-49b5b2737b27",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
 																	"locked": false,
 																	"visibility": false,
 																	"autouv": 0,
-																	"children": ["10527685-ed6b-ccb1-3664-72c75f656cdd", "aff0758e-920f-33cb-dad4-bb84ee9dda0b"]
+																	"children": ["ecd9e811-e1f7-218d-97a6-943a1f7fed8a", "91a148ed-ebb0-15b5-868b-2873c072c719"]
 																},
 																{
-																	"name": "Ten2Seg6",
-																	"origin": [4.6, -13.4, -0.9],
+																	"name": "Ten2Seg5",
+																	"origin": [4.6, -9.4, -0.9],
 																	"color": 0,
-																	"uuid": "95212161-51f0-86a5-fc7b-d1890cbcb015",
+																	"uuid": "8d6ac267-8533-ef9c-e011-f391275b77e6",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
@@ -11813,20 +11783,50 @@
 																	"visibility": true,
 																	"autouv": 0,
 																	"children": [
-																		"291368c9-983c-be78-8401-88f7fe691640",
-																		"e15d35db-1b66-8c18-369a-65cb0a376196",
+																		"7b744b33-f8d3-8ddf-cee6-9bf5a10b3ee5",
+																		"9d487948-1812-570b-1d2a-e755fb03579d",
+																		"4127608f-cbc6-94de-7eb8-0d8ef0411944",
 																		{
-																			"name": "Ten2Seg6ArmorBoot",
+																			"name": "Ten2Seg5ArmorBoot",
 																			"origin": [0, 0, 0],
 																			"color": 0,
-																			"uuid": "dcb109ba-3dc1-a4cd-d9d0-9ee899cb43c2",
+																			"uuid": "09375082-c0e0-440d-7681-9a0d9dcc0ded",
 																			"export": true,
 																			"mirror_uv": false,
 																			"isOpen": false,
 																			"locked": false,
 																			"visibility": false,
 																			"autouv": 0,
-																			"children": ["d4a07809-f2bb-44c5-7152-31974ab54aed", "033e1d7e-5c14-0725-6220-3828f8d0ef5a"]
+																			"children": ["10527685-ed6b-ccb1-3664-72c75f656cdd", "aff0758e-920f-33cb-dad4-bb84ee9dda0b"]
+																		},
+																		{
+																			"name": "Ten2Seg6",
+																			"origin": [4.6, -13.4, -0.9],
+																			"color": 0,
+																			"uuid": "95212161-51f0-86a5-fc7b-d1890cbcb015",
+																			"export": true,
+																			"mirror_uv": false,
+																			"isOpen": false,
+																			"locked": false,
+																			"visibility": true,
+																			"autouv": 0,
+																			"children": [
+																				"291368c9-983c-be78-8401-88f7fe691640",
+																				"e15d35db-1b66-8c18-369a-65cb0a376196",
+																				{
+																					"name": "Ten2Seg6ArmorBoot",
+																					"origin": [0, 0, 0],
+																					"color": 0,
+																					"uuid": "dcb109ba-3dc1-a4cd-d9d0-9ee899cb43c2",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": false,
+																					"autouv": 0,
+																					"children": ["d4a07809-f2bb-44c5-7152-31974ab54aed", "033e1d7e-5c14-0725-6220-3828f8d0ef5a"]
+																				}
+																			]
 																		}
 																	]
 																}
@@ -11837,43 +11837,13 @@
 											]
 										}
 									]
-								}
-							]
-						},
-						{
-							"name": "Ten3Seg1",
-							"origin": [4.6, 11, 1.9],
-							"rotation": [90, -112.5, 0],
-							"color": 0,
-							"uuid": "357b8b34-d74e-e480-2ca6-ff9b2c8ce9ad",
-							"export": true,
-							"mirror_uv": false,
-							"isOpen": false,
-							"locked": false,
-							"visibility": true,
-							"autouv": 0,
-							"children": [
-								"81a47ab1-bc64-9d17-d060-f54fa2b0bab3",
-								"5879ab0d-f5ae-1793-0f96-7e418df353b3",
-								"21975e19-074e-b598-e0ae-2b57eebcb07e",
-								{
-									"name": "Ten3Seg1ArmorLeggings",
-									"origin": [0, 0, 0],
-									"color": 0,
-									"uuid": "1dea765c-9ea2-fe4d-bdc2-2887e1efd458",
-									"export": true,
-									"mirror_uv": false,
-									"isOpen": false,
-									"locked": false,
-									"visibility": false,
-									"autouv": 0,
-									"children": ["5e5036bd-a0af-8c43-d72f-0c625c4edd75", "b8cb1d87-5617-27df-4d27-7c6dfafe38e6"]
 								},
 								{
-									"name": "Ten3Seg2",
-									"origin": [4.6, 6, 2.9],
+									"name": "Ten3Seg1",
+									"origin": [4.6, 11, 1.9],
+									"rotation": [90, -112.5, 0],
 									"color": 0,
-									"uuid": "10bf5010-f078-fef4-e164-a518c301a48e",
+									"uuid": "357b8b34-d74e-e480-2ca6-ff9b2c8ce9ad",
 									"export": true,
 									"mirror_uv": false,
 									"isOpen": false,
@@ -11881,27 +11851,27 @@
 									"visibility": true,
 									"autouv": 0,
 									"children": [
-										"25a2957c-7e6a-cd3b-35b3-266121599c96",
-										"0942f2d0-cefe-a0b4-c658-12a166ea91de",
-										"176d549e-54b9-be14-7e14-e7bc2716e43c",
+										"81a47ab1-bc64-9d17-d060-f54fa2b0bab3",
+										"5879ab0d-f5ae-1793-0f96-7e418df353b3",
+										"21975e19-074e-b598-e0ae-2b57eebcb07e",
 										{
-											"name": "Ten3Seg2ArmorLeggings",
+											"name": "Ten3Seg1ArmorLeggings",
 											"origin": [0, 0, 0],
 											"color": 0,
-											"uuid": "453f73e8-9c57-c14c-e15f-98fa5db61507",
+											"uuid": "1dea765c-9ea2-fe4d-bdc2-2887e1efd458",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
 											"locked": false,
 											"visibility": false,
 											"autouv": 0,
-											"children": ["498e3e4a-6e54-f365-d1d1-9a66ff195e58", "e3a3ecc1-34b5-13bd-a14f-13e19bf574c6"]
+											"children": ["5e5036bd-a0af-8c43-d72f-0c625c4edd75", "b8cb1d87-5617-27df-4d27-7c6dfafe38e6"]
 										},
 										{
-											"name": "Ten3Seg3",
-											"origin": [4.6, 0, 2.9],
+											"name": "Ten3Seg2",
+											"origin": [4.6, 6, 2.9],
 											"color": 0,
-											"uuid": "a24bacae-a100-fa4b-33dc-2adf7353fe4b",
+											"uuid": "10bf5010-f078-fef4-e164-a518c301a48e",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
@@ -11909,27 +11879,27 @@
 											"visibility": true,
 											"autouv": 0,
 											"children": [
-												"2f746e15-630e-73f0-a9b9-e1bd1e7cf8f3",
-												"51104f5f-aad8-a6c4-90d1-9502ff349d56",
-												"ec132d35-2ac7-1f94-75af-7e5f9f071b25",
+												"25a2957c-7e6a-cd3b-35b3-266121599c96",
+												"0942f2d0-cefe-a0b4-c658-12a166ea91de",
+												"176d549e-54b9-be14-7e14-e7bc2716e43c",
 												{
-													"name": "Ten3Seg3ArmorLeggings",
+													"name": "Ten3Seg2ArmorLeggings",
 													"origin": [0, 0, 0],
 													"color": 0,
-													"uuid": "5055d78c-cad2-f9ae-390c-38179d6b9bf3",
+													"uuid": "453f73e8-9c57-c14c-e15f-98fa5db61507",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
 													"locked": false,
 													"visibility": false,
 													"autouv": 0,
-													"children": ["513fd710-9b22-ee81-23f8-99e3a351fcee", "b2945158-7462-02f1-53ac-5730ef2b9fce"]
+													"children": ["498e3e4a-6e54-f365-d1d1-9a66ff195e58", "e3a3ecc1-34b5-13bd-a14f-13e19bf574c6"]
 												},
 												{
-													"name": "Ten3Seg4",
-													"origin": [4.6, -4.7, 2.9],
+													"name": "Ten3Seg3",
+													"origin": [4.6, 0, 2.9],
 													"color": 0,
-													"uuid": "ff9d08ed-700e-a392-a7e3-edf2286e79d9",
+													"uuid": "a24bacae-a100-fa4b-33dc-2adf7353fe4b",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
@@ -11937,27 +11907,27 @@
 													"visibility": true,
 													"autouv": 0,
 													"children": [
-														"3cffee96-900a-532d-8f2d-cb5dfa76cea9",
-														"99089f4c-799a-b0ca-376d-dc4a7502c12e",
-														"6874b688-62d5-7341-6eba-2f2a31c9fb9e",
+														"2f746e15-630e-73f0-a9b9-e1bd1e7cf8f3",
+														"51104f5f-aad8-a6c4-90d1-9502ff349d56",
+														"ec132d35-2ac7-1f94-75af-7e5f9f071b25",
 														{
-															"name": "Ten3Seg4ArmorBoot",
+															"name": "Ten3Seg3ArmorLeggings",
 															"origin": [0, 0, 0],
 															"color": 0,
-															"uuid": "ac5a9671-7fbd-045f-cc22-ea211ed901a1",
+															"uuid": "5055d78c-cad2-f9ae-390c-38179d6b9bf3",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
 															"locked": false,
 															"visibility": false,
 															"autouv": 0,
-															"children": ["c5ae36a6-2da2-a47a-6ef2-53874bef28f9", "87f19cc6-e58f-04d1-8946-f70e51202c46"]
+															"children": ["513fd710-9b22-ee81-23f8-99e3a351fcee", "b2945158-7462-02f1-53ac-5730ef2b9fce"]
 														},
 														{
-															"name": "Ten3Seg5",
-															"origin": [4.6, -9.4, 2.9],
+															"name": "Ten3Seg4",
+															"origin": [4.6, -4.7, 2.9],
 															"color": 0,
-															"uuid": "f503f1e1-47d1-a6d8-74f9-e20d9b8da84d",
+															"uuid": "ff9d08ed-700e-a392-a7e3-edf2286e79d9",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
@@ -11965,27 +11935,27 @@
 															"visibility": true,
 															"autouv": 0,
 															"children": [
-																"acd7b146-031a-8041-1fb9-014663109655",
-																"d9ee40fc-af46-95fc-6ba8-aed6513b41af",
-																"4d14294c-0222-ba8c-2262-dc7e54f50aeb",
+																"3cffee96-900a-532d-8f2d-cb5dfa76cea9",
+																"99089f4c-799a-b0ca-376d-dc4a7502c12e",
+																"6874b688-62d5-7341-6eba-2f2a31c9fb9e",
 																{
-																	"name": "Ten3Seg5ArmorBoot",
+																	"name": "Ten3Seg4ArmorBoot",
 																	"origin": [0, 0, 0],
 																	"color": 0,
-																	"uuid": "1bbe5c1a-86cf-0866-c78e-c78014aeeae2",
+																	"uuid": "ac5a9671-7fbd-045f-cc22-ea211ed901a1",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
 																	"locked": false,
 																	"visibility": false,
 																	"autouv": 0,
-																	"children": ["3fafa8e4-1451-9bea-5f86-a9d9bcc0ef79", "aa74d718-e0a2-a74d-27a1-c3d18618c4a9"]
+																	"children": ["c5ae36a6-2da2-a47a-6ef2-53874bef28f9", "87f19cc6-e58f-04d1-8946-f70e51202c46"]
 																},
 																{
-																	"name": "Ten3Seg6",
-																	"origin": [4.6, -13.4, 2.9],
+																	"name": "Ten3Seg5",
+																	"origin": [4.6, -9.4, 2.9],
 																	"color": 0,
-																	"uuid": "632cf924-e257-5bbe-413d-c5bb08e64c26",
+																	"uuid": "f503f1e1-47d1-a6d8-74f9-e20d9b8da84d",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
@@ -11993,20 +11963,50 @@
 																	"visibility": true,
 																	"autouv": 0,
 																	"children": [
-																		"d51e2945-6ad8-61b5-ebc0-de0257879af8",
-																		"939c3a02-4795-ac28-c0ad-25bf6fbce127",
+																		"acd7b146-031a-8041-1fb9-014663109655",
+																		"d9ee40fc-af46-95fc-6ba8-aed6513b41af",
+																		"4d14294c-0222-ba8c-2262-dc7e54f50aeb",
 																		{
-																			"name": "Ten3Seg6ArmorBoot",
+																			"name": "Ten3Seg5ArmorBoot",
 																			"origin": [0, 0, 0],
 																			"color": 0,
-																			"uuid": "d7e75701-bc19-333a-ddc2-000d6738d8de",
+																			"uuid": "1bbe5c1a-86cf-0866-c78e-c78014aeeae2",
 																			"export": true,
 																			"mirror_uv": false,
 																			"isOpen": false,
 																			"locked": false,
 																			"visibility": false,
 																			"autouv": 0,
-																			"children": ["330b8cd1-24d5-d4ef-076a-7787fd0c23e3", "258b321b-fe53-6d3a-20bc-7a594bd57483"]
+																			"children": ["3fafa8e4-1451-9bea-5f86-a9d9bcc0ef79", "aa74d718-e0a2-a74d-27a1-c3d18618c4a9"]
+																		},
+																		{
+																			"name": "Ten3Seg6",
+																			"origin": [4.6, -13.4, 2.9],
+																			"color": 0,
+																			"uuid": "632cf924-e257-5bbe-413d-c5bb08e64c26",
+																			"export": true,
+																			"mirror_uv": false,
+																			"isOpen": false,
+																			"locked": false,
+																			"visibility": true,
+																			"autouv": 0,
+																			"children": [
+																				"d51e2945-6ad8-61b5-ebc0-de0257879af8",
+																				"939c3a02-4795-ac28-c0ad-25bf6fbce127",
+																				{
+																					"name": "Ten3Seg6ArmorBoot",
+																					"origin": [0, 0, 0],
+																					"color": 0,
+																					"uuid": "d7e75701-bc19-333a-ddc2-000d6738d8de",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": false,
+																					"autouv": 0,
+																					"children": ["330b8cd1-24d5-d4ef-076a-7787fd0c23e3", "258b321b-fe53-6d3a-20bc-7a594bd57483"]
+																				}
+																			]
 																		}
 																	]
 																}
@@ -12017,43 +12017,13 @@
 											]
 										}
 									]
-								}
-							]
-						},
-						{
-							"name": "Ten4Seg1",
-							"origin": [1.9, 11, 4.6],
-							"rotation": [90, -157.5, 0],
-							"color": 0,
-							"uuid": "dd16c739-2606-7230-1ac9-040b8f38c77e",
-							"export": true,
-							"mirror_uv": false,
-							"isOpen": false,
-							"locked": false,
-							"visibility": true,
-							"autouv": 0,
-							"children": [
-								"9341cc1e-5515-eebd-e0cd-0d90434fd5d8",
-								"e896e7d3-25db-9c84-5b8e-33427e39ac8f",
-								"58792674-5ead-d123-7008-074491538396",
-								{
-									"name": "Ten4Seg1ArmorLeggings",
-									"origin": [0, 0, 0],
-									"color": 0,
-									"uuid": "f4820f41-6f2d-fc8d-015a-5f109d1a1cde",
-									"export": true,
-									"mirror_uv": false,
-									"isOpen": false,
-									"locked": false,
-									"visibility": false,
-									"autouv": 0,
-									"children": ["c2453179-ff69-6be1-c822-e0f9aa6f75e6", "a2a52318-3f1b-1f32-bc36-2ae91a4b8460"]
 								},
 								{
-									"name": "Ten4Seg2",
-									"origin": [1.9, 6, 5.6],
+									"name": "Ten4Seg1",
+									"origin": [1.9, 11, 4.6],
+									"rotation": [90, -157.5, 0],
 									"color": 0,
-									"uuid": "64243cdf-2144-0b89-6121-f706833f9bc7",
+									"uuid": "dd16c739-2606-7230-1ac9-040b8f38c77e",
 									"export": true,
 									"mirror_uv": false,
 									"isOpen": false,
@@ -12061,27 +12031,27 @@
 									"visibility": true,
 									"autouv": 0,
 									"children": [
-										"4085a570-cc53-9b2f-a488-208012d55bd0",
-										"e3790d4a-36ab-82ae-91be-3f81fcb3d89d",
-										"5e85e47d-bac8-7f6e-a3cb-3da8072a4d5b",
+										"9341cc1e-5515-eebd-e0cd-0d90434fd5d8",
+										"e896e7d3-25db-9c84-5b8e-33427e39ac8f",
+										"58792674-5ead-d123-7008-074491538396",
 										{
-											"name": "Ten4Seg2ArmorLeggings",
+											"name": "Ten4Seg1ArmorLeggings",
 											"origin": [0, 0, 0],
 											"color": 0,
-											"uuid": "b799ccfa-6b03-c343-8f76-570346806cd6",
+											"uuid": "f4820f41-6f2d-fc8d-015a-5f109d1a1cde",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
 											"locked": false,
 											"visibility": false,
 											"autouv": 0,
-											"children": ["08a11fc1-d88f-866d-70bd-0f165b87825c", "a51dfd0c-7d7e-47e3-7199-513c13ce33a3"]
+											"children": ["c2453179-ff69-6be1-c822-e0f9aa6f75e6", "a2a52318-3f1b-1f32-bc36-2ae91a4b8460"]
 										},
 										{
-											"name": "Ten4Seg3",
-											"origin": [1.9, 0, 5.6],
+											"name": "Ten4Seg2",
+											"origin": [1.9, 6, 5.6],
 											"color": 0,
-											"uuid": "80b467d5-ff67-7b1c-4458-e653d3b640f6",
+											"uuid": "64243cdf-2144-0b89-6121-f706833f9bc7",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
@@ -12089,27 +12059,27 @@
 											"visibility": true,
 											"autouv": 0,
 											"children": [
-												"1e8a83b8-f2d0-bf04-65f3-9febafc328c7",
-												"54eada1f-73f6-f657-9542-5418e388a66d",
-												"e48a6bc5-ed24-1898-1687-31babfd85eec",
+												"4085a570-cc53-9b2f-a488-208012d55bd0",
+												"e3790d4a-36ab-82ae-91be-3f81fcb3d89d",
+												"5e85e47d-bac8-7f6e-a3cb-3da8072a4d5b",
 												{
-													"name": "Ten4Seg3ArmorLeggings",
+													"name": "Ten4Seg2ArmorLeggings",
 													"origin": [0, 0, 0],
 													"color": 0,
-													"uuid": "2f90eb86-4b71-64f7-2e35-edc293e11dad",
+													"uuid": "b799ccfa-6b03-c343-8f76-570346806cd6",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
 													"locked": false,
 													"visibility": false,
 													"autouv": 0,
-													"children": ["59424147-2eb9-587f-da9e-a15ee79172b3", "bbaaabc6-61b9-1048-0960-2b3584e61452"]
+													"children": ["08a11fc1-d88f-866d-70bd-0f165b87825c", "a51dfd0c-7d7e-47e3-7199-513c13ce33a3"]
 												},
 												{
-													"name": "Ten4Seg4",
-													"origin": [1.9, -4.7, 5.6],
+													"name": "Ten4Seg3",
+													"origin": [1.9, 0, 5.6],
 													"color": 0,
-													"uuid": "e3ea2588-a518-15a6-d7f0-e3f3bc049ee2",
+													"uuid": "80b467d5-ff67-7b1c-4458-e653d3b640f6",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
@@ -12117,27 +12087,27 @@
 													"visibility": true,
 													"autouv": 0,
 													"children": [
-														"bd3e99f3-fae2-5912-9593-3d74d300d4d8",
-														"8c60d123-677d-0b4f-afcf-0dfb7d243f51",
-														"98c879a9-3256-ddeb-fc25-ecbbbab312e5",
+														"1e8a83b8-f2d0-bf04-65f3-9febafc328c7",
+														"54eada1f-73f6-f657-9542-5418e388a66d",
+														"e48a6bc5-ed24-1898-1687-31babfd85eec",
 														{
-															"name": "Ten4Seg4ArmorBoot",
+															"name": "Ten4Seg3ArmorLeggings",
 															"origin": [0, 0, 0],
 															"color": 0,
-															"uuid": "bf64e812-ffeb-f73e-fb09-f81fde165843",
+															"uuid": "2f90eb86-4b71-64f7-2e35-edc293e11dad",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
 															"locked": false,
 															"visibility": false,
 															"autouv": 0,
-															"children": ["8d54056a-d935-bbed-786c-f37ea90e2572", "0d4fb362-5f94-87b6-102a-b9c26c2c1599"]
+															"children": ["59424147-2eb9-587f-da9e-a15ee79172b3", "bbaaabc6-61b9-1048-0960-2b3584e61452"]
 														},
 														{
-															"name": "Ten4Seg5",
-															"origin": [1.9, -9.4, 5.6],
+															"name": "Ten4Seg4",
+															"origin": [1.9, -4.7, 5.6],
 															"color": 0,
-															"uuid": "dfed3f0c-b58b-1496-6c05-495d10b2ee63",
+															"uuid": "e3ea2588-a518-15a6-d7f0-e3f3bc049ee2",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
@@ -12145,27 +12115,27 @@
 															"visibility": true,
 															"autouv": 0,
 															"children": [
-																"ed67bb6c-fda2-a24d-ae4b-e02648c9f62b",
-																"20b086cd-8ecc-f674-4d7d-42ae3c536071",
-																"d66acfb1-2798-5d24-f2b5-285f61f133e1",
+																"bd3e99f3-fae2-5912-9593-3d74d300d4d8",
+																"8c60d123-677d-0b4f-afcf-0dfb7d243f51",
+																"98c879a9-3256-ddeb-fc25-ecbbbab312e5",
 																{
-																	"name": "Ten4Seg5ArmorBoot",
+																	"name": "Ten4Seg4ArmorBoot",
 																	"origin": [0, 0, 0],
 																	"color": 0,
-																	"uuid": "62044920-d675-bbbd-ecda-8866fe887d71",
+																	"uuid": "bf64e812-ffeb-f73e-fb09-f81fde165843",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
 																	"locked": false,
 																	"visibility": false,
 																	"autouv": 0,
-																	"children": ["d0ae8fbe-2fb1-7f44-3e6c-b6f95de2d2b6", "fea5c5c9-76c4-8ec3-8bb6-b385079d2d6f"]
+																	"children": ["8d54056a-d935-bbed-786c-f37ea90e2572", "0d4fb362-5f94-87b6-102a-b9c26c2c1599"]
 																},
 																{
-																	"name": "Ten4Seg6",
-																	"origin": [1.9, -13.4, 5.6],
+																	"name": "Ten4Seg5",
+																	"origin": [1.9, -9.4, 5.6],
 																	"color": 0,
-																	"uuid": "b158a4bb-0d7e-885b-3aaa-2a59d4285c45",
+																	"uuid": "dfed3f0c-b58b-1496-6c05-495d10b2ee63",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
@@ -12173,20 +12143,50 @@
 																	"visibility": true,
 																	"autouv": 0,
 																	"children": [
-																		"bf0008cd-3f16-3c9a-5977-60ae9daad1d3",
-																		"13aa6cd7-1fc4-46ff-4d16-7e15a98f574d",
+																		"ed67bb6c-fda2-a24d-ae4b-e02648c9f62b",
+																		"20b086cd-8ecc-f674-4d7d-42ae3c536071",
+																		"d66acfb1-2798-5d24-f2b5-285f61f133e1",
 																		{
-																			"name": "Ten4Seg6ArmorBoot",
+																			"name": "Ten4Seg5ArmorBoot",
 																			"origin": [0, 0, 0],
 																			"color": 0,
-																			"uuid": "59cde978-a44e-360e-2c12-06bfe5dcbfa3",
+																			"uuid": "62044920-d675-bbbd-ecda-8866fe887d71",
 																			"export": true,
 																			"mirror_uv": false,
 																			"isOpen": false,
 																			"locked": false,
 																			"visibility": false,
 																			"autouv": 0,
-																			"children": ["ba28c05a-c30f-90fa-b04c-37d6ca5e44aa", "43b4c9fc-8b7e-178c-317a-da62523bae85"]
+																			"children": ["d0ae8fbe-2fb1-7f44-3e6c-b6f95de2d2b6", "fea5c5c9-76c4-8ec3-8bb6-b385079d2d6f"]
+																		},
+																		{
+																			"name": "Ten4Seg6",
+																			"origin": [1.9, -13.4, 5.6],
+																			"color": 0,
+																			"uuid": "b158a4bb-0d7e-885b-3aaa-2a59d4285c45",
+																			"export": true,
+																			"mirror_uv": false,
+																			"isOpen": false,
+																			"locked": false,
+																			"visibility": true,
+																			"autouv": 0,
+																			"children": [
+																				"bf0008cd-3f16-3c9a-5977-60ae9daad1d3",
+																				"13aa6cd7-1fc4-46ff-4d16-7e15a98f574d",
+																				{
+																					"name": "Ten4Seg6ArmorBoot",
+																					"origin": [0, 0, 0],
+																					"color": 0,
+																					"uuid": "59cde978-a44e-360e-2c12-06bfe5dcbfa3",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": false,
+																					"autouv": 0,
+																					"children": ["ba28c05a-c30f-90fa-b04c-37d6ca5e44aa", "43b4c9fc-8b7e-178c-317a-da62523bae85"]
+																				}
+																			]
 																		}
 																	]
 																}
@@ -12197,43 +12197,13 @@
 											]
 										}
 									]
-								}
-							]
-						},
-						{
-							"name": "Ten5Seg1",
-							"origin": [-1.9, 11, 4.6],
-							"rotation": [90, 157.5, 0],
-							"color": 0,
-							"uuid": "3f5a59aa-890c-85e2-b673-3fd41de90b70",
-							"export": true,
-							"mirror_uv": false,
-							"isOpen": false,
-							"locked": false,
-							"visibility": true,
-							"autouv": 0,
-							"children": [
-								"b54315df-61e2-51bf-82ec-22fe28199025",
-								"f29229b1-3174-f02c-7b5b-2bcea17db0a0",
-								"d6984f39-5c94-0c1e-2ef7-e18c21a74bdd",
-								{
-									"name": "Ten5Seg1ArmorLeggings",
-									"origin": [0, 0, 0],
-									"color": 0,
-									"uuid": "506200b7-8b6e-1cb1-6a2f-7ab6d91b4ce3",
-									"export": true,
-									"mirror_uv": false,
-									"isOpen": false,
-									"locked": false,
-									"visibility": false,
-									"autouv": 0,
-									"children": ["e9c21812-0e36-f68b-9818-119251834fd9", "f12c8306-af45-02bc-6fca-ddc1dd942785"]
 								},
 								{
-									"name": "Ten5Seg2",
-									"origin": [-1.9, 6, 5.6],
+									"name": "Ten5Seg1",
+									"origin": [-1.9, 11, 4.6],
+									"rotation": [90, 157.5, 0],
 									"color": 0,
-									"uuid": "75eb8b24-fc8d-ca9a-c8d1-369f51856050",
+									"uuid": "3f5a59aa-890c-85e2-b673-3fd41de90b70",
 									"export": true,
 									"mirror_uv": false,
 									"isOpen": false,
@@ -12241,27 +12211,27 @@
 									"visibility": true,
 									"autouv": 0,
 									"children": [
-										"cbbba18b-8c50-868d-e9a2-cc49343f1697",
-										"58fc639e-c29b-43a5-c591-51014128fddd",
-										"1cb426c1-410f-794f-5fc1-5357853068ed",
+										"b54315df-61e2-51bf-82ec-22fe28199025",
+										"f29229b1-3174-f02c-7b5b-2bcea17db0a0",
+										"d6984f39-5c94-0c1e-2ef7-e18c21a74bdd",
 										{
-											"name": "Ten5Seg2ArmorLeggings",
+											"name": "Ten5Seg1ArmorLeggings",
 											"origin": [0, 0, 0],
 											"color": 0,
-											"uuid": "83016a0d-5bab-73cc-a94a-657e1ff16326",
+											"uuid": "506200b7-8b6e-1cb1-6a2f-7ab6d91b4ce3",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
 											"locked": false,
 											"visibility": false,
 											"autouv": 0,
-											"children": ["7a377255-e953-513f-6eaf-84999f48e000", "58f4804a-0dbb-9c27-f037-c6913ecc6b42"]
+											"children": ["e9c21812-0e36-f68b-9818-119251834fd9", "f12c8306-af45-02bc-6fca-ddc1dd942785"]
 										},
 										{
-											"name": "Ten5Seg3",
-											"origin": [-1.9, 0, 5.6],
+											"name": "Ten5Seg2",
+											"origin": [-1.9, 6, 5.6],
 											"color": 0,
-											"uuid": "60feba33-98e0-dedf-fde0-bdc520f988dc",
+											"uuid": "75eb8b24-fc8d-ca9a-c8d1-369f51856050",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
@@ -12269,27 +12239,27 @@
 											"visibility": true,
 											"autouv": 0,
 											"children": [
-												"e5a22d34-d51a-d049-0f52-19ab57e08bd5",
-												"425a68af-b30d-b6e6-cbe7-73e130909e56",
-												"1d3e20ae-8aab-3bbe-21d5-25a542f6cccd",
+												"cbbba18b-8c50-868d-e9a2-cc49343f1697",
+												"58fc639e-c29b-43a5-c591-51014128fddd",
+												"1cb426c1-410f-794f-5fc1-5357853068ed",
 												{
-													"name": "Ten5Seg3ArmorLeggings",
+													"name": "Ten5Seg2ArmorLeggings",
 													"origin": [0, 0, 0],
 													"color": 0,
-													"uuid": "7f622255-7404-db73-2765-ba00acebbaf6",
+													"uuid": "83016a0d-5bab-73cc-a94a-657e1ff16326",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
 													"locked": false,
 													"visibility": false,
 													"autouv": 0,
-													"children": ["da411eca-3156-beeb-e011-3c56fb593536", "08dc9198-b9ac-bc2c-f675-147ca7ab903d"]
+													"children": ["7a377255-e953-513f-6eaf-84999f48e000", "58f4804a-0dbb-9c27-f037-c6913ecc6b42"]
 												},
 												{
-													"name": "Ten5Seg4",
-													"origin": [-1.9, -4.7, 5.6],
+													"name": "Ten5Seg3",
+													"origin": [-1.9, 0, 5.6],
 													"color": 0,
-													"uuid": "fbad7ef7-e689-d83d-196d-e52f922a7050",
+													"uuid": "60feba33-98e0-dedf-fde0-bdc520f988dc",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
@@ -12297,27 +12267,27 @@
 													"visibility": true,
 													"autouv": 0,
 													"children": [
-														"761236b0-7641-95de-5c46-207dccc9f5c0",
-														"fbc3888e-9a30-7134-a3d6-4dca42b46ec4",
-														"6df9378b-61b1-80d5-278f-42b692e6f2fc",
+														"e5a22d34-d51a-d049-0f52-19ab57e08bd5",
+														"425a68af-b30d-b6e6-cbe7-73e130909e56",
+														"1d3e20ae-8aab-3bbe-21d5-25a542f6cccd",
 														{
-															"name": "Ten5Seg4ArmorBoot",
+															"name": "Ten5Seg3ArmorLeggings",
 															"origin": [0, 0, 0],
 															"color": 0,
-															"uuid": "1d07fd4f-11b2-157f-b2f9-e8d48dc67d25",
+															"uuid": "7f622255-7404-db73-2765-ba00acebbaf6",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
 															"locked": false,
 															"visibility": false,
 															"autouv": 0,
-															"children": ["9bf53896-cd15-ddab-829b-bf04226913bc", "3355c4dd-52a3-cbf6-5f44-588f1634736d"]
+															"children": ["da411eca-3156-beeb-e011-3c56fb593536", "08dc9198-b9ac-bc2c-f675-147ca7ab903d"]
 														},
 														{
-															"name": "Ten5Seg5",
-															"origin": [-1.9, -9.4, 5.6],
+															"name": "Ten5Seg4",
+															"origin": [-1.9, -4.7, 5.6],
 															"color": 0,
-															"uuid": "306e99d8-505e-d9da-3e2c-496d2b3adc20",
+															"uuid": "fbad7ef7-e689-d83d-196d-e52f922a7050",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
@@ -12325,27 +12295,27 @@
 															"visibility": true,
 															"autouv": 0,
 															"children": [
-																"e8dd3393-e0f5-66f1-bd6a-f04604aa60a5",
-																"2bbc4993-ae99-6abf-3492-98f418122864",
-																"f46aae26-095d-4174-9c96-935d01811aae",
+																"761236b0-7641-95de-5c46-207dccc9f5c0",
+																"fbc3888e-9a30-7134-a3d6-4dca42b46ec4",
+																"6df9378b-61b1-80d5-278f-42b692e6f2fc",
 																{
-																	"name": "Ten5Seg5ArmorBoot",
+																	"name": "Ten5Seg4ArmorBoot",
 																	"origin": [0, 0, 0],
 																	"color": 0,
-																	"uuid": "59cb9ccb-1b7e-e087-f990-316b036a33f2",
+																	"uuid": "1d07fd4f-11b2-157f-b2f9-e8d48dc67d25",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
 																	"locked": false,
 																	"visibility": false,
 																	"autouv": 0,
-																	"children": ["64f90ba0-ba97-60dc-735f-32138ebb52e7", "92aa8c61-9d1c-5639-6eff-b322785676b2"]
+																	"children": ["9bf53896-cd15-ddab-829b-bf04226913bc", "3355c4dd-52a3-cbf6-5f44-588f1634736d"]
 																},
 																{
-																	"name": "Ten5Seg6",
-																	"origin": [-1.9, -13.4, 5.6],
+																	"name": "Ten5Seg5",
+																	"origin": [-1.9, -9.4, 5.6],
 																	"color": 0,
-																	"uuid": "1f789cc5-c07f-d3c9-2fd4-660d70c2df59",
+																	"uuid": "306e99d8-505e-d9da-3e2c-496d2b3adc20",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
@@ -12353,20 +12323,50 @@
 																	"visibility": true,
 																	"autouv": 0,
 																	"children": [
-																		"0d0ae69b-9ff8-b54e-2bc4-259c91e20505",
-																		"d4ff0d01-6b74-e3e3-5adf-68f9d51f6e50",
+																		"e8dd3393-e0f5-66f1-bd6a-f04604aa60a5",
+																		"2bbc4993-ae99-6abf-3492-98f418122864",
+																		"f46aae26-095d-4174-9c96-935d01811aae",
 																		{
-																			"name": "Ten5Seg6ArmorBoot",
+																			"name": "Ten5Seg5ArmorBoot",
 																			"origin": [0, 0, 0],
 																			"color": 0,
-																			"uuid": "41f67158-fed3-971c-5c1b-f2745785a9fa",
+																			"uuid": "59cb9ccb-1b7e-e087-f990-316b036a33f2",
 																			"export": true,
 																			"mirror_uv": false,
 																			"isOpen": false,
 																			"locked": false,
 																			"visibility": false,
 																			"autouv": 0,
-																			"children": ["1eb6aae2-ecdf-f93b-e2c2-a02c4312734e", "f660e9bb-a0a0-e0f5-cb32-730905c564c0"]
+																			"children": ["64f90ba0-ba97-60dc-735f-32138ebb52e7", "92aa8c61-9d1c-5639-6eff-b322785676b2"]
+																		},
+																		{
+																			"name": "Ten5Seg6",
+																			"origin": [-1.9, -13.4, 5.6],
+																			"color": 0,
+																			"uuid": "1f789cc5-c07f-d3c9-2fd4-660d70c2df59",
+																			"export": true,
+																			"mirror_uv": false,
+																			"isOpen": false,
+																			"locked": false,
+																			"visibility": true,
+																			"autouv": 0,
+																			"children": [
+																				"0d0ae69b-9ff8-b54e-2bc4-259c91e20505",
+																				"d4ff0d01-6b74-e3e3-5adf-68f9d51f6e50",
+																				{
+																					"name": "Ten5Seg6ArmorBoot",
+																					"origin": [0, 0, 0],
+																					"color": 0,
+																					"uuid": "41f67158-fed3-971c-5c1b-f2745785a9fa",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": false,
+																					"autouv": 0,
+																					"children": ["1eb6aae2-ecdf-f93b-e2c2-a02c4312734e", "f660e9bb-a0a0-e0f5-cb32-730905c564c0"]
+																				}
+																			]
 																		}
 																	]
 																}
@@ -12377,43 +12377,13 @@
 											]
 										}
 									]
-								}
-							]
-						},
-						{
-							"name": "Ten6Seg1",
-							"origin": [-4.6, 11, 1.9],
-							"rotation": [90, 112.5, 0],
-							"color": 0,
-							"uuid": "ca95de74-07e2-255f-c665-7876bf734f6a",
-							"export": true,
-							"mirror_uv": false,
-							"isOpen": false,
-							"locked": false,
-							"visibility": true,
-							"autouv": 0,
-							"children": [
-								"c3ffeefb-6564-8a4e-e3bf-8de3ae74c3cc",
-								"7f1275d0-4d4e-5492-45ff-7ef19d12fe98",
-								"f5729f08-07e9-2fbd-8a22-c73327d0f6ca",
-								{
-									"name": "Ten6Seg1ArmorLeggings",
-									"origin": [0, 0, 0],
-									"color": 0,
-									"uuid": "99384398-b88e-755b-fa15-ab535350d54c",
-									"export": true,
-									"mirror_uv": false,
-									"isOpen": false,
-									"locked": false,
-									"visibility": false,
-									"autouv": 0,
-									"children": ["2db5a0e7-ec4b-16b5-ed64-10cc42e12c73", "fef4e0fb-6540-d6cd-2182-c98227df57eb"]
 								},
 								{
-									"name": "Ten6Seg2",
-									"origin": [-4.6, 6, 2.9],
+									"name": "Ten6Seg1",
+									"origin": [-4.6, 11, 1.9],
+									"rotation": [90, 112.5, 0],
 									"color": 0,
-									"uuid": "8f4b663f-0267-bfe3-0fa2-09e3c35e51e8",
+									"uuid": "ca95de74-07e2-255f-c665-7876bf734f6a",
 									"export": true,
 									"mirror_uv": false,
 									"isOpen": false,
@@ -12421,27 +12391,27 @@
 									"visibility": true,
 									"autouv": 0,
 									"children": [
-										"44b17d43-3e34-af38-d2c6-7ae94c335e73",
-										"f7c448df-94fc-5bdc-1952-2bcfa57257c9",
-										"2ab796c9-9848-16c9-1843-e8714dfd1566",
+										"c3ffeefb-6564-8a4e-e3bf-8de3ae74c3cc",
+										"7f1275d0-4d4e-5492-45ff-7ef19d12fe98",
+										"f5729f08-07e9-2fbd-8a22-c73327d0f6ca",
 										{
-											"name": "Ten6Seg2ArmorLeggings",
+											"name": "Ten6Seg1ArmorLeggings",
 											"origin": [0, 0, 0],
 											"color": 0,
-											"uuid": "02e59e25-7840-61a3-c041-032305152723",
+											"uuid": "99384398-b88e-755b-fa15-ab535350d54c",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
 											"locked": false,
 											"visibility": false,
 											"autouv": 0,
-											"children": ["2f2eaa80-d44a-1539-3080-da38dee242c1", "80517d9a-9e02-fafb-eacd-417a570a5331"]
+											"children": ["2db5a0e7-ec4b-16b5-ed64-10cc42e12c73", "fef4e0fb-6540-d6cd-2182-c98227df57eb"]
 										},
 										{
-											"name": "Ten6Seg3",
-											"origin": [-4.6, 0, 2.9],
+											"name": "Ten6Seg2",
+											"origin": [-4.6, 6, 2.9],
 											"color": 0,
-											"uuid": "3455caba-2aef-bc10-9e5e-fc04727f0150",
+											"uuid": "8f4b663f-0267-bfe3-0fa2-09e3c35e51e8",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
@@ -12449,27 +12419,27 @@
 											"visibility": true,
 											"autouv": 0,
 											"children": [
-												"d29cd376-6dd2-4adb-be1e-7cef634958a2",
-												"82a24d6f-1e2b-bbc5-bb9c-28938e69989c",
-												"424a5e15-e6df-d78a-474c-200084baf573",
+												"44b17d43-3e34-af38-d2c6-7ae94c335e73",
+												"f7c448df-94fc-5bdc-1952-2bcfa57257c9",
+												"2ab796c9-9848-16c9-1843-e8714dfd1566",
 												{
-													"name": "Ten6Seg3ArmorLeggings",
+													"name": "Ten6Seg2ArmorLeggings",
 													"origin": [0, 0, 0],
 													"color": 0,
-													"uuid": "8371408b-dc32-bdf7-5f46-c66042f47c85",
+													"uuid": "02e59e25-7840-61a3-c041-032305152723",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
 													"locked": false,
 													"visibility": false,
 													"autouv": 0,
-													"children": ["2190bd6b-d509-8d15-4d16-484b2ce18a07", "dc244738-30cd-d587-3f6b-8318e385c29b"]
+													"children": ["2f2eaa80-d44a-1539-3080-da38dee242c1", "80517d9a-9e02-fafb-eacd-417a570a5331"]
 												},
 												{
-													"name": "Ten6Seg4",
-													"origin": [-4.6, -4.7, 2.9],
+													"name": "Ten6Seg3",
+													"origin": [-4.6, 0, 2.9],
 													"color": 0,
-													"uuid": "643601ea-0c66-4b00-af38-7a53d3490b5a",
+													"uuid": "3455caba-2aef-bc10-9e5e-fc04727f0150",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
@@ -12477,27 +12447,27 @@
 													"visibility": true,
 													"autouv": 0,
 													"children": [
-														"dd46b74f-66e3-d708-f3ec-8dd746ed14d4",
-														"7f60eef4-ded5-5a6c-3a1a-654b5509da3d",
-														"e3221b85-698e-9bec-d88e-d1cda5d6f18e",
+														"d29cd376-6dd2-4adb-be1e-7cef634958a2",
+														"82a24d6f-1e2b-bbc5-bb9c-28938e69989c",
+														"424a5e15-e6df-d78a-474c-200084baf573",
 														{
-															"name": "Ten6Seg4ArmorBoot",
+															"name": "Ten6Seg3ArmorLeggings",
 															"origin": [0, 0, 0],
 															"color": 0,
-															"uuid": "8af299ac-ba8e-d5a3-c601-32865ac79722",
+															"uuid": "8371408b-dc32-bdf7-5f46-c66042f47c85",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
 															"locked": false,
 															"visibility": false,
 															"autouv": 0,
-															"children": ["ee2e6738-e92e-422e-c417-9a183096be8b", "79b34bfa-e8f4-2a55-345c-4721bbf48bc8"]
+															"children": ["2190bd6b-d509-8d15-4d16-484b2ce18a07", "dc244738-30cd-d587-3f6b-8318e385c29b"]
 														},
 														{
-															"name": "Ten6Seg5",
-															"origin": [-4.6, -9.4, 2.9],
+															"name": "Ten6Seg4",
+															"origin": [-4.6, -4.7, 2.9],
 															"color": 0,
-															"uuid": "2594fc66-f286-99dc-1dc2-ee225f7dc232",
+															"uuid": "643601ea-0c66-4b00-af38-7a53d3490b5a",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
@@ -12505,27 +12475,27 @@
 															"visibility": true,
 															"autouv": 0,
 															"children": [
-																"3abd5742-b881-d87c-b3f6-12a585e1fdbe",
-																"8d4dcfdb-ef10-a6be-3273-75a9348ef4f4",
-																"9f9960df-762b-80e1-0422-1eb8de65a72a",
+																"dd46b74f-66e3-d708-f3ec-8dd746ed14d4",
+																"7f60eef4-ded5-5a6c-3a1a-654b5509da3d",
+																"e3221b85-698e-9bec-d88e-d1cda5d6f18e",
 																{
-																	"name": "Ten6Seg5ArmorBoot",
+																	"name": "Ten6Seg4ArmorBoot",
 																	"origin": [0, 0, 0],
 																	"color": 0,
-																	"uuid": "4ccd8710-822c-2bc2-701d-003c5abe3afc",
+																	"uuid": "8af299ac-ba8e-d5a3-c601-32865ac79722",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
 																	"locked": false,
 																	"visibility": false,
 																	"autouv": 0,
-																	"children": ["37aa5e69-f7e8-a948-f6a2-cb8e9a9eb469", "a15ee478-7712-019e-8ca8-c23c9f292b14"]
+																	"children": ["ee2e6738-e92e-422e-c417-9a183096be8b", "79b34bfa-e8f4-2a55-345c-4721bbf48bc8"]
 																},
 																{
-																	"name": "Ten6Seg6",
-																	"origin": [-4.6, -13.4, 2.9],
+																	"name": "Ten6Seg5",
+																	"origin": [-4.6, -9.4, 2.9],
 																	"color": 0,
-																	"uuid": "61441d2f-c048-4c87-a87b-372f73c95890",
+																	"uuid": "2594fc66-f286-99dc-1dc2-ee225f7dc232",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
@@ -12533,20 +12503,50 @@
 																	"visibility": true,
 																	"autouv": 0,
 																	"children": [
-																		"1bcdeec2-6e54-db3a-a92f-44ff65c6d554",
-																		"1950ffee-a0b7-6d6d-2f40-63d656a31eaf",
+																		"3abd5742-b881-d87c-b3f6-12a585e1fdbe",
+																		"8d4dcfdb-ef10-a6be-3273-75a9348ef4f4",
+																		"9f9960df-762b-80e1-0422-1eb8de65a72a",
 																		{
-																			"name": "Ten6Seg6ArmorBoot",
+																			"name": "Ten6Seg5ArmorBoot",
 																			"origin": [0, 0, 0],
 																			"color": 0,
-																			"uuid": "37820046-2432-a5eb-3a8b-18731d5e3aed",
+																			"uuid": "4ccd8710-822c-2bc2-701d-003c5abe3afc",
 																			"export": true,
 																			"mirror_uv": false,
 																			"isOpen": false,
 																			"locked": false,
 																			"visibility": false,
 																			"autouv": 0,
-																			"children": ["d8f39222-8fc0-0d9c-c7ec-23e7a3bafe47", "03da951d-e884-244b-077c-ad6431e003b6"]
+																			"children": ["37aa5e69-f7e8-a948-f6a2-cb8e9a9eb469", "a15ee478-7712-019e-8ca8-c23c9f292b14"]
+																		},
+																		{
+																			"name": "Ten6Seg6",
+																			"origin": [-4.6, -13.4, 2.9],
+																			"color": 0,
+																			"uuid": "61441d2f-c048-4c87-a87b-372f73c95890",
+																			"export": true,
+																			"mirror_uv": false,
+																			"isOpen": false,
+																			"locked": false,
+																			"visibility": true,
+																			"autouv": 0,
+																			"children": [
+																				"1bcdeec2-6e54-db3a-a92f-44ff65c6d554",
+																				"1950ffee-a0b7-6d6d-2f40-63d656a31eaf",
+																				{
+																					"name": "Ten6Seg6ArmorBoot",
+																					"origin": [0, 0, 0],
+																					"color": 0,
+																					"uuid": "37820046-2432-a5eb-3a8b-18731d5e3aed",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": false,
+																					"autouv": 0,
+																					"children": ["d8f39222-8fc0-0d9c-c7ec-23e7a3bafe47", "03da951d-e884-244b-077c-ad6431e003b6"]
+																				}
+																			]
 																		}
 																	]
 																}
@@ -12557,43 +12557,13 @@
 											]
 										}
 									]
-								}
-							]
-						},
-						{
-							"name": "Ten7Seg1",
-							"origin": [-4.6, 11, -1.9],
-							"rotation": [90, 67.5, 0],
-							"color": 0,
-							"uuid": "1964c6b4-e27d-a805-642f-0ab51c2744c9",
-							"export": true,
-							"mirror_uv": false,
-							"isOpen": false,
-							"locked": false,
-							"visibility": true,
-							"autouv": 0,
-							"children": [
-								"dac9493e-8d25-4b80-4f77-36c024428680",
-								"d6ca38ce-b560-dc30-3a9a-cfa9bf499cd3",
-								"ffeb0582-22a0-f9d5-27cc-594099cc3f32",
-								{
-									"name": "Ten7Seg1ArmorLeggings",
-									"origin": [0, 0, 0],
-									"color": 0,
-									"uuid": "0e12cabd-8b17-7b4b-62aa-cf2f39817709",
-									"export": true,
-									"mirror_uv": false,
-									"isOpen": false,
-									"locked": false,
-									"visibility": false,
-									"autouv": 0,
-									"children": ["9dfcaa63-7440-0caa-3e10-27495a74356e", "9208eea2-f090-3611-25fc-ee161a3cdd4a"]
 								},
 								{
-									"name": "Ten7Seg2",
-									"origin": [-4.6, 6, -0.9],
+									"name": "Ten7Seg1",
+									"origin": [-4.6, 11, -1.9],
+									"rotation": [90, 67.5, 0],
 									"color": 0,
-									"uuid": "30cd1d52-48c2-8405-8528-3e37953746de",
+									"uuid": "1964c6b4-e27d-a805-642f-0ab51c2744c9",
 									"export": true,
 									"mirror_uv": false,
 									"isOpen": false,
@@ -12601,27 +12571,27 @@
 									"visibility": true,
 									"autouv": 0,
 									"children": [
-										"1a16b713-8461-4160-10ca-05a733c43843",
-										"7e42081e-7a7e-358d-65e4-b71a8208c433",
-										"8200f40d-dbc6-38e8-4d2b-4059ed6af95d",
+										"dac9493e-8d25-4b80-4f77-36c024428680",
+										"d6ca38ce-b560-dc30-3a9a-cfa9bf499cd3",
+										"ffeb0582-22a0-f9d5-27cc-594099cc3f32",
 										{
-											"name": "Ten7Seg2ArmorLeggings",
+											"name": "Ten7Seg1ArmorLeggings",
 											"origin": [0, 0, 0],
 											"color": 0,
-											"uuid": "ae4baf97-9377-b0fe-fa6d-d1d63ff06ae2",
+											"uuid": "0e12cabd-8b17-7b4b-62aa-cf2f39817709",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
 											"locked": false,
 											"visibility": false,
 											"autouv": 0,
-											"children": ["0aee2c90-86ee-3674-a4f0-9f18dfae6a44", "de90ff90-8088-bea7-a090-d18e45543b93"]
+											"children": ["9dfcaa63-7440-0caa-3e10-27495a74356e", "9208eea2-f090-3611-25fc-ee161a3cdd4a"]
 										},
 										{
-											"name": "Ten7Seg3",
-											"origin": [-4.6, 0, -0.9],
+											"name": "Ten7Seg2",
+											"origin": [-4.6, 6, -0.9],
 											"color": 0,
-											"uuid": "2d048c54-ddc5-f82a-68b9-f7de26fa822c",
+											"uuid": "30cd1d52-48c2-8405-8528-3e37953746de",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
@@ -12629,27 +12599,27 @@
 											"visibility": true,
 											"autouv": 0,
 											"children": [
-												"7bea976f-db18-a591-cb52-77fae678d84f",
-												"aa07e8bb-b955-d656-7f45-cdcc814eca91",
-												"42d0627f-1b31-6f25-5a0d-594b100aeab0",
+												"1a16b713-8461-4160-10ca-05a733c43843",
+												"7e42081e-7a7e-358d-65e4-b71a8208c433",
+												"8200f40d-dbc6-38e8-4d2b-4059ed6af95d",
 												{
-													"name": "Ten7Seg3ArmorLeggings",
+													"name": "Ten7Seg2ArmorLeggings",
 													"origin": [0, 0, 0],
 													"color": 0,
-													"uuid": "f864c18d-6f1b-d60f-953f-86bcecdef139",
+													"uuid": "ae4baf97-9377-b0fe-fa6d-d1d63ff06ae2",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
 													"locked": false,
 													"visibility": false,
 													"autouv": 0,
-													"children": ["389f6f62-b538-a4d4-4f27-634fab45476e", "2aebee5b-2152-9f61-6fef-d1e18f246419"]
+													"children": ["0aee2c90-86ee-3674-a4f0-9f18dfae6a44", "de90ff90-8088-bea7-a090-d18e45543b93"]
 												},
 												{
-													"name": "Ten7Seg4",
-													"origin": [-4.6, -4.7, -0.9],
+													"name": "Ten7Seg3",
+													"origin": [-4.6, 0, -0.9],
 													"color": 0,
-													"uuid": "aae91b29-c8f1-2a6e-e868-6a0e0a0331e7",
+													"uuid": "2d048c54-ddc5-f82a-68b9-f7de26fa822c",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
@@ -12657,27 +12627,27 @@
 													"visibility": true,
 													"autouv": 0,
 													"children": [
-														"a35b6b58-23cd-8870-ca18-0a267afc8587",
-														"087e2443-6b60-f2da-5703-7fd44d77464a",
-														"eea15f06-3b7f-63d7-91e8-dc8c2e86c6e0",
+														"7bea976f-db18-a591-cb52-77fae678d84f",
+														"aa07e8bb-b955-d656-7f45-cdcc814eca91",
+														"42d0627f-1b31-6f25-5a0d-594b100aeab0",
 														{
-															"name": "Ten7Seg4ArmorBoot",
+															"name": "Ten7Seg3ArmorLeggings",
 															"origin": [0, 0, 0],
 															"color": 0,
-															"uuid": "0b131173-e3df-a9ad-c18d-54eb03d5647b",
+															"uuid": "f864c18d-6f1b-d60f-953f-86bcecdef139",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
 															"locked": false,
 															"visibility": false,
 															"autouv": 0,
-															"children": ["ece46665-07e0-e6f2-a606-dcfc51ad2aaa", "d41a21ca-a2a4-991a-8e4f-fe7ab3835bba"]
+															"children": ["389f6f62-b538-a4d4-4f27-634fab45476e", "2aebee5b-2152-9f61-6fef-d1e18f246419"]
 														},
 														{
-															"name": "Ten7Seg5",
-															"origin": [-4.6, -9.4, -0.9],
+															"name": "Ten7Seg4",
+															"origin": [-4.6, -4.7, -0.9],
 															"color": 0,
-															"uuid": "9f13d86b-9f61-6d85-71de-095686c0c821",
+															"uuid": "aae91b29-c8f1-2a6e-e868-6a0e0a0331e7",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
@@ -12685,27 +12655,27 @@
 															"visibility": true,
 															"autouv": 0,
 															"children": [
-																"34e65e88-5b3e-4dcc-5f3b-89e8919fbbf4",
-																"b1fce8db-f277-c0cc-888e-3fcc7983e558",
-																"8dda1238-6b97-e8d1-bd5a-2590b198d9d3",
+																"a35b6b58-23cd-8870-ca18-0a267afc8587",
+																"087e2443-6b60-f2da-5703-7fd44d77464a",
+																"eea15f06-3b7f-63d7-91e8-dc8c2e86c6e0",
 																{
-																	"name": "Ten7Seg5ArmorBoot",
+																	"name": "Ten7Seg4ArmorBoot",
 																	"origin": [0, 0, 0],
 																	"color": 0,
-																	"uuid": "608c2395-792c-a811-067a-783256f458fa",
+																	"uuid": "0b131173-e3df-a9ad-c18d-54eb03d5647b",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
 																	"locked": false,
 																	"visibility": false,
 																	"autouv": 0,
-																	"children": ["34388c9e-b7eb-91df-71f8-9d756dfc1637", "2c52f634-dd6e-91c4-498e-996f49e45857"]
+																	"children": ["ece46665-07e0-e6f2-a606-dcfc51ad2aaa", "d41a21ca-a2a4-991a-8e4f-fe7ab3835bba"]
 																},
 																{
-																	"name": "Ten7Seg6",
-																	"origin": [-4.6, -13.4, -0.9],
+																	"name": "Ten7Seg5",
+																	"origin": [-4.6, -9.4, -0.9],
 																	"color": 0,
-																	"uuid": "e16a541c-7391-6648-f232-93d7676cf32f",
+																	"uuid": "9f13d86b-9f61-6d85-71de-095686c0c821",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
@@ -12713,20 +12683,50 @@
 																	"visibility": true,
 																	"autouv": 0,
 																	"children": [
-																		"90d53d75-e7ae-155b-73fa-85c383c60192",
-																		"f75c623e-eb54-3c31-786c-443aab8f5484",
+																		"34e65e88-5b3e-4dcc-5f3b-89e8919fbbf4",
+																		"b1fce8db-f277-c0cc-888e-3fcc7983e558",
+																		"8dda1238-6b97-e8d1-bd5a-2590b198d9d3",
 																		{
-																			"name": "Ten7Seg6ArmorBoot",
+																			"name": "Ten7Seg5ArmorBoot",
 																			"origin": [0, 0, 0],
 																			"color": 0,
-																			"uuid": "cb67b9eb-ecdc-46a7-5b37-712b61bfee62",
+																			"uuid": "608c2395-792c-a811-067a-783256f458fa",
 																			"export": true,
 																			"mirror_uv": false,
 																			"isOpen": false,
 																			"locked": false,
 																			"visibility": false,
 																			"autouv": 0,
-																			"children": ["963a1fda-8faa-25c8-c8ba-14e7625f4f9f", "f0d2bf28-1913-74d5-5cc0-809bc6e65045"]
+																			"children": ["34388c9e-b7eb-91df-71f8-9d756dfc1637", "2c52f634-dd6e-91c4-498e-996f49e45857"]
+																		},
+																		{
+																			"name": "Ten7Seg6",
+																			"origin": [-4.6, -13.4, -0.9],
+																			"color": 0,
+																			"uuid": "e16a541c-7391-6648-f232-93d7676cf32f",
+																			"export": true,
+																			"mirror_uv": false,
+																			"isOpen": false,
+																			"locked": false,
+																			"visibility": true,
+																			"autouv": 0,
+																			"children": [
+																				"90d53d75-e7ae-155b-73fa-85c383c60192",
+																				"f75c623e-eb54-3c31-786c-443aab8f5484",
+																				{
+																					"name": "Ten7Seg6ArmorBoot",
+																					"origin": [0, 0, 0],
+																					"color": 0,
+																					"uuid": "cb67b9eb-ecdc-46a7-5b37-712b61bfee62",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": false,
+																					"autouv": 0,
+																					"children": ["963a1fda-8faa-25c8-c8ba-14e7625f4f9f", "f0d2bf28-1913-74d5-5cc0-809bc6e65045"]
+																				}
+																			]
 																		}
 																	]
 																}
@@ -12737,43 +12737,13 @@
 											]
 										}
 									]
-								}
-							]
-						},
-						{
-							"name": "Ten8Seg1",
-							"origin": [-1.9, 11, -4.6],
-							"rotation": [90, 22.5, 0],
-							"color": 0,
-							"uuid": "344729c7-ab27-1d57-94f5-da5b87801401",
-							"export": true,
-							"mirror_uv": false,
-							"isOpen": false,
-							"locked": false,
-							"visibility": true,
-							"autouv": 0,
-							"children": [
-								"af024eb5-047e-1ff6-6060-305260efb798",
-								"97e5dc07-bcf4-3984-69de-9726bc7b6245",
-								"75c6ff99-21dd-af70-f269-542d9a6255f2",
-								{
-									"name": "Ten8Seg1ArmorLeggings",
-									"origin": [0, 0, 0],
-									"color": 0,
-									"uuid": "b656e8f1-363e-e287-f04e-93ad8905a5b5",
-									"export": true,
-									"mirror_uv": false,
-									"isOpen": false,
-									"locked": false,
-									"visibility": false,
-									"autouv": 0,
-									"children": ["cd52af8e-759c-3a6f-318f-ceca981c350d", "509442c4-9952-5687-5244-a4bbd2de5a76"]
 								},
 								{
-									"name": "Ten8Seg2",
-									"origin": [-1.9, 6, -3.6],
+									"name": "Ten8Seg1",
+									"origin": [-1.9, 11, -4.6],
+									"rotation": [90, 22.5, 0],
 									"color": 0,
-									"uuid": "c629ab57-37cd-638e-5622-4a50faab99cb",
+									"uuid": "344729c7-ab27-1d57-94f5-da5b87801401",
 									"export": true,
 									"mirror_uv": false,
 									"isOpen": false,
@@ -12781,27 +12751,27 @@
 									"visibility": true,
 									"autouv": 0,
 									"children": [
-										"e8c0231a-9cea-0ac3-f80c-31558e86acf7",
-										"d248ba40-163c-1755-7947-910dac7530da",
-										"365d8087-106b-6c63-b173-e57177125d58",
+										"af024eb5-047e-1ff6-6060-305260efb798",
+										"97e5dc07-bcf4-3984-69de-9726bc7b6245",
+										"75c6ff99-21dd-af70-f269-542d9a6255f2",
 										{
-											"name": "Ten8Seg2ArmorLeggings",
+											"name": "Ten8Seg1ArmorLeggings",
 											"origin": [0, 0, 0],
 											"color": 0,
-											"uuid": "5138a1d2-42fd-c02d-a487-bf6c8ca8e992",
+											"uuid": "b656e8f1-363e-e287-f04e-93ad8905a5b5",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
 											"locked": false,
 											"visibility": false,
 											"autouv": 0,
-											"children": ["f437d4a6-4114-5740-acaf-f475c432a16a", "a9f9c90e-0388-2d81-d076-0f363097f464"]
+											"children": ["cd52af8e-759c-3a6f-318f-ceca981c350d", "509442c4-9952-5687-5244-a4bbd2de5a76"]
 										},
 										{
-											"name": "Ten8Seg3",
-											"origin": [-1.9, 0, -3.6],
+											"name": "Ten8Seg2",
+											"origin": [-1.9, 6, -3.6],
 											"color": 0,
-											"uuid": "974bc2eb-e32a-5627-6ba5-f6307d0a3657",
+											"uuid": "c629ab57-37cd-638e-5622-4a50faab99cb",
 											"export": true,
 											"mirror_uv": false,
 											"isOpen": false,
@@ -12809,27 +12779,27 @@
 											"visibility": true,
 											"autouv": 0,
 											"children": [
-												"79f0e274-07f0-87ef-80d6-509ace954627",
-												"e71a9703-d086-a491-796b-07ed2303b455",
-												"9aa0b146-0324-cf71-d696-869b85cab31f",
+												"e8c0231a-9cea-0ac3-f80c-31558e86acf7",
+												"d248ba40-163c-1755-7947-910dac7530da",
+												"365d8087-106b-6c63-b173-e57177125d58",
 												{
-													"name": "Ten8Seg3ArmorLeggings",
+													"name": "Ten8Seg2ArmorLeggings",
 													"origin": [0, 0, 0],
 													"color": 0,
-													"uuid": "4d8425cc-b0e4-802d-fbf8-e7643dcf601b",
+													"uuid": "5138a1d2-42fd-c02d-a487-bf6c8ca8e992",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
 													"locked": false,
 													"visibility": false,
 													"autouv": 0,
-													"children": ["d778bffc-c21b-3cf1-74cc-1c742775e8cb", "e7623fb0-da43-bdcf-1ae9-a0abedcc66fd"]
+													"children": ["f437d4a6-4114-5740-acaf-f475c432a16a", "a9f9c90e-0388-2d81-d076-0f363097f464"]
 												},
 												{
-													"name": "Ten8Seg4",
-													"origin": [-1.9, -4.7, -3.6],
+													"name": "Ten8Seg3",
+													"origin": [-1.9, 0, -3.6],
 													"color": 0,
-													"uuid": "76e1c81e-86e3-e91f-fb41-b8c3418f7c8e",
+													"uuid": "974bc2eb-e32a-5627-6ba5-f6307d0a3657",
 													"export": true,
 													"mirror_uv": false,
 													"isOpen": false,
@@ -12837,27 +12807,27 @@
 													"visibility": true,
 													"autouv": 0,
 													"children": [
-														"a5d16e81-1327-c8e5-1c06-4b9af5201fc6",
-														"c9f9f4df-171e-3f5b-6f25-38eff09915d2",
-														"c8d370b6-19d1-dc6a-9d25-0a77d9aa30fc",
+														"79f0e274-07f0-87ef-80d6-509ace954627",
+														"e71a9703-d086-a491-796b-07ed2303b455",
+														"9aa0b146-0324-cf71-d696-869b85cab31f",
 														{
-															"name": "Ten8Seg4ArmorBoot",
+															"name": "Ten8Seg3ArmorLeggings",
 															"origin": [0, 0, 0],
 															"color": 0,
-															"uuid": "8daddba9-2e9d-2304-98e9-aa4d0186d6e7",
+															"uuid": "4d8425cc-b0e4-802d-fbf8-e7643dcf601b",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
 															"locked": false,
 															"visibility": false,
 															"autouv": 0,
-															"children": ["d909ad02-f157-ad70-49fd-7dec5b2520af", "91d93806-6a8e-b3c0-6620-c7f0aadf9631"]
+															"children": ["d778bffc-c21b-3cf1-74cc-1c742775e8cb", "e7623fb0-da43-bdcf-1ae9-a0abedcc66fd"]
 														},
 														{
-															"name": "Ten8Seg5",
-															"origin": [-1.9, -9.4, -3.6],
+															"name": "Ten8Seg4",
+															"origin": [-1.9, -4.7, -3.6],
 															"color": 0,
-															"uuid": "bcadf383-f1be-79e7-f3c1-97de4a84c589",
+															"uuid": "76e1c81e-86e3-e91f-fb41-b8c3418f7c8e",
 															"export": true,
 															"mirror_uv": false,
 															"isOpen": false,
@@ -12865,27 +12835,27 @@
 															"visibility": true,
 															"autouv": 0,
 															"children": [
-																"09b118a9-4795-9a29-c6f8-464e353e8eab",
-																"3e71ca54-5b75-45cd-d1e9-f44f2ac409eb",
-																"b86e8376-0410-7008-2976-31c697457ae6",
+																"a5d16e81-1327-c8e5-1c06-4b9af5201fc6",
+																"c9f9f4df-171e-3f5b-6f25-38eff09915d2",
+																"c8d370b6-19d1-dc6a-9d25-0a77d9aa30fc",
 																{
-																	"name": "Ten8Seg5ArmorBoot",
+																	"name": "Ten8Seg4ArmorBoot",
 																	"origin": [0, 0, 0],
 																	"color": 0,
-																	"uuid": "f8d8250b-6c34-8aa7-a4d2-0715bacfc1e4",
+																	"uuid": "8daddba9-2e9d-2304-98e9-aa4d0186d6e7",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
 																	"locked": false,
 																	"visibility": false,
 																	"autouv": 0,
-																	"children": ["19270f03-ef28-0e5e-a41a-42a26cb6a24b", "04bca445-df90-e3d5-223f-f212fc131550"]
+																	"children": ["d909ad02-f157-ad70-49fd-7dec5b2520af", "91d93806-6a8e-b3c0-6620-c7f0aadf9631"]
 																},
 																{
-																	"name": "Ten8Seg6",
-																	"origin": [-1.9, -13.4, -3.6],
+																	"name": "Ten8Seg5",
+																	"origin": [-1.9, -9.4, -3.6],
 																	"color": 0,
-																	"uuid": "9da172d2-b868-d728-b873-2dee0dccfd18",
+																	"uuid": "bcadf383-f1be-79e7-f3c1-97de4a84c589",
 																	"export": true,
 																	"mirror_uv": false,
 																	"isOpen": false,
@@ -12893,20 +12863,50 @@
 																	"visibility": true,
 																	"autouv": 0,
 																	"children": [
-																		"04c33a60-4faf-4b86-fa64-d4b2c4c790c2",
-																		"099f8beb-e5f1-8aab-2820-ae9650b65ced",
+																		"09b118a9-4795-9a29-c6f8-464e353e8eab",
+																		"3e71ca54-5b75-45cd-d1e9-f44f2ac409eb",
+																		"b86e8376-0410-7008-2976-31c697457ae6",
 																		{
-																			"name": "Ten8Seg6ArmorBoot",
+																			"name": "Ten8Seg5ArmorBoot",
 																			"origin": [0, 0, 0],
 																			"color": 0,
-																			"uuid": "aa81ed42-3b48-d6f2-fd3b-aab4528591f0",
+																			"uuid": "f8d8250b-6c34-8aa7-a4d2-0715bacfc1e4",
 																			"export": true,
 																			"mirror_uv": false,
 																			"isOpen": false,
 																			"locked": false,
 																			"visibility": false,
 																			"autouv": 0,
-																			"children": ["5d9c1672-800d-a1eb-a131-e009066ed849", "b107b156-5d52-8e90-7951-b9848d652bdf"]
+																			"children": ["19270f03-ef28-0e5e-a41a-42a26cb6a24b", "04bca445-df90-e3d5-223f-f212fc131550"]
+																		},
+																		{
+																			"name": "Ten8Seg6",
+																			"origin": [-1.9, -13.4, -3.6],
+																			"color": 0,
+																			"uuid": "9da172d2-b868-d728-b873-2dee0dccfd18",
+																			"export": true,
+																			"mirror_uv": false,
+																			"isOpen": false,
+																			"locked": false,
+																			"visibility": true,
+																			"autouv": 0,
+																			"children": [
+																				"04c33a60-4faf-4b86-fa64-d4b2c4c790c2",
+																				"099f8beb-e5f1-8aab-2820-ae9650b65ced",
+																				{
+																					"name": "Ten8Seg6ArmorBoot",
+																					"origin": [0, 0, 0],
+																					"color": 0,
+																					"uuid": "aa81ed42-3b48-d6f2-fd3b-aab4528591f0",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": false,
+																					"autouv": 0,
+																					"children": ["5d9c1672-800d-a1eb-a131-e009066ed849", "b107b156-5d52-8e90-7951-b9848d652bdf"]
+																				}
+																			]
 																		}
 																	]
 																}
@@ -13697,7 +13697,7 @@
 			"name": "idle",
 			"loop": "loop",
 			"override": false,
-			"length": 2,
+			"length": 0,
 			"snapping": 24,
 			"selected": false,
 			"anim_time_update": "",
@@ -13713,7 +13713,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "52.5",
+									"x": "v.bounce+52.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -13721,7 +13721,7 @@
 							"uuid": "9a3c494d-6149-72e3-c823-f57646090c6a",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -13741,7 +13741,7 @@
 							"uuid": "843a172c-e8b4-4b72-d839-3c97a42a1033",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -13753,57 +13753,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -17.5,
+									"x": "math.sin(v.time+(67.5*math.pi)/180)*18.75-36.25\n",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "0f80865a-0e88-0624-2fb4-43af6a2ffb14",
+							"uuid": "4eac8b28-1f77-f732-b1f2-18ad76eaf47e",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "9d158cc3-d124-f3d7-ef49-e34f1114b0ca",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -17.5,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "7576f7e8-b939-6486-8c95-e9cdcbd372ce",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "faf1c00f-1fa5-4d05-8013-e346d605a68d",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -13815,57 +13773,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(67.5*math.pi)/180)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "36c2c01f-1aec-75bc-6aea-9ec66bd8ec70",
+							"uuid": "51d48ba6-2485-fcca-2887-fddb97f3a578",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "795c8895-cfe8-09ba-41b1-ebc943735a5f",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "cbf35f2e-420a-501e-f769-cdb8103c7a49",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "3c3cdc56-61a2-c915-0052-1a0a261c6e45",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -13877,57 +13793,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(67.5*math.pi)/180)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "304cd4d0-2d38-e6b8-630e-45133697fb61",
+							"uuid": "1d76444f-0b06-e5c1-aba1-92cd936c68b6",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "2edfc398-7e8f-ce25-7aef-87424cff920e",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "4fa71d66-6ec3-82ea-e928-782a62a9d483",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "4ec5d867-0f95-4917-cb80-c653742c9f7b",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -13939,57 +13813,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -50,
+									"x": "-50",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "1888c772-1186-2177-c4f7-101a571ab151",
+							"uuid": "0c423d86-f343-214a-107d-bc407a93cdf0",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "46b23431-ab34-eaed-97cb-db162f0b01de",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "8e40a8a9-fbe7-b2cd-22be-f715c90c46e4",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "ebe68453-c429-f303-b8d1-e9bbf1f72c26",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14002,14 +13834,14 @@
 							"data_points": [
 								{
 									"x": "0",
-									"y": -2,
+									"y": "v.bounce*0.1-2\n",
 									"z": "0"
 								}
 							],
 							"uuid": "d3e03eb3-35bf-28ff-504a-8d63fa7282a8",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14021,7 +13853,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "52.5",
+									"x": "v.bounce+52.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -14029,7 +13861,7 @@
 							"uuid": "cae44ee7-f9cb-8592-8bf4-237818c3d3aa",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14049,7 +13881,7 @@
 							"uuid": "4ef76fbb-853b-e916-c5ac-886209aee557",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14061,57 +13893,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -17.5,
+									"x": "math.sin(v.time+(112.5*math.pi)/180)*18.75-36.25\n",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "9d79b7ea-35a8-e6a7-eef9-4991e1ec3ea6",
+							"uuid": "37b699ab-add0-3c9b-a7a9-0052aa1f94c3",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "d8b0d7de-34fc-2f13-61fc-6b7c961e21f0",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -17.5,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "fca00532-48b4-ca7a-ccd1-afb677217417",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "dbb2d0bc-a4ea-970c-1eb1-f286407e555f",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14123,57 +13913,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(112.5*math.pi)/180)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "6a5274f4-89de-f1f1-7511-a18479aedd08",
+							"uuid": "fb50c9ef-db96-efc1-1c73-db7b1bda74e3",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "e6e4875c-7618-3255-7b91-4a730b0e04cf",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "945d3335-14fa-b511-5191-3de43614f605",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "fc67935a-07b4-2b14-aeb9-19bc079e0e2f",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14185,57 +13933,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(112.5*math.pi)/180)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "32500470-3cd1-906a-c600-fd5d885fd82d",
+							"uuid": "c7f723ca-2e49-73e9-c20a-f45e8191930a",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "fe96eaab-6df7-3148-b085-80378f42f380",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "1e0997cf-ce78-9303-5ba4-54b373e3e12a",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "e593dac8-ab24-7e61-5441-63d04aad61c1",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14247,57 +13953,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -50,
+									"x": "-50",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "2fe3b88b-cd78-b1db-e2a0-2d0a7ec304e4",
+							"uuid": "88507747-3254-46b4-558b-02ffa151f4b1",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "654d9e91-0d88-2842-4646-1f13c3370ad4",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "3ad7df1c-a08c-04da-9841-56dadb2e4f69",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "67b2cf8c-05c6-47ea-ace3-87b08c8dd06c",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14309,7 +13973,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "52.5",
+									"x": "v.bounce+52.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -14317,7 +13981,7 @@
 							"uuid": "2d2f3354-34fa-4740-35de-37c9e60a98ac",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14337,7 +14001,7 @@
 							"uuid": "08782c5d-f400-30dc-6d5f-2d1c4131c418",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14349,57 +14013,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "a0f0c592-96b3-1b1d-05b5-6435b81ef270",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -17.5,
+									"x": "math.sin(v.time+(157.5*math.pi)/180)*18.75-36.25\n",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "290b908b-6dff-bb24-421e-41e5d0565ab8",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "c508d24e-746f-3420-0926-ce7320387334",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -17.5,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "952b17b6-f7a1-cba5-905a-fca8f9df9d66",
+							"uuid": "7e594c55-a003-2751-f7d5-776406571d2f",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14411,57 +14033,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(157.5*math.pi)/180)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "df50f1c2-2aa7-8d37-0e86-d5561d5f92e9",
+							"uuid": "feb5bd22-4310-784d-b7da-cc87cc055052",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "765eecc8-2d2a-9eed-5a0e-74e92927b121",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "d22e32bb-e05b-c0c7-4e02-30829e08430c",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "0e6c35e6-1ceb-d479-742a-38f98e4a3e91",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14473,57 +14053,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(157.5*math.pi)/180)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "24a1bcbb-5d16-3c9a-af21-045e36a9353b",
+							"uuid": "7c69561b-34cc-c7eb-efb2-5f328961b0af",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "f69fcf2b-06e0-4dbf-59fe-a8590c1c01b1",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "b57b442f-9b79-b6bb-84eb-27c847fd12fb",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "9d47fcef-d6d5-350a-4ba4-4b3934e289fe",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14535,57 +14073,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -50,
+									"x": "-50",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "8efd97de-bf46-389c-619d-6ec267aade5e",
+							"uuid": "dca34158-bc9f-2187-8adb-5fd75eb867a0",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "2e9c8723-1839-5b73-5162-c260409e4970",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "22f5a15a-c42e-0e21-41b0-3052383030d5",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "45419f33-444d-44aa-b751-65c64585f6a4",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14597,7 +14093,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "52.5",
+									"x": "v.bounce+52.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -14605,7 +14101,7 @@
 							"uuid": "0e454e10-0537-8af6-6a32-10f2fab95563",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14617,7 +14113,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "52.5",
+									"x": "v.bounce+52.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -14625,7 +14121,7 @@
 							"uuid": "ce1e97bf-5c1e-f4fa-cf9b-0e7c669921d3",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14645,7 +14141,7 @@
 							"uuid": "85d1aa47-d7df-69f9-baba-82ee551be501",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14657,57 +14153,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -17.5,
+									"x": "math.sin(v.time+(202.5*math.pi)/180)*18.75-36.25\n",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "abcce56a-b07d-7190-3d5b-780a9310eaa6",
+							"uuid": "7af66e1c-7184-8d78-df0e-290e55cb0331",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "e90de213-d06f-b2d7-5799-ddd63bae4c01",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -17.5,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "a3534787-dde0-e7dd-1f04-0f2673e7d6c1",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "cdc469cb-226a-b4be-993e-2f69c9a91bb6",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14719,57 +14173,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(202.5*math.pi)/180)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "e7f7a610-e5a7-7a2d-7b70-86293cf5c394",
+							"uuid": "2c8e2cbf-fb2c-3351-503e-e13146e531a6",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "7f27cbb9-4555-a7b3-46a4-5045da50f4b3",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "396c30d5-a91c-46b3-9ef3-aec40428c4da",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "2da582f0-d4a4-ad62-fabd-27b5fba18192",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14781,57 +14193,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(202.5*math.pi)/180)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "1ffabf88-d48b-0d6f-47f1-9dec8bb0d104",
+							"uuid": "b179e4e8-7e46-d907-ef05-0178578d2007",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "74223e5b-5691-a3ba-6cad-66fa05999d70",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "3d2a524e-fd67-f0b0-ada6-5c9002a26eeb",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "d114a261-5e2a-a102-9f0b-26f4577605dd",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14843,57 +14213,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -50,
+									"x": "-50",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "ffbdc812-b048-34d1-421d-7018248926ad",
+							"uuid": "26035567-8953-6b57-676e-a7299c68f2f7",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "8b78f69a-b2f9-6384-1e71-03cf600fd416",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "3258f869-daa4-e633-4b83-b4b553b85fe4",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "0c2d3472-d966-ac2c-8977-2936633eb149",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14905,7 +14233,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "52.5",
+									"x": "v.bounce+52.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -14913,7 +14241,7 @@
 							"uuid": "3aae5834-9ee3-8995-9623-6252ab4933a7",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14933,7 +14261,7 @@
 							"uuid": "cab1979c-df63-5c2c-70e1-edb2d0bd5b17",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -14945,57 +14273,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -17.5,
+									"x": "math.sin(v.time+(247.5*math.pi)/180)*18.75-36.25\n",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "fdfad541-5b62-c08a-e0a6-5d3f4e2f77f8",
+							"uuid": "5f1e7e81-4efc-dc05-e926-346e0addd600",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "17711ed8-b879-ea6c-ea20-c38ab51a58dc",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -17.5,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "c9636fb2-d46f-b33b-856f-60ca47f1522c",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "a4b0521d-3b79-b5af-b4b7-af757e14c2ab",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15007,57 +14293,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(247.5*math.pi)/180)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "9fc0b840-c2ad-c65b-a47d-8d5c84c8cfd5",
+							"uuid": "9c16f4b3-7a8a-8e99-6786-15df05eefd50",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "a325e643-9420-6d20-a770-8b8434e173fd",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "1e9bd667-b4f2-427a-e377-12076abf5c6c",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "535e1551-1a40-10d2-0d8a-ab79d9b86e47",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15069,57 +14313,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(247.5*math.pi)/180)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "7cf5df64-7993-eaea-ea5f-abe0a8017f96",
+							"uuid": "3b7f1d50-908a-fdb4-836f-8f6cd856f364",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "ccc8a1fe-14e2-704e-24cf-dfb6cba26b93",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "5eeb396c-164b-fefc-a82a-e7e606069294",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "222aff23-5a14-833c-472d-9cb54f70a4b1",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15131,57 +14333,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -50,
+									"x": "-50",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "e60ea7aa-6e72-580f-4e76-f85578c6654b",
+							"uuid": "ed3e6405-b5e0-591c-41da-63d75a01b61e",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "3fd56842-416d-8c4c-a724-a63004db3e3f",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "66b1f3be-efe5-a669-bf42-46dc2419db61",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "96799fbb-e842-b474-9a7c-dc7c2e35eae2",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15193,7 +14353,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "52.5",
+									"x": "v.bounce+52.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -15201,7 +14361,7 @@
 							"uuid": "8a4ba355-f60d-b83d-007e-64b654d9d229",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15221,7 +14381,7 @@
 							"uuid": "93425808-68e7-1433-14b1-ca43e398f22d",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15233,57 +14393,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -17.5,
+									"x": "math.sin(v.time+(292.5*math.pi)/180)*18.75-36.25\n",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "36a21e5b-c6e6-5729-c50a-d37440fda80d",
+							"uuid": "93e21777-e377-ef74-e9ad-a89d02b9a7e6",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "ebcd3d11-4b8c-174f-c905-6f54a16562a8",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -17.5,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "d34cff49-7cf4-1f81-c500-d17b913404d0",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "261675e8-a110-6ef2-ab9e-8b5a95d4e529",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15295,57 +14413,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(292.5*math.pi)/180)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "1d67ec8f-2119-11ce-8bf9-d8422d5bf15a",
+							"uuid": "0c55c94b-72ca-859f-81a1-496b476da068",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "adabc8fa-7110-02aa-0e21-8072d1015fdc",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "ad3bab06-d264-7f1b-1ada-b0bdd69c3c2f",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "2ec4ad37-445e-4f12-9856-e0dea7b02205",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15357,57 +14433,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(292.5*math.pi)/180)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "6ef336bb-bc72-7eda-8800-52060c70e6a8",
+							"uuid": "b69870ed-c7d6-c8fe-8cc5-a55510b385bf",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "83a7b86a-37da-752c-261a-83f943fb18f7",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "94114565-f2ad-f744-8128-17e0642beb56",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "ef1b4ce2-58dc-e62c-4f8f-a657b59234e2",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15419,57 +14453,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -50,
+									"x": "-50",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "34955e0b-4a7b-8b8a-40a9-c46da3d4787b",
+							"uuid": "84410e5f-e1a8-c0da-3fb5-1f98bdc6a6bf",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "00bb6404-09eb-f0bc-1bbd-635768c8e2f0",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "6ae940d9-19f9-1dfc-cad4-a5a56dc22e77",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "596a2eb1-c740-7c3f-e6f1-377de45a1919",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15489,7 +14481,7 @@
 							"uuid": "5c395e87-fad8-51c5-4118-619a3d054c29",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15501,57 +14493,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -17.5,
+									"x": "math.sin(v.time+(337.5*math.pi)/180)*18.75-36.25\n",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "c11f8723-5816-8912-19cc-538d34760dda",
+							"uuid": "02683a4a-cf07-6bf6-a5c6-8225f86c78ce",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "8f0dc097-e4fb-cc08-215c-4cfee4ca627a",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -17.5,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "384d874a-a646-ef59-8ff7-2813faab2825",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "89606f60-4991-e941-acbe-34d6b1fe9e70",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15563,57 +14513,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(337.5*math.pi)/180)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "68347d5e-9a50-5207-3f33-afc2020fd37c",
+							"uuid": "f54aa7ff-983d-aa09-b177-1fdc8e303f3b",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "1045ebc3-be2f-b4d3-06da-fb477f311bc2",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "2dc22cc4-a57f-39b9-9952-32ba089e9ce7",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "d00e07a8-8917-e85c-4f38-5052411a66b6",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15625,57 +14533,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(337.5*math.pi)/180)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "a1ff0520-df9c-7298-5279-8415b8dd394a",
+							"uuid": "cb5846e5-b870-6994-1312-8dd64bcfc8bf",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "20ddcc54-dea4-3619-124d-2e0a33d312fe",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "9291e99b-6771-9f78-f6f4-872c74e13b89",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "ccc6ba0a-8b84-98d2-a4b5-eac2ee7bb852",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15687,57 +14553,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -50,
+									"x": "-50",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "c8846021-2417-4713-5ae7-9d144d750455",
+							"uuid": "372af662-a05a-e9a4-3ac7-8b94cba054b4",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "7521eab4-6ab9-45b4-7364-bf2dc795214d",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "92608dac-693d-5e1f-0255-28b4997ed5a9",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "def39e89-710f-36a4-29f6-bcd75c91545d",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15749,7 +14573,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "52.5",
+									"x": "v.bounce+52.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -15757,7 +14581,7 @@
 							"uuid": "558c5e3d-b592-9c81-6b3e-022666b4d9f6",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15777,7 +14601,7 @@
 							"uuid": "c2aac2a0-a6f3-5bfe-7fdf-fd9ba9784ba0",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15789,57 +14613,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -17.5,
+									"x": "math.sin(v.time+(22.5*math.pi)/180)*18.75-36.25\n",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "4a57beff-a3bb-2a99-5123-34e1c08e927a",
+							"uuid": "5ad267ad-56c8-d4f5-3968-47149a279ec8",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "bf4ed450-0339-c507-4b79-fd28a0ea9bc3",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -17.5,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "a1ce5fb6-6c06-dcf8-3e9e-dbc2c57754d2",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "a56ce841-e425-d562-7cf3-b39a600fee95",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15851,57 +14633,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(22.5*math.pi)/180)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "b57ec48c-6c5b-2f17-13f5-e4eb7207fdd7",
+							"uuid": "1449458e-a24b-51eb-1487-3087b74423f3",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "523dc14d-aef5-5b53-20a6-9224a7052225",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "505237f7-c30e-8488-15f2-aee72f7393c9",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -42.5,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "6d4646af-49de-f91e-62de-875359b3335f",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15913,57 +14653,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -55,
+									"x": "math.sin(v.time+(22.5*math.pi)/180)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "b0803abd-e5d7-a224-dcd9-2acbbf3c90b2",
+							"uuid": "fd51563d-4608-0e2b-98df-7d3a239fe033",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "fdab432d-f2be-7860-dc35-777cbc85e137",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -55,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "942eb492-bd59-ff64-bab5-fdba1eea59ff",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -80,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "1dcf245c-6f46-62dc-1397-bbdc2b3b3936",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				},
@@ -15975,57 +14673,15 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": -50,
+									"x": "-50",
 									"y": "0",
 									"z": "0"
 								}
 							],
-							"uuid": "f57d5162-a2e9-f616-d06d-5658218e8497",
+							"uuid": "2c36200d-6fc4-4736-07a0-24511e45ed9f",
 							"time": 0,
 							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "b0daeac6-f914-b9ce-76ec-6400c4b3b3af",
-							"time": 1,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": "0",
-									"z": "0"
-								}
-							],
-							"uuid": "e8861ae7-5a0a-dd9a-5a5f-15604b05fcf0",
-							"time": 2,
-							"color": -1,
-							"interpolation": "catmullrom"
-						},
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -50,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "5e1bd18e-30cf-09e1-83b0-5e5a00c51ae7",
-							"time": 3,
-							"color": -1,
-							"interpolation": "catmullrom"
+							"interpolation": "linear"
 						}
 					]
 				}
