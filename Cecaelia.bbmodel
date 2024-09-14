@@ -11845,6 +11845,33 @@
 																					"visibility": false,
 																					"autouv": 0,
 																					"children": ["64543728-73c8-4919-7390-d001de13b59d", "216b484e-51de-a7cd-d7a5-438f18099d76"]
+																				},
+																				{
+																					"name": "Ten1Seg7",
+																					"origin": [1.9, -18.4, -3.6],
+																					"color": 0,
+																					"uuid": "708da10b-1ed6-d893-2565-4553ef187306",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": true,
+																					"autouv": 0,
+																					"children": [
+																						{
+																							"name": "Bubble1",
+																							"origin": [1.9, -18.4, -3.6],
+																							"color": 0,
+																							"uuid": "3b324eef-4884-a234-d921-abca7b13c185",
+																							"export": true,
+																							"mirror_uv": false,
+																							"isOpen": false,
+																							"locked": false,
+																							"visibility": true,
+																							"autouv": 0,
+																							"children": []
+																						}
+																					]
 																				}
 																			]
 																		}
@@ -12025,6 +12052,33 @@
 																					"visibility": false,
 																					"autouv": 0,
 																					"children": ["d4a07809-f2bb-44c5-7152-31974ab54aed", "033e1d7e-5c14-0725-6220-3828f8d0ef5a"]
+																				},
+																				{
+																					"name": "Ten2Seg7",
+																					"origin": [4.6, -18.4, -0.9],
+																					"color": 0,
+																					"uuid": "da5e1ee3-915f-e88d-256b-d21d0bedff9f",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": true,
+																					"autouv": 0,
+																					"children": [
+																						{
+																							"name": "Bubble2",
+																							"origin": [4.6, -18.4, -0.9],
+																							"color": 0,
+																							"uuid": "39b6c751-181c-094d-607c-ca217b9972d7",
+																							"export": true,
+																							"mirror_uv": false,
+																							"isOpen": false,
+																							"locked": false,
+																							"visibility": true,
+																							"autouv": 0,
+																							"children": []
+																						}
+																					]
 																				}
 																			]
 																		}
@@ -12205,6 +12259,33 @@
 																					"visibility": false,
 																					"autouv": 0,
 																					"children": ["330b8cd1-24d5-d4ef-076a-7787fd0c23e3", "258b321b-fe53-6d3a-20bc-7a594bd57483"]
+																				},
+																				{
+																					"name": "Ten3Seg7",
+																					"origin": [4.6, -18.4, 2.9],
+																					"color": 0,
+																					"uuid": "f34166db-081e-dba0-3e30-d7c5b59a9b49",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": true,
+																					"autouv": 0,
+																					"children": [
+																						{
+																							"name": "Bubble3",
+																							"origin": [4.6, -18.4, 2.9],
+																							"color": 0,
+																							"uuid": "0e13b95f-084e-5068-d95c-5da72cb6d884",
+																							"export": true,
+																							"mirror_uv": false,
+																							"isOpen": false,
+																							"locked": false,
+																							"visibility": true,
+																							"autouv": 0,
+																							"children": []
+																						}
+																					]
 																				}
 																			]
 																		}
@@ -12385,6 +12466,33 @@
 																					"visibility": false,
 																					"autouv": 0,
 																					"children": ["ba28c05a-c30f-90fa-b04c-37d6ca5e44aa", "43b4c9fc-8b7e-178c-317a-da62523bae85"]
+																				},
+																				{
+																					"name": "Ten4Seg7",
+																					"origin": [1.9, -18.4, 5.6],
+																					"color": 0,
+																					"uuid": "87de622b-d70f-45df-084c-1ad226a02d26",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": true,
+																					"autouv": 0,
+																					"children": [
+																						{
+																							"name": "Bubble4",
+																							"origin": [1.9, -18.4, 5.6],
+																							"color": 0,
+																							"uuid": "f6a70def-7c2e-db86-3cdd-824d7675e24c",
+																							"export": true,
+																							"mirror_uv": false,
+																							"isOpen": false,
+																							"locked": false,
+																							"visibility": true,
+																							"autouv": 0,
+																							"children": []
+																						}
+																					]
 																				}
 																			]
 																		}
@@ -12565,6 +12673,33 @@
 																					"visibility": false,
 																					"autouv": 0,
 																					"children": ["1eb6aae2-ecdf-f93b-e2c2-a02c4312734e", "f660e9bb-a0a0-e0f5-cb32-730905c564c0"]
+																				},
+																				{
+																					"name": "Ten5Seg7",
+																					"origin": [-1.9, -18.4, 5.6],
+																					"color": 0,
+																					"uuid": "fb282745-a315-ca80-66ac-167b8df2d35a",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": true,
+																					"autouv": 0,
+																					"children": [
+																						{
+																							"name": "Bubble5",
+																							"origin": [-1.9, -18.4, 5.6],
+																							"color": 0,
+																							"uuid": "86d95a3e-899d-8962-a3ec-8ca674688902",
+																							"export": true,
+																							"mirror_uv": false,
+																							"isOpen": false,
+																							"locked": false,
+																							"visibility": true,
+																							"autouv": 0,
+																							"children": []
+																						}
+																					]
 																				}
 																			]
 																		}
@@ -12745,6 +12880,33 @@
 																					"visibility": false,
 																					"autouv": 0,
 																					"children": ["d8f39222-8fc0-0d9c-c7ec-23e7a3bafe47", "03da951d-e884-244b-077c-ad6431e003b6"]
+																				},
+																				{
+																					"name": "Ten6Seg7",
+																					"origin": [-4.6, -18.4, 2.9],
+																					"color": 0,
+																					"uuid": "a8347297-7bf0-95e0-01e1-ff5655d98029",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": true,
+																					"autouv": 0,
+																					"children": [
+																						{
+																							"name": "Bubble6",
+																							"origin": [-4.6, -18.4, 2.9],
+																							"color": 0,
+																							"uuid": "4487d853-414c-e712-96b4-078370a88961",
+																							"export": true,
+																							"mirror_uv": false,
+																							"isOpen": false,
+																							"locked": false,
+																							"visibility": true,
+																							"autouv": 0,
+																							"children": []
+																						}
+																					]
 																				}
 																			]
 																		}
@@ -12925,6 +13087,33 @@
 																					"visibility": false,
 																					"autouv": 0,
 																					"children": ["963a1fda-8faa-25c8-c8ba-14e7625f4f9f", "f0d2bf28-1913-74d5-5cc0-809bc6e65045"]
+																				},
+																				{
+																					"name": "Sen7Seg7",
+																					"origin": [-4.6, -18.4, -0.9],
+																					"color": 0,
+																					"uuid": "0acda78c-3a19-f118-a326-fce060b49f86",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": true,
+																					"autouv": 0,
+																					"children": [
+																						{
+																							"name": "Bubble7",
+																							"origin": [-4.6, -18.4, -0.9],
+																							"color": 0,
+																							"uuid": "c687720e-2018-cc1d-832e-a15afffe1228",
+																							"export": true,
+																							"mirror_uv": false,
+																							"isOpen": false,
+																							"locked": false,
+																							"visibility": true,
+																							"autouv": 0,
+																							"children": []
+																						}
+																					]
 																				}
 																			]
 																		}
@@ -13105,6 +13294,33 @@
 																					"visibility": false,
 																					"autouv": 0,
 																					"children": ["5d9c1672-800d-a1eb-a131-e009066ed849", "b107b156-5d52-8e90-7951-b9848d652bdf"]
+																				},
+																				{
+																					"name": "Ten8Seg7",
+																					"origin": [-1.9, -18.4, -3.6],
+																					"color": 0,
+																					"uuid": "6da59075-1523-3318-b99f-a115ca41290b",
+																					"export": true,
+																					"mirror_uv": false,
+																					"isOpen": false,
+																					"locked": false,
+																					"visibility": true,
+																					"autouv": 0,
+																					"children": [
+																						{
+																							"name": "Bubble8",
+																							"origin": [-1.9, -18.4, -3.6],
+																							"color": 0,
+																							"uuid": "d17991d0-8010-cdb1-e2ca-e70be7cb0c1b",
+																							"export": true,
+																							"mirror_uv": false,
+																							"isOpen": false,
+																							"locked": false,
+																							"visibility": true,
+																							"autouv": 0,
+																							"children": []
+																						}
+																					]
 																				}
 																			]
 																		}

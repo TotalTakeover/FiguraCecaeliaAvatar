@@ -1,4 +1,5 @@
 -- Required scripts
+local parts   = require("lib.PartsAPI")
 local effects = require("scripts.SyncedVariables")
 local pose    = require("scripts.Posing")
 
@@ -8,17 +9,25 @@ local bubbles       = config:load("WhirlpoolBubbles")
 local dolphinsGrace = config:load("WhirlpoolDolphinsGrace") or false
 if bubbles == nil then bubbles = true end
 
--- Bubble spawner
-local numBubbles = 8
+-- Bubble spawner locations
+local whirlpoolParts = parts:createTable(function(part) return part:getName():find("Bubble") end)
+
 function events.TICK()
 	
 	if dolphinsGrace and not effects.dG then return end
+	
+	if avatar:getPermissionLevel() ~= "MAX" then
+		
+		local time = world.getTime() % 2
+		if time == 0 then return end
+		
+	end
+	
 	if pose.swim and bubbles and player:isInWater() then
-		local worldMatrix = models:partToWorldMatrix()
-		for i = 1, numBubbles do
-			particles:newParticle("bubble",
-				(worldMatrix * matrices.rotation4(0, world.getTime() * 10 - 360/numBubbles * i)):apply(20, 25)
-			)
+		for _, part in ipairs(whirlpoolParts) do
+			particles["bubble"]
+				:pos(part:partToWorldMatrix():apply())
+				:spawn()
 		end
 	end
 	
