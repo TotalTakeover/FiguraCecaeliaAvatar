@@ -9,8 +9,8 @@ local effects   = require("scripts.SyncedVariables")
 -- Animation setup
 local anims = animations.Cecaelia
 
---TEMP
-v = {}
+-- TEMP, PLEASE DELETE
+v = v or {}
 
 -- Force load before setting up animation variable
 require("scripts.Anims")
