@@ -40,8 +40,6 @@ end
 
 function events.RENDER(delta, context)
 	
-	parts.group.Octopus:offsetRot(-vanilla_model.BODY:getOriginRot(delta).x, 0, 0)
-	
 	-- Store animation variables
 	v.time = time.currPos
 	
