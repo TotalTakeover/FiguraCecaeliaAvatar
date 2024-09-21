@@ -20,6 +20,17 @@ v.bounce = 0
 config:name("Cecaelia")
 local armsMove = config:load("SquapiArmsMove") or false
 
+-- Calculate parent's rotations
+local function calculateParentRot(m)
+	
+	local parent = m:getParent()
+	if not parent then
+		return m:getOffsetRot()
+	end
+	return calculateParentRot(parent) + m:getOffsetRot()
+	
+end
+
 -- Lerp tables
 local leftArmLerp  = lerp:new(0.5, armsMove and 1 or 0)
 local rightArmLerp = lerp:new(0.5, armsMove and 1 or 0)
@@ -59,6 +70,24 @@ local tailXIntense  = tail.idleXMovement
 local tailXSpeed    = tail.idleXSpeed
 local tailStrength  = tail.bendStrength
 local tailFlyOffset = tail.flyingOffset
+
+-- Head table
+local headParts = {
+	
+	parts.group.UpperBody
+	
+}
+
+-- Squishy smooth torso
+local head = squapi.smoothHead:new(
+	headParts,
+	0.3,  -- Strength (0.3)
+	0.4,  -- Tilt (0.4)
+	1,    -- Speed (1)
+	false -- Keep Original Head Pos (false)
+)
+
+local headStrength = head.strength[1] * #head.strength
 
 -- Squishy vanilla arms
 local leftArm = squapi.arm:new(
@@ -109,6 +138,11 @@ function events.TICK()
 	
 	-- Control the intensity of the tail function based on its scale
 	local scale = tailScale.large <= tailScale.swap and 1 or 0
+	
+	for i in ipairs(head.strength) do
+		head.strength[i] = (headStrength / #head.strength) * (1 - scale)
+	end
+	
 	tail.idleXMovement = scale * tailXIntense
 	tail.idleXSpeed    = scale * tailXSpeed
 	tail.bendStrength  = scale * tailStrength
@@ -163,6 +197,15 @@ function events.RENDER(delta, context)
 	parts.group.LeftArmFP:visible(firstPerson)
 	parts.group.RightArmFP:visible(firstPerson)
 	
+	-- Offset smooth torso in various parts
+	-- Note: acts strangely with `parts.group.body`
+	for _, group in ipairs(parts.group.UpperBody:getChildren()) do
+		if group ~= parts.group.Body then
+			group:rot(-calculateParentRot(group:getParent()))
+		end
+	end
+	
+	-- Calculate bounce variable
 	v.bounce = bounce:berp(bounce.target, delta)
 	
 end
