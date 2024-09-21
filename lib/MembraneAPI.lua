@@ -21,7 +21,7 @@ function Membrane:define(membrane,positions)
         for i, p in ipairs(positions) do
             local n = membrane:partToWorldMatrix():invert():apply(p:partToWorldMatrix():apply())
             vs[i]:setPos(n)
-            vs[#vs+1-i]:setPos(n)
+            vs[#vs/2+i+1-((i+1)%2*2)]:setPos(n)
         end
     end
 end
