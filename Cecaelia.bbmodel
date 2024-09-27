@@ -14652,7 +14652,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "math.sin(v.time+(67.5*math.pi)/180)*18.75-36.25\n",
+									"x": "math.sin(v.time+(67.5*math.pi)/180)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -14733,7 +14733,7 @@
 							"data_points": [
 								{
 									"x": "0",
-									"y": "v.bounce*0.1-2\n",
+									"y": "v.bounce*0.1-2",
 									"z": "0"
 								}
 							],
@@ -14792,7 +14792,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "math.sin(v.time+(112.5*math.pi)/180)*18.75-36.25\n",
+									"x": "math.sin(v.time+(112.5*math.pi)/180)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -14912,7 +14912,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "math.sin(v.time+(157.5*math.pi)/180)*18.75-36.25\n",
+									"x": "math.sin(v.time+(157.5*math.pi)/180)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15052,7 +15052,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "math.sin(v.time+(202.5*math.pi)/180)*18.75-36.25\n",
+									"x": "math.sin(v.time+(202.5*math.pi)/180)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15172,7 +15172,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "math.sin(v.time+(247.5*math.pi)/180)*18.75-36.25\n",
+									"x": "math.sin(v.time+(247.5*math.pi)/180)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15292,7 +15292,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "math.sin(v.time+(292.5*math.pi)/180)*18.75-36.25\n",
+									"x": "math.sin(v.time+(292.5*math.pi)/180)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15392,7 +15392,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "math.sin(v.time+(337.5*math.pi)/180)*18.75-36.25\n",
+									"x": "math.sin(v.time+(337.5*math.pi)/180)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15512,7 +15512,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "math.sin(v.time+(22.5*math.pi)/180)*18.75-36.25\n",
+									"x": "math.sin(v.time+(22.5*math.pi)/180)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15871,7 +15871,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-17.5\n",
+									"x": "-17.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -15891,7 +15891,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-55\n",
+									"x": "-55",
 									"y": "0",
 									"z": "0"
 								}
@@ -15911,7 +15911,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-55\n",
+									"x": "-55",
 									"y": "0",
 									"z": "0"
 								}
@@ -15931,7 +15931,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-50\n",
+									"x": "-50",
 									"y": "0",
 									"z": "0"
 								}
@@ -16033,7 +16033,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-17.5\n",
+									"x": "-17.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -27485,7 +27485,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-47.5\n",
+									"x": "-47.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -27605,7 +27605,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-47.5\n",
+									"x": "-47.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -27725,7 +27725,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-47.5\n",
+									"x": "-47.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -27845,7 +27845,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-47.5\n",
+									"x": "-47.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -27965,7 +27965,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-47.5\n",
+									"x": "-47.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -28085,7 +28085,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-47.5\n",
+									"x": "-47.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -28205,7 +28205,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-47.5\n",
+									"x": "-47.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -29249,7 +29249,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-25\n",
+									"x": "-25",
 									"y": "0",
 									"z": "0"
 								}
@@ -29269,7 +29269,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-25\n",
+									"x": "-25",
 									"y": "0",
 									"z": "0"
 								}
@@ -29289,7 +29289,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-25\n",
+									"x": "-25",
 									"y": "0",
 									"z": "0"
 								}
@@ -29309,7 +29309,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-25\n",
+									"x": "-25",
 									"y": "0",
 									"z": "0"
 								}
@@ -29329,7 +29329,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-25\n",
+									"x": "-25",
 									"y": "0",
 									"z": "0"
 								}
@@ -29349,7 +29349,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-25\n",
+									"x": "-25",
 									"y": "0",
 									"z": "0"
 								}
@@ -29369,7 +29369,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-25\n",
+									"x": "-25",
 									"y": 0,
 									"z": 0
 								}
@@ -29389,7 +29389,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-25\n",
+									"x": "-25",
 									"y": 0,
 									"z": 0
 								}
@@ -29449,7 +29449,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "-25\n",
+									"x": "-25",
 									"y": "0",
 									"z": "0"
 								}
