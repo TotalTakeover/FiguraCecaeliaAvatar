@@ -19,6 +19,25 @@ v = {}
 -- Animation variables
 v.time = 0
 
+-- Parrot pivots
+local parrots = {
+	
+	parts.group.LeftParrotPivot,
+	parts.group.RightParrotPivot
+	
+}
+
+-- Calculate parent's rotations
+local function calculateParentRot(m)
+	
+	local parent = m:getParent()
+	if not parent then
+		return m:getTrueRot()
+	end
+	return calculateParentRot(parent) + m:getTrueRot()
+	
+end
+
 -- Lerps
 local time = lerp:new(1)
 
@@ -42,6 +61,11 @@ function events.RENDER(delta, context)
 	
 	-- Store animation variables
 	v.time = time.currPos
+	
+	-- Parrot rot offset
+	for _, parrot in pairs(parrots) do
+		parrot:rot(-calculateParentRot(parrot:getParent()) - vanilla_model.BODY:getOriginRot())
+	end
 	
 end
 
