@@ -13992,6 +13992,19 @@
 											]
 										}
 									]
+								},
+								{
+									"name": "Ink_Glow",
+									"origin": [0, 6, 0],
+									"color": 0,
+									"uuid": "567e48ee-8963-afc4-989f-b60eea9df9e6",
+									"export": true,
+									"mirror_uv": false,
+									"isOpen": false,
+									"locked": false,
+									"visibility": true,
+									"autouv": 0,
+									"children": []
 								}
 							]
 						},

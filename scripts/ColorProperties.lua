@@ -1,11 +1,14 @@
 -- Avatar color
 avatar:color(vectors.hexToRGB("A008E2"))
 
--- Host only instructions
-if not host:isHost() then return end
-
 -- Table setup
 local t = {}
+
+-- Ink color
+t.ink = vectors.hexToRGB("B33BEA")
+
+-- Host only instructions
+if not host:isHost() then return end
 
 -- Action variables
 t.hover     = vectors.hexToRGB("A008E2")

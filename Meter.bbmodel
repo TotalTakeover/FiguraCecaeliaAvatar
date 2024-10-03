@@ -1,0 +1,271 @@
+{
+	"meta": {
+		"format_version": "4.10",
+		"model_format": "figura",
+		"box_uv": false
+	},
+	"visible_box": [1, 1, 0],
+	"variable_placeholders": "",
+	"variable_placeholder_buttons": [],
+	"timeline_setups": [],
+	"unhandled_root_fields": {},
+	"resolution": {
+		"width": 16,
+		"height": 16
+	},
+	"elements": [
+		{
+			"name": "Ink",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-1, -0.5, 0],
+			"to": [1, 0.5, 0],
+			"autouv": 0,
+			"color": 4,
+			"origin": [0, -0.5, 0],
+			"faces": {
+				"north": {
+					"uv": [10, 0, 12, 1],
+					"texture": 0
+				},
+				"east": {
+					"uv": [0, 0, 0, 1],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 2, 1],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 0, 1],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 0, 2, 0],
+					"texture": null
+				},
+				"down": {
+					"uv": [0, 0, 2, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "f52cf4a3-1017-9efc-3bbb-a65f061c7814"
+		},
+		{
+			"name": "Cap",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-3, 0.5, 0],
+			"to": [3, 2.5, 0],
+			"autouv": 0,
+			"color": 5,
+			"origin": [0, 0, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 6, 2],
+					"texture": 0
+				},
+				"east": {
+					"uv": [0, 0, 0, 1],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 3, 1],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 0, 1],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 0, 3, 0],
+					"texture": null
+				},
+				"down": {
+					"uv": [0, 0, 3, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "95a9ca00-f7db-db45-0182-aa670714d84b"
+		},
+		{
+			"name": "Cap",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-3, -2.5, 0],
+			"to": [3, -0.5, 0],
+			"autouv": 0,
+			"color": 5,
+			"origin": [0, 0, 0],
+			"faces": {
+				"north": {
+					"uv": [0, 2, 6, 4],
+					"texture": 0
+				},
+				"east": {
+					"uv": [0, 0, 0, 1],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 3, 1],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 0, 1],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 0, 3, 0],
+					"texture": null
+				},
+				"down": {
+					"uv": [0, 0, 3, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "32abd588-eac6-9137-d3f2-6ab840a55ff9"
+		},
+		{
+			"name": "Glass",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-2, -0.5, 0],
+			"to": [2, 0.5, 0],
+			"autouv": 0,
+			"color": 4,
+			"origin": [0, 0, 0],
+			"faces": {
+				"north": {
+					"uv": [6, 0, 10, 1],
+					"texture": 0
+				},
+				"east": {
+					"uv": [0, 0, 0, 1],
+					"texture": null
+				},
+				"south": {
+					"uv": [0, 0, 2, 1],
+					"texture": null
+				},
+				"west": {
+					"uv": [0, 0, 0, 1],
+					"texture": null
+				},
+				"up": {
+					"uv": [0, 0, 2, 0],
+					"texture": null
+				},
+				"down": {
+					"uv": [0, 0, 2, 0],
+					"texture": null
+				}
+			},
+			"type": "cube",
+			"uuid": "84d7b5b3-9b60-d89c-1d1c-d19dce1b0d73"
+		}
+	],
+	"outliner": [
+		{
+			"name": "Gui",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"uuid": "6a3821a0-b0ea-1452-b374-f6a0d5c27d6f",
+			"export": true,
+			"mirror_uv": false,
+			"isOpen": true,
+			"locked": false,
+			"visibility": true,
+			"autouv": 0,
+			"children": [
+				{
+					"name": "Bar",
+					"origin": [0, -0.5, 0],
+					"color": 0,
+					"uuid": "70f73d69-7151-ae21-191c-d143034a5e61",
+					"export": true,
+					"mirror_uv": false,
+					"isOpen": false,
+					"locked": false,
+					"visibility": true,
+					"autouv": 0,
+					"children": ["f52cf4a3-1017-9efc-3bbb-a65f061c7814", "84d7b5b3-9b60-d89c-1d1c-d19dce1b0d73"]
+				},
+				{
+					"name": "Top",
+					"origin": [0, 0.5, 0],
+					"color": 0,
+					"uuid": "1682c0c2-be0d-fb0a-546a-054e8be3cd16",
+					"export": true,
+					"mirror_uv": false,
+					"isOpen": false,
+					"locked": false,
+					"visibility": true,
+					"autouv": 0,
+					"children": ["95a9ca00-f7db-db45-0182-aa670714d84b"]
+				},
+				{
+					"name": "Bottom",
+					"origin": [0, -0.5, 0],
+					"color": 0,
+					"uuid": "16ea189a-4fb4-b456-ebd1-6e4e3e61e50f",
+					"export": true,
+					"mirror_uv": false,
+					"isOpen": false,
+					"locked": false,
+					"visibility": true,
+					"autouv": 0,
+					"children": ["32abd588-eac6-9137-d3f2-6ab840a55ff9"]
+				}
+			]
+		}
+	],
+	"textures": [
+		{
+			"path": "D:\\Total\\OneDrive\\Documents\\Misc Docs\\Video Game Assets\\Modding Assets\\Minecraft Assets\\Figura Avatars\\avatars\\GitHubRepos\\FiguraCecaeliaAvatar\\textures\\misc\\meter.png",
+			"name": "meter.png",
+			"folder": "block",
+			"namespace": "",
+			"id": "0",
+			"group": "",
+			"width": 16,
+			"height": 16,
+			"uv_width": 16,
+			"uv_height": 16,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": true,
+			"uuid": "29bb994f-f6f6-4d1b-3922-f3aa85223437",
+			"relative_path": "textures/misc/meter.png",
+			"source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAATJJREFUOE+dk6FOw1AUhv+TDDUSlmYVZSQ0V4xWjC4NGaoLkieYAFdJLa/AG6BxV8AToG4QJJgaHBLDMCgc6iznhtt00AXamt6c9ny5/3/+QwDw/njJ8rbPskSweCBjzBkzv0iJiKLBzkCDgDRNqfpXvtnmZVnV3j6+7PkzujqvAXJ/6BcgxmRy2ACoI5clBOIARHQK4HU02tPSOT4YrwOshLuTSoI0H108WQkAQma+FwlKKQ0QwnD/N6B+AXc2xlwz843zIIpje4MgCP4NWDMxmSaaQPA8rxtgdjzTxIT+dr8TIJ9nWSEe9LZ67QBuCvMssya2AtSn0EVCfQp5Mk2KTiZ+S0iiOF60HqNIALArWVBKWRNbBcmt159R3pDEWwDPLsr+0NeNy9TULLWfUd60ziviapwRP9vP2AAAAABJRU5ErkJggg=="
+		}
+	]
+}
