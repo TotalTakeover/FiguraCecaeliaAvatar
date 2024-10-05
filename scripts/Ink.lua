@@ -86,7 +86,7 @@ function events.TICK()
 	end
 	
 	-- If no ink, activate cooldown
-	if remainingInk == 0 and not cooldown then
+	if remainingInk == 0 and maxInk ~= 0 and not cooldown then
 		
 		cooldown = true
 		active   = false
@@ -144,25 +144,27 @@ local fadeLerp = lerp:new(0.2, 0)
 local barLerp  = lerp:new(0.2, 0)
 
 -- Variables
-local pMax = false
+local pMaxInk = maxInk
+local wasMax, isMax = true, true
 local fadeTimer = 100
 
 function events.TICK()
 	
-	-- Variable
-	local max = remainingInk == maxInk
+	-- Variables
+	isMax = remainingInk == maxInk
 	
 	-- Adjust timer based on active
-	fadeTimer = (active or max ~= pMax or cooldownTimer ~= 0) and 0 or math.min(fadeTimer + 1, 100)
+	fadeTimer = (active or pMaxInk ~= maxInk or wasMax ~= isMax or cooldownTimer ~= 0) and 0 or math.min(fadeTimer + 1, 100)
 	
 	-- If timer reaches 100, fade out, otherwise fade in
 	fadeLerp.target = fadeTimer == 100 and 0 or 1
 	
-	-- Store previous max state
-	pMax = max
-	
 	-- Lerp bar scale
 	barLerp.target = fadeLerp.target * (maxInk / 20)
+	
+	-- Store previous variables
+	pMaxInk = maxInk
+	wasMax  = isMax
 	
 end
 
