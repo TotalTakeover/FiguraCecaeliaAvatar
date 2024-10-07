@@ -28,7 +28,7 @@ local function shootInk(x)
 	if #blockPos:getFluidTags() == 0 then return end
 	
 	-- Find color
-	local calcColor = (inkColor * inkPart:getSecondaryColor() * 1.25):applyFunc(function(x) return math.clamp(x, 0, 1) end)
+	local calcColor = inkColor * inkPart:getSecondaryColor()
 	
 	for i = 1, x do
 		
