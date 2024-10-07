@@ -1,12 +1,14 @@
 -- Required scripts
 local parts = require("lib.PartsAPI")
 local tail  = require("scripts.Tail")
-local s, color = pcall(require, "scripts.ColorProperties")
-if not s then color = {ink = vectors.vec3()} end
 
 -- Disables code if script cannot find `parts.group.Ink` or related groups
 local inkPart = table.unpack(parts:createTable(function(part) return part:getName():find("Ink") end, 1))
 if not inkPart then return {} end
+
+-- Config setup
+config:name("Cecaelia")
+local inkColor = config:load("InkColor") or vectors.hexToRGB("B33BEA")
 
 -- Variables
 local active = false
@@ -14,6 +16,7 @@ local cooldown = false
 local maxInk = 0
 local remainingInk = 0
 local cooldownTimer = 0
+local selectedRGB = 0
 
 -- Shoots ink
 local function shootInk(x)
@@ -25,7 +28,7 @@ local function shootInk(x)
 	if #blockPos:getFluidTags() == 0 then return end
 	
 	-- Find color
-	local calcColor = (color.ink * inkPart:getSecondaryColor() * 1.25):applyFunc(function(x) return math.clamp(x, 0, 1) end)
+	local calcColor = (inkColor * inkPart:getSecondaryColor() * 1.25):applyFunc(function(x) return math.clamp(x, 0, 1) end)
 	
 	for i = 1, x do
 		
@@ -132,12 +135,51 @@ function pings.inkKey(x)
 	
 end
 
+-- Choose color function
+local function pickColor(x)
+	
+	x = x/255
+	inkColor[selectedRGB+1] = math.clamp(inkColor[selectedRGB+1] + x, 0, 1)
+	
+	config:save("InkColor", inkColor)
+	
+	if inkColor == vec(1, 1, 1) then
+		host:setActionbar("Shame on you.")
+	end
+	
+end
+
+-- Swaps selected rgb value
+local function selectRGB()
+	
+	selectedRGB = (selectedRGB + 1) % 3
+	
+end
+
+-- Sync variables
+function pings.syncInk(a)
+	
+	inkColor = a
+	
+end
+
 -- Host only instructions
 if not host:isHost() then return end
 
 -- Required scripts
 local lerp      = require("lib.LerpAPI")
 local itemCheck = require("lib.ItemCheck")
+local s, color = pcall(require, "scripts.ColorProperties")
+if not s then color = {} end
+
+-- Sync on tick
+function events.TICK()
+	
+	if world.getTime() % 200 == 0 then
+		pings.syncInk(inkColor)
+	end
+	
+end
 
 -- Lerp tables
 local fadeLerp = lerp:new(0.2, 0)
@@ -146,6 +188,7 @@ local barLerp  = lerp:new(0.2, 0)
 -- Variables
 local pMaxInk = maxInk
 local wasMax, isMax = true, true
+local pInkColor = inkColor:length()
 local fadeTimer = 100
 
 function events.TICK()
@@ -154,7 +197,18 @@ function events.TICK()
 	isMax = remainingInk == maxInk
 	
 	-- Adjust timer based on active
-	fadeTimer = (active or pMaxInk ~= maxInk or wasMax ~= isMax or cooldownTimer ~= 0) and 0 or math.min(fadeTimer + 1, 100)
+	fadeTimer = (
+		active
+		or pMaxInk ~= maxInk
+		or wasMax ~= isMax
+		or pInkColor ~= inkColor:length()
+		or cooldownTimer ~= 0
+	) and 0 or math.min(fadeTimer + 1, 100)
+	
+	-- If maxInk is 0, hide the meter
+	if maxInk == 0 then
+		fadeTimer = 100
+	end
 	
 	-- If timer reaches 100, fade out, otherwise fade in
 	fadeLerp.target = fadeTimer == 100 and 0 or 1
@@ -163,8 +217,9 @@ function events.TICK()
 	barLerp.target = fadeLerp.target * (maxInk / 20)
 	
 	-- Store previous variables
-	pMaxInk = maxInk
-	wasMax  = isMax
+	pMaxInk   = maxInk
+	wasMax    = isMax
+	pInkColor = inkColor:length()
 	
 end
 
@@ -192,7 +247,7 @@ function events.RENDER(delta, context)
 	
 	parts.group.Bar.Ink
 		:scale(1, inkLeft, 1)
-		:color(color.ink)
+		:color(inkColor)
 		:setUVMatrix(matrices.mat3():scale(1, (barLerp.currPos + 1) * inkLeft, 1))
 	
 	-- Position cap to top
@@ -220,3 +275,43 @@ function events.TICK()
 	end
 	
 end
+
+-- Table setup
+local t = {}
+
+-- Action
+t.colorAct = action_wheel:newAction()
+	:item(itemCheck("ink_sac"))
+	:onLeftClick(selectRGB)
+	:onScroll(pickColor)
+
+-- Update action
+function events.RENDER(delta, context)
+	
+	if action_wheel:isEnabled() then
+		t.colorAct
+			:title(toJson
+				{"",
+				{text = "Ink Color\n\n", bold = true, color = color.primary},
+				{text = "Scroll to set the color of your ink.\n\n", color = color.secondary},
+				{text = "Selected RGB: ", bold = true, color = color.secondary},
+				{text = (selectedRGB == 0 and "[%d] "  or "%d " ):format(inkColor[1] * 255), color = "red"},
+				{text = (selectedRGB == 1 and "[%d] "  or "%d " ):format(inkColor[2] * 255), color = "green"},
+				{text = (selectedRGB == 2 and "[%d]\n" or "%d\n"):format(inkColor[3] * 255), color = "blue"},
+				{text = "Selected Hex: ", bold = true, color = color.secondary},
+				{text = vectors.rgbToHex(inkColor).."\n\n", color = "#"..vectors.rgbToHex(inkColor)},
+				{text = "Click to change selection.\n\n", color = color.secondary},
+				{text = "Notice:\n", bold = true, color = "gold"},
+				{text = "Brighter colors glow. Glowing settings control glowing.", color = "yellow"}}
+			)
+		
+		for _, page in pairs(t) do
+			page:hoverColor(color.hover):toggleColor(color.active)
+		end
+		
+	end
+	
+end
+
+-- Return actions
+return t

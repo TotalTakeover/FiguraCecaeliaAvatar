@@ -19,6 +19,9 @@ if not s then tail = {} end
 local s, membrane = pcall(require, "scripts.Membrane")
 if not s then membrane = {} end
 
+local s, ink = pcall(require, "scripts.Ink")
+if not s then ink = {} end
+
 local s, whirlpool = pcall(require, "scripts.WhirlpoolEffect")
 if not s then whirlpool = {} end
 
@@ -216,6 +219,7 @@ pages.octopus
 	:action( -1, tail.tailAct)
 	:action( -1, tail.smallAct)
 	:action( -1, membrane.toggleAct)
+	:action( -1, ink.colorAct)
 	:action( -1, pageActs.dry)
 	:action( -1, pageActs.whirlpool)
 	:action( -1, backAct)
