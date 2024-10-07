@@ -41,7 +41,7 @@ local function shootInk(x)
 			)
 		
 		-- Create particle
-		particles["glow_squid_ink"]
+		particles["squid_ink"]
 			:pos(pos)
 			:velocity(ang)
 			:scale(math.random() * 1.5 + 1)
