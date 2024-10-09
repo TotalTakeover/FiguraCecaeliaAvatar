@@ -148,7 +148,7 @@ function events.TICK()
 	tail.bendStrength  = scale * tailStrength
 	tail.flyingOffset  = scale * tailFlyOffset
 	
-	bounce.target = math.clamp(player:getVelocity().y * 80 - (player:getPose() == "CROUCHING" and 20 or 0), -60, 12.5)
+	bounce.target = math.clamp(player:getVelocity().y * 80 - (player:getPose() == "CROUCHING" and 20 or 0), -60, 30)
 	
 end
 
