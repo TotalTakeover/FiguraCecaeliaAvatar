@@ -47,6 +47,7 @@ v.roll  = 0
 v.scale = math.map(math.max(tail.scale, tail.legs), 0, 1, 1, 0)
 
 -- Variables
+local waterTimer = 0
 local isSing = false
 
 -- Parrot pivots
@@ -101,9 +102,19 @@ function events.TICK()
 	local vel      = player:getVelocity()
 	local dir      = player:getLookDir()
 	local bodyYaw  = player:getBodyYaw()
+	local onGround = ground()
+	
+	-- Timer settings
+	if player:isInWater() or player:isInLava() then
+		waterTimer = 20
+	else
+		waterTimer = math.max(waterTimer - 1, 0)
+	end
+	
 	-- Animation variables
 	local largeTail = tail.large >= tail.swap
 	local smallTail = tail.small >= tail.swap or tail.large <= tail.swap
+	local groundAnim = (onGround or waterTimer == 0) and not (pose.climb or pose.swim or pose.crawl) and not pose.elytra and not pose.sleep and not player:getVehicle() and not effects.cF
 	
 	time.target = time.target + 0.1
 	--[[
@@ -115,10 +126,12 @@ function events.TICK()
 	--]]
 	
 	-- Animation states
+	local idle  = largeTail and groundAnim
 	local small = smallTail and not largeTail
 	local sing  = isSing and not pose.sleep
 	
 	-- Animations
+	anims.idle:playing(idle)
 	anims.small:playing(small)
 	anims.sing:playing(sing)
 	
@@ -149,6 +162,7 @@ end
 
 -- GS Blending Setup
 local blendAnims = {
+	{ anim = anims.idle,  ticks = {7,7} },
 	{ anim = anims.small, ticks = {7,7} },
 	{ anim = anims.sing,  ticks = {3,3} }
 }
