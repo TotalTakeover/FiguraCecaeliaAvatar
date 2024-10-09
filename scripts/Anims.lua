@@ -38,7 +38,6 @@ setmetatable(q, {
 v = {}
 
 -- Animation variables
-v.time = 0
 v.strength = 1
 v.pitch = 0
 v.yaw   = 0
@@ -70,7 +69,6 @@ local function calculateParentRot(m)
 end
 
 -- Lerps
-local time = lerp:new(1)
 local strength = lerp:new(1)
 local pitch = lerp:new(0.1)
 local yaw   = lerp:new(1)
@@ -116,7 +114,6 @@ function events.TICK()
 	local smallTail = tail.small >= tail.swap or tail.large <= tail.swap
 	local groundAnim = (onGround or waterTimer == 0) and not (pose.climb or pose.swim or pose.crawl) and not pose.elytra and not pose.sleep and not player:getVehicle() and not effects.cF
 	
-	time.target = time.target + 0.1
 	--[[
 	-- Directional velocity
 	local fbVel = player:getVelocity():dot((dir.x_z):normalize())
@@ -147,7 +144,6 @@ end
 function events.RENDER(delta, context)
 	
 	-- Store animation variables
-	v.time = time.currPos
 	v.strength = strength.currPos
 	v.pitch    = pitch.currPos
 	v.yaw      = yaw.currPos
