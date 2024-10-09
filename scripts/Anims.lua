@@ -10,8 +10,6 @@ local effects = require("scripts.SyncedVariables")
 -- Animations setup
 local anims = animations.Cecaelia
 
--- Config setup
-config:name("Cecaelia")
 
 -- Table setup
 v = {}
@@ -303,41 +301,4 @@ do
     
   end
 end
-
--- Fixing spyglass jank
-function events.RENDER(delta)
-  local rot = vanilla_model.HEAD:getOriginRot()
-  rot.x = math.clamp(rot.x, -90, 30)
-  model.Spyglass:setRot(rot)
-  if (posing == "CROUCHING") and not (animation.crouch:getPlayState() == "PLAYING") then
-    model.Spyglass:setPos(0, -4, 0)
-  else
-    model.Spyglass:setPos(0, 0, 0)
-  end
-end
-
-require("lib.GSAnimBlend")
-
--- Animation blending
-animation.idle:blendTime(4)
-animation.move:blendTime(4)
-animation.swim:blendTime(10)
-animation.crawl:blendTime(10)
-animation.elytra:blendTime(10)
-animation.spin:blendTime(10)
-animation.ride:blendTime(10)
-animation.sleep:blendTime(10)
-animation.jump:blendTime(4)
-animation.fall:blendTime(10)
-
-animation.idle:onBlend("easeOutQuad")
-animation.move:onBlend("easeOutQuad")
-animation.swim:onBlend("easeOutQuad")
-animation.crawl:onBlend("easeOutQuad")
-animation.elytra:onBlend("easeOutQuad")
-animation.spin:onBlend("easeOutQuad")
-animation.ride:onBlend("easeOutQuad")
-animation.sleep:onBlend("easeOutQuad")
-animation.jump:onBlend("easeOutQuad")
-animation.fall:onBlend("easeOutQuad")
 --]]
