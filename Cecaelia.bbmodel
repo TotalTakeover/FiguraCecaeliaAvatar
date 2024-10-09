@@ -30496,6 +30496,41 @@
 					]
 				}
 			}
+		},
+		{
+			"uuid": "e45152a7-eed9-359c-2feb-6f6d54b1ef9d",
+			"name": "sing",
+			"loop": "loop",
+			"override": false,
+			"length": 0,
+			"snapping": 24,
+			"selected": false,
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "",
+			"animators": {
+				"56ac1026-2e55-b919-f2be-3f7b2c42b5f2": {
+					"name": "Head",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "(0 * prepare{...}) +\n-Math.sin(q.anim_time*360-90)*3.75-3.75",
+									"y": "(0 * prepare{...}) +\n-math.pow(Math.sin(q.anim_time*180),3)*5",
+									"z": "(0 * prepare{...}) +\n-math.pow(Math.sin(q.anim_time*180),3)*9.25"
+								}
+							],
+							"uuid": "b5f1ee39-c131-2732-c358-a8c12d0ba9b8",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear"
+						}
+					]
+				}
+			}
 		}
 	],
 	"animation_variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -20, 20)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -20, 20)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)\n"

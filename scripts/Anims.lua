@@ -46,6 +46,9 @@ v.roll  = 0
 
 v.scale = math.map(math.max(tail.scale, tail.legs), 0, 1, 1, 0)
 
+-- Variables
+local isSing = false
+
 -- Parrot pivots
 local parrots = {
 	
@@ -71,6 +74,18 @@ local strength = lerp:new(1)
 local pitch = lerp:new(0.1)
 local yaw   = lerp:new(1)
 local roll  = lerp:new(0.1)
+
+-- Spawns notes around a model part
+local function notes(part, blocks)
+	
+	local pos   = part:partToWorldMatrix():apply()
+	local range = blocks * 16
+	particles["note"]
+		:pos(pos + vec(math.random(-range, range)/16, math.random(-range, range)/16, math.random(-range, range)/16))
+		:setColor(math.random(51,200)/150, math.random(51,200)/150, math.random(51,200)/150)
+		:spawn()
+	
+end
 
 -- Set staticYaw to Yaw on init
 local staticYaw = 0
@@ -101,9 +116,16 @@ function events.TICK()
 	
 	-- Animation states
 	local small = smallTail and not largeTail
+	local sing  = isSing and not pose.sleep
 	
 	-- Animations
 	anims.small:playing(small)
+	anims.sing:playing(sing)
+	
+	-- Spawns notes around head while singing
+	if isSing and world.getTime() % 5 == 0 then
+		notes(parts.group.Head, 1)
+	end
 	
 end
 
@@ -127,7 +149,8 @@ end
 
 -- GS Blending Setup
 local blendAnims = {
-	{ anim = anims.small, ticks = {7,7} }
+	{ anim = anims.small, ticks = {7,7} },
+	{ anim = anims.sing,  ticks = {3,3} }
 }
 
 -- Apply GS Blending
@@ -144,6 +167,82 @@ function events.RENDER(delta, context)
 		:pos(pose.crouch and vec(0, -4, 0) or nil)
 	
 end
+
+-- Singing anim toggle
+function pings.setAnimSing(boolean)
+	
+	isSing = boolean
+	
+end
+
+-- Sync variables
+function pings.syncAnims(a)
+	
+	isSing = a
+	
+end
+
+-- Host only instructions
+if not host:isHost() then return end
+
+-- Required scripts
+local itemCheck = require("lib.ItemCheck")
+local s, color = pcall(require, "scripts.ColorProperties")
+if not s then color = {} end
+
+-- Sing keybind
+local singBind   = config:load("AnimSingKeybind") or "key.keyboard.keypad.7"
+local setSingKey = keybinds:newKeybind("Singing Animation"):onPress(function() pings.setAnimSing(not isSing) end):key(singBind)
+
+-- Keybind updaters
+function events.TICK()
+	
+	local singKey  = setSingKey:getKey()
+	if singKey ~= singBind then
+		singBind = singKey
+		config:save("AnimSingKeybind", singKey)
+	end
+	
+end
+
+-- Sync on tick
+function events.TICK()
+	
+	if world.getTime() % 200 == 0 then
+		pings.syncAnims(isSing)
+	end
+	
+end
+
+-- Table setup
+local t = {}
+
+-- Action
+t.singAct = action_wheel:newAction()
+	:item(itemCheck("music_disc_blocks"))
+	:toggleItem(itemCheck("music_disc_cat"))
+	:onToggle(pings.setAnimSing)
+
+-- Update actions
+function events.RENDER(delta, context)
+	
+	if action_wheel:isEnabled() then
+		t.singAct
+			:title(toJson
+				{text = "Play Singing animation", bold = true, color = color.primary}
+			)
+			:toggled(isSing)
+		
+		for _, page in pairs(t) do
+			page:hoverColor(color.hover):toggleColor(color.active)
+		end
+		
+	end
+	
+end
+
+-- Returns animation variables & actions
+return t
 
 --[[
 local syncedVariables = require("scripts.SyncedVariables")
