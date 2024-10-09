@@ -5,8 +5,54 @@
 		"box_uv": false
 	},
 	"visible_box": [1, 1, 0],
-	"variable_placeholders": "",
-	"variable_placeholder_buttons": [],
+	"variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -20, 20)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -20, 20)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)\n",
+	"variable_placeholder_buttons": [
+		{
+			"type": "slider",
+			"id": "Strength",
+			"value": 0,
+			"variable": "variable.strength",
+			"step": 0.05,
+			"min": 1,
+			"max": 2
+		},
+		{
+			"type": "slider",
+			"id": "Pitch",
+			"value": 0,
+			"variable": "variable.pitch",
+			"step": 0.5,
+			"min": -20,
+			"max": 20
+		},
+		{
+			"type": "slider",
+			"id": "Yaw",
+			"value": 0,
+			"variable": "variable.yaw",
+			"step": 1,
+			"min": -45,
+			"max": 45
+		},
+		{
+			"type": "slider",
+			"id": "Roll",
+			"value": 0,
+			"variable": "variable.roll",
+			"step": 0.5,
+			"min": -20,
+			"max": 20
+		},
+		{
+			"type": "slider",
+			"id": "HeadY",
+			"value": 0,
+			"variable": "variable.headY",
+			"step": 1,
+			"min": -50,
+			"max": 50
+		}
+	],
 	"timeline_setups": [],
 	"unhandled_root_fields": {},
 	"resolution": {
@@ -30451,5 +30497,6 @@
 				}
 			}
 		}
-	]
+	],
+	"animation_variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -20, 20)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -20, 20)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)\n"
 }

@@ -16,6 +16,12 @@ v = {}
 
 -- Animation variables
 v.time = 0
+v.strength = 1
+v.pitch = 0
+v.yaw   = 0
+v.roll  = 0
+
+v.scale = math.map(math.max(tail.scale, tail.legs), 0, 1, 1, 0)
 
 -- Parrot pivots
 local parrots = {
@@ -38,14 +44,37 @@ end
 
 -- Lerps
 local time = lerp:new(1)
+local strength = lerp:new(1)
+local pitch = lerp:new(0.1)
+local yaw   = lerp:new(1)
+local roll  = lerp:new(0.1)
+
+-- Set staticYaw to Yaw on init
+local staticYaw = 0
+function events.ENTITY_INIT()
+	
+	staticYaw = player:getBodyYaw()
+	
+end
 
 function events.TICK()
 	
+	-- Player variables
+	local vel      = player:getVelocity()
+	local dir      = player:getLookDir()
+	local bodyYaw  = player:getBodyYaw()
 	-- Animation variables
 	local largeTail = tail.large >= tail.swap
 	local smallTail = tail.small >= tail.swap or tail.large <= tail.swap
 	
 	time.target = time.target + 0.1
+	--[[
+	-- Directional velocity
+	local fbVel = player:getVelocity():dot((dir.x_z):normalize())
+	local lrVel = player:getVelocity():cross(dir.x_z:normalize()).y
+	local udVel = player:getVelocity().y
+	local diagCancel = math.abs(lrVel) - math.abs(fbVel)
+	--]]
 	
 	-- Animation states
 	local small = smallTail and not largeTail
@@ -59,6 +88,12 @@ function events.RENDER(delta, context)
 	
 	-- Store animation variables
 	v.time = time.currPos
+	v.strength = strength.currPos
+	v.pitch    = pitch.currPos
+	v.yaw      = yaw.currPos
+	v.roll     = roll.currPos
+	
+	v.scale = math.map(math.max(tail.scale, tail.legs), 0, 1, 1, 0)
 	
 	-- Parrot rot offset
 	for _, parrot in pairs(parrots) do
