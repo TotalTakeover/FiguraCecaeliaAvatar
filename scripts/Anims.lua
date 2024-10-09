@@ -127,11 +127,13 @@ function events.TICK()
 	
 	-- Animation states
 	local idle  = largeTail and groundAnim
+	local walk  = largeTail and groundAnim and vel.xz:length() ~= 0
 	local small = smallTail and not largeTail
 	local sing  = isSing and not pose.sleep
 	
 	-- Animations
 	anims.idle:playing(idle)
+	anims.walk:playing(walk)
 	anims.small:playing(small)
 	anims.sing:playing(sing)
 	
@@ -163,6 +165,7 @@ end
 -- GS Blending Setup
 local blendAnims = {
 	{ anim = anims.idle,  ticks = {7,7} },
+	{ anim = anims.walk,  ticks = {7,7} },
 	{ anim = anims.small, ticks = {7,7} },
 	{ anim = anims.sing,  ticks = {3,3} }
 }
