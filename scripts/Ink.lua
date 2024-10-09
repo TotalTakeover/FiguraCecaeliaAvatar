@@ -143,7 +143,7 @@ local function pickColor(x)
 	
 	config:save("InkColor", inkColor)
 	
-	if inkColor == vec(1, 1, 1) then
+	if inkColor == vec(1, 1, 1) or inkColor == vec(1, 1, 0) then
 		host:setActionbar("Shame on you.")
 	end
 	
