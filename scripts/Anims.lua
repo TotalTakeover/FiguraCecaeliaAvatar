@@ -254,7 +254,7 @@ function events.RENDER(delta, context)
 	
 end
 
--- Returns animation variables & actions
+-- Returns actions
 return t
 
 --[[
