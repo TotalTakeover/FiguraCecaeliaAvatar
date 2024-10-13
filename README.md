@@ -18,6 +18,7 @@ This Figura avatar is a template designed around turning the user into a Cecaeli
 - Squishy (SquAPI)
 - Katt (OriginsAPI, KattArmor, DynamicCrosshair)
 - 4P5 (GroundCheck)
+- Manuel (Membranes, Molang Conversions)
 
 ## Features
 Section under construction
