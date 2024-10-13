@@ -1,5 +1,6 @@
 -- Required scripts
 require("lib.GSAnimBlend")
+require("lib.Molang")
 local parts   = require("lib.PartsAPI")
 local lerp    = require("lib.LerpAPI")
 local ground  = require("lib.GroundCheck")
@@ -9,30 +10,6 @@ local effects = require("scripts.SyncedVariables")
 
 -- Animations setup
 local anims = animations.Cecaelia
-
--- Molang to Lua conversions
-Math = {}
-Math.sin = function(a)
-	return math.sin(math.rad(a))
-end
-Math.cos = function(a)
-	return math.cos(math.rad(a))
-end
-
--- Allow q.anim_time to be interpreted as anim:getTime()
-local current
-function prepare(t)
-    current = t
-    return 0
-end
-q = {}
-setmetatable(q, {
-    __index=function(...)
-        if ({...})[2] == "anim_time" then
-            return current[2]:getTime()
-        end
-    end
-})
 
 -- Table setup
 v = {}
