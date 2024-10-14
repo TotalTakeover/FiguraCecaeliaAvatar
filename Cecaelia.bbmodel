@@ -14711,7 +14711,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+67.5)*90)*18.75-36.25",
+									"x": "q(...) +\nMath.sin((q.anim_time+67.5)*90)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -14731,7 +14731,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+67.5)*90)*6.25-48.75",
+									"x": "q(...) +\nMath.sin((q.anim_time+67.5)*90)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
@@ -14751,7 +14751,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+67.5)*90)*12.5-67.5",
+									"x": "q(...) +\nMath.sin((q.anim_time+67.5)*90)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -14851,7 +14851,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+112.5)*90)*18.75-36.25",
+									"x": "q(...) +\nMath.sin((q.anim_time+112.5)*90)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -14871,7 +14871,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+112.5)*90)*6.25-48.75",
+									"x": "q(...) +\nMath.sin((q.anim_time+112.5)*90)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
@@ -14891,7 +14891,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+112.5)*90)*12.5-67.5",
+									"x": "q(...) +\nMath.sin((q.anim_time+112.5)*90)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -14971,7 +14971,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+157.5)*90)*18.75-36.25",
+									"x": "q(...) +\nMath.sin((q.anim_time+157.5)*90)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -14991,7 +14991,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+157.5)*90)*6.25-48.75",
+									"x": "q(...) +\nMath.sin((q.anim_time+157.5)*90)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
@@ -15011,7 +15011,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+157.5)*90)*12.5-67.5",
+									"x": "q(...) +\nMath.sin((q.anim_time+157.5)*90)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -15111,7 +15111,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+202.5)*90)*18.75-36.25",
+									"x": "q(...) +\nMath.sin((q.anim_time+202.5)*90)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15131,7 +15131,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+202.5)*90)*6.25-48.75",
+									"x": "q(...) +\nMath.sin((q.anim_time+202.5)*90)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
@@ -15151,7 +15151,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+202.5)*90)*12.5-67.5",
+									"x": "q(...) +\nMath.sin((q.anim_time+202.5)*90)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -15231,7 +15231,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+247.5)*90)*18.75-36.25",
+									"x": "q(...) +\nMath.sin((q.anim_time+247.5)*90)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15251,7 +15251,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+247.5)*90)*6.25-48.75",
+									"x": "q(...) +\nMath.sin((q.anim_time+247.5)*90)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
@@ -15271,7 +15271,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+247.5)*90)*12.5-67.5",
+									"x": "q(...) +\nMath.sin((q.anim_time+247.5)*90)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -15351,7 +15351,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+292.5)*90)*18.75-36.25",
+									"x": "q(...) +\nMath.sin((q.anim_time+292.5)*90)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15371,7 +15371,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+292.5)*90)*6.25-48.75",
+									"x": "q(...) +\nMath.sin((q.anim_time+292.5)*90)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
@@ -15391,7 +15391,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+292.5)*90)*12.5-67.5",
+									"x": "q(...) +\nMath.sin((q.anim_time+292.5)*90)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -15451,7 +15451,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+337.5)*90)*18.75-36.25",
+									"x": "q(...) +\nMath.sin((q.anim_time+337.5)*90)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15471,7 +15471,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+337.5)*90)*6.25-48.75",
+									"x": "q(...) +\nMath.sin((q.anim_time+337.5)*90)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
@@ -15491,7 +15491,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+337.5)*90)*12.5-67.5",
+									"x": "q(...) +\nMath.sin((q.anim_time+337.5)*90)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -15571,7 +15571,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+22.5)*90)*18.75-36.25",
+									"x": "q(...) +\nMath.sin((q.anim_time+22.5)*90)*18.75-36.25",
 									"y": "0",
 									"z": "0"
 								}
@@ -15591,7 +15591,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+22.5)*90)*6.25-48.75",
+									"x": "q(...) +\nMath.sin((q.anim_time+22.5)*90)*6.25-48.75",
 									"y": "0",
 									"z": "0"
 								}
@@ -15611,7 +15611,7 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\nMath.sin((q.anim_time+22.5)*90)*12.5-67.5",
+									"x": "q(...) +\nMath.sin((q.anim_time+22.5)*90)*12.5-67.5",
 									"y": "0",
 									"z": "0"
 								}
@@ -29172,9 +29172,9 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "(0 * prepare{...}) +\n-Math.sin(q.anim_time*360-90)*3.75-3.75",
-									"y": "(0 * prepare{...}) +\n-math.pow(Math.sin(q.anim_time*180),3)*5",
-									"z": "(0 * prepare{...}) +\n-math.pow(Math.sin(q.anim_time*180),3)*9.25"
+									"x": "q(...) +\n-Math.sin(q.anim_time*360-90)*3.75-3.75",
+									"y": "q(...) +\n-math.pow(Math.sin(q.anim_time*180),3)*5",
+									"z": "q(...) +\n-math.pow(Math.sin(q.anim_time*180),3)*9.25"
 								}
 							],
 							"uuid": "b5f1ee39-c131-2732-c358-a8c12d0ba9b8",
