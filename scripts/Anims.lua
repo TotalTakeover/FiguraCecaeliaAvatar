@@ -24,6 +24,7 @@ v.scale = math.map(math.max(tail.scale, tail.legs), 0, 1, 1, 0)
 
 -- Variables
 local waterTimer = 0
+local fallTimer = 0
 local isSing = false
 
 -- Parrot pivots
@@ -86,10 +87,16 @@ function events.TICK()
 		waterTimer = math.max(waterTimer - 1, 0)
 	end
 	
+	if onGround or vel.y >= 0 then
+		fallTimer = 10
+	else
+		fallTimer = math.max(fallTimer - 1, 0)
+	end
+	
 	-- Animation variables
 	local largeTail = tail.large >= tail.swap
 	local smallTail = tail.small >= tail.swap or tail.large <= tail.swap
-	local groundAnim = (onGround or waterTimer == 0) and not (pose.climb or pose.swim or pose.crawl) and not pose.elytra and not pose.sleep and not player:getVehicle() and not effects.cF
+	local groundAnim = (onGround or waterTimer == 0) and not (pose.swim or pose.crawl) and not pose.elytra and not pose.sleep and not player:getVehicle() and not effects.cF
 	
 	--[[
 	-- Directional velocity
@@ -108,14 +115,16 @@ function events.TICK()
 	yaw.target = yawDif
 	
 	-- Animation states
-	local idle  = largeTail and groundAnim
+	local idle  = largeTail and groundAnim and fallTimer ~= 0
 	local walk  = largeTail and groundAnim and vel.xz:length() ~= 0
+	local fall  = largeTail and groundAnim and fallTimer == 0
 	local small = smallTail and not largeTail
 	local sing  = isSing and not pose.sleep
 	
 	-- Animations
 	anims.idle:playing(idle)
 	anims.walk:playing(walk)
+	anims.fall:playing(fall)
 	anims.small:playing(small)
 	anims.sing:playing(sing)
 	
@@ -147,6 +156,7 @@ end
 local blendAnims = {
 	{ anim = anims.idle,  ticks = {7,7} },
 	{ anim = anims.walk,  ticks = {7,7} },
+	{ anim = anims.fall,  ticks = {7,7} },
 	{ anim = anims.small, ticks = {7,7} },
 	{ anim = anims.sing,  ticks = {3,3} }
 }
