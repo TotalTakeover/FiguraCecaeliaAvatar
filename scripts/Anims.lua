@@ -99,6 +99,14 @@ function events.TICK()
 	local diagCancel = math.abs(lrVel) - math.abs(fbVel)
 	--]]
 	
+	-- Static yaw
+	staticYaw = math.clamp(staticYaw, bodyYaw - 45, bodyYaw + 45)
+	staticYaw = math.lerp(staticYaw, bodyYaw, onGround and math.clamp(vel:length(), 0, 1) or 0.25)
+	local yawDif = staticYaw - bodyYaw
+	
+	-- Y axis control
+	yaw.target = yawDif
+	
 	-- Animation states
 	local idle  = largeTail and groundAnim
 	local walk  = largeTail and groundAnim and vel.xz:length() ~= 0
