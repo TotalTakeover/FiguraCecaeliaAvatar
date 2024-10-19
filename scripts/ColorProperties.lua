@@ -1,5 +1,5 @@
 -- Avatar color
-avatar:color(vectors.hexToRGB("A008E2"))
+avatar:color(vectors.hexToRGB("C35444"))
 
 -- Host only instructions
 if not host:isHost() then return end
@@ -8,10 +8,10 @@ if not host:isHost() then return end
 local t = {}
 
 -- Action variables
-t.hover     = vectors.hexToRGB("A008E2")
-t.active    = vectors.hexToRGB("7A06CA")
-t.primary   = "#7A06CA"
-t.secondary = "#A008E2"
+t.hover     = vectors.hexToRGB("9A3A3E")
+t.active    = vectors.hexToRGB("C35444")
+t.primary   = "#C35444"
+t.secondary = "#9A3A3E"
 
 -- Return variables
 return t
