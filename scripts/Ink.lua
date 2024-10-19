@@ -8,7 +8,7 @@ if not inkPart then return {} end
 
 -- Config setup
 config:name("Cecaelia")
-local inkColor = config:load("InkColor") or vectors.hexToRGB("B33BEA")
+local inkColor = config:load("InkColor") or vectors.hexToRGB("27D5AF")
 
 -- Variables
 local active = false
