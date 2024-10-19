@@ -172,6 +172,9 @@ local itemCheck = require("lib.ItemCheck")
 local s, color = pcall(require, "scripts.ColorProperties")
 if not s then color = {} end
 
+-- Reenabled parts
+parts.group.Meter:visible(true)
+
 -- Sync on tick
 function events.TICK()
 	
@@ -231,7 +234,7 @@ function events.RENDER(delta, context)
 	local redBar = math.clamp(inkLeft / 0.5, 0, 1) * 0.5 + 0.5
 	
 	-- Position Gui parts, set scale, opacity, and color
-	parts.group.Gui
+	parts.group.Meter
 		:pos(-screen.x * 0.975, -screen.y * 0.5)
 		:scale(2.5)
 		:opacity(fadeLerp.currPos)
