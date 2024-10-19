@@ -87,7 +87,7 @@ function events.TICK()
 		waterTimer = math.max(waterTimer - 1, 0)
 	end
 	
-	if onGround or vel.y >= 0 then
+	if onGround or vel.y >= 0 or pose.climb then
 		fallTimer = 10
 	else
 		fallTimer = math.max(fallTimer - 1, 0)
