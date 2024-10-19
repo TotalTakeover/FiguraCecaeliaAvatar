@@ -4,6 +4,7 @@ This Figura avatar is a template designed around turning the user into a Cecaeli
 
 ### Authors:
 - TakenByDumplings
+- Snqwblind
 - Detrilogue
 - Total
 
