@@ -98,21 +98,61 @@ function events.TICK()
 	local smallTail = tail.small >= tail.swap or tail.large <= tail.swap
 	local groundAnim = (onGround or waterTimer == 0) and not (pose.swim or pose.crawl) and not pose.elytra and not pose.sleep and not player:getVehicle() and not effects.cF
 	
-	--[[
 	-- Directional velocity
 	local fbVel = player:getVelocity():dot((dir.x_z):normalize())
 	local lrVel = player:getVelocity():cross(dir.x_z:normalize()).y
 	local udVel = player:getVelocity().y
 	local diagCancel = math.abs(lrVel) - math.abs(fbVel)
-	--]]
 	
 	-- Static yaw
 	staticYaw = math.clamp(staticYaw, bodyYaw - 45, bodyYaw + 45)
 	staticYaw = math.lerp(staticYaw, bodyYaw, onGround and math.clamp(vel:length(), 0, 1) or 0.25)
 	local yawDif = staticYaw - bodyYaw
 	
+	-- Axis controls
+	-- X axis control
+	if pose.elytra then
+		
+		-- When using elytra
+		pitch.target = math.clamp(-udVel * 20 * (-math.abs(player:getLookDir().y) + 1), -45, 45)
+		
+	elseif pose.climb or not largeTail or pose.spin then
+		
+		-- Assumed climbing
+		pitch.target = 0
+		
+	elseif (pose.swim or waterTimer == 0) and not effects.cF then
+		
+		-- While "swimming" or outside of water
+		pitch.target = math.clamp(-udVel * 80 * -(math.abs(player:getLookDir().y * 2) - 1), -45, 45)
+		
+	else
+		
+		-- Assumed floating in water
+		pitch.target = math.clamp((fbVel + math.max(-udVel, 0) + (math.abs(lrVel) * diagCancel) * 4) * 160, -45, 45)
+		
+	end
+	
 	-- Y axis control
 	yaw.target = yawDif
+	
+	-- Z Axis control
+	if effects.dG then
+		
+		-- Dolphin's grace applied
+		roll.target = 0
+		
+	elseif pose.elytra then
+		
+		-- When using an elytra
+		roll.target = math.clamp((-lrVel * 40) - (yawDif * math.clamp(fbVel, -1, 1)), -45, 45)
+		
+	else
+		
+		-- Assumed floating in water
+		roll.target = math.clamp((-lrVel * diagCancel * 160) - (yawDif * math.clamp(fbVel, -1, 1)), -45, 45)
+		
+	end
 	
 	-- Animation states
 	local idle  = largeTail and groundAnim and fallTimer ~= 0

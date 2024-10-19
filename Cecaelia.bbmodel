@@ -5,7 +5,7 @@
 		"box_uv": false
 	},
 	"visible_box": [1, 1, 0],
-	"variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -20, 20)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -20, 20)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)",
+	"variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -45, 45)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -45, 45)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)",
 	"variable_placeholder_buttons": [
 		{
 			"type": "slider",
@@ -22,8 +22,8 @@
 			"value": 0,
 			"variable": "variable.pitch",
 			"step": 0.5,
-			"min": -20,
-			"max": 20
+			"min": -45,
+			"max": 45
 		},
 		{
 			"type": "slider",
@@ -40,8 +40,8 @@
 			"value": 0,
 			"variable": "variable.roll",
 			"step": 0.5,
-			"min": -20,
-			"max": 20
+			"min": -45,
+			"max": 45
 		},
 		{
 			"type": "slider",
@@ -26109,6 +26109,26 @@
 							"interpolation": "catmullrom"
 						}
 					]
+				},
+				"96e8141e-d7ff-9913-c1f6-bf96d993c12a": {
+					"name": "Octopus",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "v.pitch",
+									"y": "0",
+									"z": "v.roll"
+								}
+							],
+							"uuid": "7f7c625c-4d29-73c1-17c0-73ba24a34956",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear"
+						}
+					]
 				}
 			}
 		},
@@ -29122,5 +29142,5 @@
 			}
 		}
 	],
-	"animation_variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -20, 20)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -20, 20)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)"
+	"animation_variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -45, 45)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -45, 45)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)"
 }
