@@ -7253,6 +7253,7 @@
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
+			"inflate": 0.5,
 			"origin": [0, 0, 0],
 			"faces": {
 				"north": {
@@ -7296,6 +7297,7 @@
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
+			"inflate": 0.5,
 			"origin": [0, 0, 0],
 			"faces": {
 				"north": {
@@ -8615,6 +8617,7 @@
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
+			"inflate": 0.5,
 			"origin": [0, 0, 0],
 			"faces": {
 				"north": {
@@ -8658,6 +8661,7 @@
 			"autouv": 0,
 			"color": 0,
 			"visibility": false,
+			"inflate": 0.5,
 			"origin": [0, 0, 0],
 			"faces": {
 				"north": {
