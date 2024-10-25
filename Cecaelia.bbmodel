@@ -5,7 +5,7 @@
 		"box_uv": false
 	},
 	"visible_box": [1, 1, 0],
-	"variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -45, 45)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -45, 45)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)",
+	"variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -30, 30)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -30, 30)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)",
 	"variable_placeholder_buttons": [
 		{
 			"type": "slider",
@@ -22,8 +22,8 @@
 			"value": 0,
 			"variable": "variable.pitch",
 			"step": 0.5,
-			"min": -45,
-			"max": 45
+			"min": -30,
+			"max": 30
 		},
 		{
 			"type": "slider",
@@ -40,8 +40,8 @@
 			"value": 0,
 			"variable": "variable.roll",
 			"step": 0.5,
-			"min": -45,
-			"max": 45
+			"min": -30,
+			"max": 30
 		},
 		{
 			"type": "slider",
@@ -29142,5 +29142,5 @@
 			}
 		}
 	],
-	"animation_variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -45, 45)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -45, 45)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)"
+	"animation_variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -30, 30)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -30, 30)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)"
 }

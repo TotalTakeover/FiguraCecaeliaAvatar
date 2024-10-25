@@ -114,7 +114,7 @@ function events.TICK()
 	if pose.elytra then
 		
 		-- When using elytra
-		pitch.target = math.clamp(-udVel * 20 * (-math.abs(player:getLookDir().y) + 1), -45, 45)
+		pitch.target = math.clamp(-udVel * 20 * (-math.abs(player:getLookDir().y) + 1), -30, 30)
 		
 	elseif pose.climb or not largeTail or pose.spin then
 		
@@ -124,12 +124,12 @@ function events.TICK()
 	elseif (pose.swim or waterTimer == 0) and not effects.cF then
 		
 		-- While "swimming" or outside of water
-		pitch.target = math.clamp(-udVel * 80 * -(math.abs(player:getLookDir().y * 2) - 1), -45, 45)
+		pitch.target = math.clamp(-udVel * 80 * -(math.abs(player:getLookDir().y * 2) - 1), -30, 30)
 		
 	else
 		
 		-- Assumed floating in water
-		pitch.target = math.clamp((fbVel + math.max(-udVel, 0) + (math.abs(lrVel) * diagCancel) * 4) * 160, -45, 45)
+		pitch.target = math.clamp((fbVel + math.max(-udVel, 0) + (math.abs(lrVel) * diagCancel) * 4) * 160, -30, 30)
 		
 	end
 	
@@ -145,12 +145,12 @@ function events.TICK()
 	elseif pose.elytra then
 		
 		-- When using an elytra
-		roll.target = math.clamp((-lrVel * 40) - (yawDif * math.clamp(fbVel, -1, 1)), -45, 45)
+		roll.target = math.clamp((-lrVel * 40) - (yawDif * math.clamp(fbVel, -1, 1)), -30, 30)
 		
 	else
 		
 		-- Assumed floating in water
-		roll.target = math.clamp((-lrVel * diagCancel * 160) - (yawDif * math.clamp(fbVel, -1, 1)), -45, 45)
+		roll.target = math.clamp((-lrVel * diagCancel * 160) - (yawDif * math.clamp(fbVel, -1, 1)), -30, 30)
 		
 	end
 	
