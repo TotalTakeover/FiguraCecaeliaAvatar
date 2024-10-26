@@ -109,6 +109,13 @@ function events.TICK()
 	staticYaw = math.lerp(staticYaw, bodyYaw, onGround and math.clamp(vel:length(), 0, 1) or 0.25)
 	local yawDif = staticYaw - bodyYaw
 	
+	-- Speed control
+	local speed = player:getVehicle() and 1 or math.min(vel:length() * 1.5, 3) + 0.5
+	--local landSpeed = math.clamp(fbVel < -0.05 and math.min(fbVel, math.abs(lrVel)) * 6 - 0.5 or math.max(fbVel, math.abs(lrVel)) * 6 + 0.5, -6, 6)
+	
+	-- Animation speeds
+	anims.swim:speed(speed)
+	
 	-- Axis controls
 	-- X axis control
 	if pose.elytra then
@@ -157,6 +164,7 @@ function events.TICK()
 	-- Animation states
 	local idle  = largeTail and groundAnim and fallTimer ~= 0
 	local walk  = largeTail and groundAnim and vel.xz:length() ~= 0
+	local swim  = largeTail and not groundAnim
 	local fall  = largeTail and groundAnim and fallTimer == 0
 	local small = smallTail and not largeTail
 	local sing  = isSing and not pose.sleep
@@ -164,6 +172,7 @@ function events.TICK()
 	-- Animations
 	anims.idle:playing(idle)
 	anims.walk:playing(walk)
+	anims.swim:playing(swim)
 	anims.fall:playing(fall)
 	anims.small:playing(small)
 	anims.sing:playing(sing)
@@ -196,6 +205,7 @@ end
 local blendAnims = {
 	{ anim = anims.idle,  ticks = {7,7} },
 	{ anim = anims.walk,  ticks = {7,7} },
+	{ anim = anims.swim,  ticks = {7,7} },
 	{ anim = anims.fall,  ticks = {7,7} },
 	{ anim = anims.small, ticks = {7,7} },
 	{ anim = anims.sing,  ticks = {3,3} }
