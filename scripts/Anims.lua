@@ -106,7 +106,7 @@ function events.TICK()
 	
 	-- Static yaw
 	staticYaw = math.clamp(staticYaw, bodyYaw - 45, bodyYaw + 45)
-	staticYaw = math.lerp(staticYaw, bodyYaw, onGround and math.clamp(vel:length(), 0, 1) or 0.25)
+	staticYaw = math.lerp(staticYaw, bodyYaw, onGround and math.clamp(vel:length(), 0, 1) or 0.1)
 	local yawDif = staticYaw - bodyYaw
 	
 	-- Speed control
