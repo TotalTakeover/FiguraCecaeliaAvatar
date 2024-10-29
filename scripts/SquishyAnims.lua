@@ -9,9 +9,6 @@ local effects   = require("scripts.SyncedVariables")
 -- Animation setup
 local anims = animations.Cecaelia
 
--- TEMP, PLEASE DELETE
-v = v or {}
-
 -- Force load before setting up animation variable
 require("scripts.Anims")
 v.bounce = 0
