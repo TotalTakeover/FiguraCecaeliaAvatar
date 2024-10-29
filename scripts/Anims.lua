@@ -110,7 +110,7 @@ function events.TICK()
 	local yawDif = staticYaw - bodyYaw
 	
 	-- Speed control
-	local speed     = player:getVehicle() and 1 or math.min(vel:length() * 1.5, 3) + 0.5
+	local speed     = player:getVehicle() and 1 or pose.crawl and math.clamp(fbVel < -0.05 and math.min(fbVel, math.abs(lrVel)) * 12 or math.max(fbVel, math.abs(lrVel)) * 12, -3, 3) or math.min(vel:length() * 1.5, 3) + 0.5
 	local landSpeed = math.clamp(fbVel < -0.05 and math.min(fbVel, math.abs(lrVel)) * 4 or math.max(fbVel, math.abs(lrVel)) * 4, -2, 2)
 	
 	-- Animation speeds
