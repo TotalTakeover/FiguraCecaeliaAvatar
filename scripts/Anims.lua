@@ -164,13 +164,14 @@ function events.TICK()
 	end
 	
 	-- Animation states
-	local swim   = largeTail and not groundAnim and not (pose.elytra or pose.spin or player:getVehicle())
+	local swim   = largeTail and not groundAnim and not (pose.elytra or pose.spin or pose.sleep or player:getVehicle())
 	local idle   = largeTail and groundAnim and fallTimer ~= 0
 	local walk   = largeTail and groundAnim and vel.xz:length() ~= 0
 	local elytra = largeTail and not groundAnim and pose.elytra
 	local fall   = largeTail and groundAnim and fallTimer == 0
 	local mount  = largeTail and player:getVehicle()
 	local spin   = largeTail and pose.spin
+	local sleep  = largeTail and pose.sleep
 	local small  = smallTail and not largeTail
 	local sing   = isSing and not pose.sleep
 	
@@ -182,6 +183,7 @@ function events.TICK()
 	anims.fall:playing(fall)
 	anims.mount:playing(mount)
 	anims.spin:playing(spin)
+	anims.sleep:playing(sleep)
 	anims.small:playing(small)
 	anims.sing:playing(sing)
 	
@@ -218,6 +220,7 @@ local blendAnims = {
 	{ anim = anims.fall,   ticks = {7,7} },
 	{ anim = anims.mount,  ticks = {7,7} },
 	{ anim = anims.spin,   ticks = {7,7} },
+	{ anim = anims.sleep,  ticks = {7,7} },
 	{ anim = anims.small,  ticks = {7,7} },
 	{ anim = anims.sing,   ticks = {3,3} }
 }
