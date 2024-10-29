@@ -106,7 +106,7 @@ function events.TICK()
 	
 	-- Static yaw
 	staticYaw = math.clamp(staticYaw, bodyYaw - 45, bodyYaw + 45)
-	staticYaw = math.lerp(staticYaw, bodyYaw, onGround and math.clamp(vel:length(), 0, 1) or 0.1)
+	staticYaw = math.lerp(staticYaw, bodyYaw, onGround and math.clamp(vel:length(), 0, 1) or pose.elytra and 0.25 or 0.1)
 	local yawDif = staticYaw - bodyYaw
 	
 	-- Speed control
@@ -116,6 +116,7 @@ function events.TICK()
 	-- Animation speeds
 	anims.swim:speed(speed)
 	anims.walk:speed(landSpeed)
+	anims.elytra:speed(speed)
 	
 	-- Axis controls
 	-- X axis control
@@ -163,17 +164,19 @@ function events.TICK()
 	end
 	
 	-- Animation states
-	local swim  = largeTail and not groundAnim
-	local idle  = largeTail and groundAnim and fallTimer ~= 0
-	local walk  = largeTail and groundAnim and vel.xz:length() ~= 0
-	local fall  = largeTail and groundAnim and fallTimer == 0
-	local small = smallTail and not largeTail
-	local sing  = isSing and not pose.sleep
+	local swim   = largeTail and not groundAnim and not pose.elytra
+	local idle   = largeTail and groundAnim and fallTimer ~= 0
+	local walk   = largeTail and groundAnim and vel.xz:length() ~= 0
+	local elytra = largeTail and not groundAnim and pose.elytra
+	local fall   = largeTail and groundAnim and fallTimer == 0
+	local small  = smallTail and not largeTail
+	local sing   = isSing and not pose.sleep
 	
 	-- Animations
 	anims.swim:playing(swim)
 	anims.idle:playing(idle)
 	anims.walk:playing(walk)
+	anims.elytra:playing(elytra)
 	anims.fall:playing(fall)
 	anims.small:playing(small)
 	anims.sing:playing(sing)
@@ -204,12 +207,13 @@ end
 
 -- GS Blending Setup
 local blendAnims = {
-	{ anim = anims.swim,  ticks = {7,7} },
-	{ anim = anims.idle,  ticks = {7,7} },
-	{ anim = anims.walk,  ticks = {7,7} },
-	{ anim = anims.fall,  ticks = {7,7} },
-	{ anim = anims.small, ticks = {7,7} },
-	{ anim = anims.sing,  ticks = {3,3} }
+	{ anim = anims.swim,   ticks = {7,7} },
+	{ anim = anims.idle,   ticks = {7,7} },
+	{ anim = anims.walk,   ticks = {7,7} },
+	{ anim = anims.elytra, ticks = {7,7} },
+	{ anim = anims.fall,   ticks = {7,7} },
+	{ anim = anims.small,  ticks = {7,7} },
+	{ anim = anims.sing,   ticks = {3,3} }
 }
 
 -- Apply GS Blending
