@@ -21731,8 +21731,8 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),8)*20",
-									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*80-20),4)*40",
+									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),8)*20",
+									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*180-20),4)*40",
 									"z": 0
 								}
 							],
@@ -21752,8 +21752,8 @@
 							"data_points": [
 								{
 									"x": 0,
-									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),8)*3",
-									"z": "q(...) +\n-math.pow(Math.sin(q.anim_time*80-20),4)*6"
+									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),8)*3",
+									"z": "q(...) +\n-math.pow(Math.sin(q.anim_time*180-20),4)*6"
 								}
 							],
 							"uuid": "91d108f4-29ef-996f-128d-ced9f13da311",
@@ -21771,8 +21771,8 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),8)*20",
-									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*80-40),4)*35",
+									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),8)*20",
+									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*180-40),4)*35",
 									"z": 0
 								}
 							],
@@ -21791,8 +21791,8 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),8)*20",
-									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*80-60),4)*20",
+									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),8)*20",
+									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*180-60),4)*20",
 									"z": 0
 								}
 							],
@@ -21811,8 +21811,8 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),8)*20",
-									"y": "q(...) +\n-math.pow(Math.sin(q.anim_time*80-60),4)*20",
+									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),8)*20",
+									"y": "q(...) +\n-math.pow(Math.sin(q.anim_time*180-60),4)*20",
 									"z": 0
 								}
 							],
@@ -21831,8 +21831,8 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),8)*20",
-									"y": "q(...) +\n-math.pow(Math.sin(q.anim_time*80-40),4)*35",
+									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),8)*20",
+									"y": "q(...) +\n-math.pow(Math.sin(q.anim_time*180-40),4)*35",
 									"z": 0
 								}
 							],
@@ -21851,8 +21851,8 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),8)*20",
-									"y": "q(...) +\n-math.pow(Math.sin(q.anim_time*80-20),4)*40",
+									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),8)*20",
+									"y": "q(...) +\n-math.pow(Math.sin(q.anim_time*180-20),4)*40",
 									"z": 0
 								}
 							],
@@ -21871,8 +21871,8 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),8)*20",
-									"y": "q(...) +\n-math.pow(Math.sin(q.anim_time*80),4)*45",
+									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),8)*20",
+									"y": "q(...) +\n-math.pow(Math.sin(q.anim_time*180),4)*45",
 									"z": 0
 								}
 							],
@@ -21891,8 +21891,8 @@
 							"channel": "rotation",
 							"data_points": [
 								{
-									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),8)*20",
-									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*80),4)*45",
+									"x": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),8)*20",
+									"y": "q(...) +\nmath.pow(Math.sin(q.anim_time*180),4)*45",
 									"z": 0
 								}
 							],
