@@ -19,16 +19,18 @@ local tailTimer = 0
 local wasInAir  = false
 
 -- Lerp variables
-local tailScale  = lerp:new(0.2, tailType == 5 and 1 or 0)
-local legsScale  = lerp:new(0.2, tailType ~= 5 and 1 or 0)
-local smallScale = lerp:new(0.2, small and 1 or 0)
+local scale = {
+	tail  = lerp:new(0.2, tailType == 5 and 1 or 0),
+	legs  = lerp:new(0.2, tailType ~= 5 and 1 or 0),
+	small = lerp:new(0.2, small and 1 or 0)
+}
 
 -- Data sent to other scripts
 local tailData = {
-	scale = tailScale.currPos * math.map(smallScale.currPos, 0, 1, 1, 0.5) + smallScale.currPos * 0.5,
-	large = tailScale.currPos,
-	small = smallScale.currPos,
-	legs  = legsScale.currPos,
+	scale = scale.tail.currPos * math.map(scale.small.currPos, 0, 1, 1, 0.5) + scale.small.currPos * 0.5,
+	large = scale.tail.currPos,
+	small = scale.small.currPos,
+	legs  = scale.legs.currPos,
 	dry   = dryTimer,
 	swap  = legsForm
 }
@@ -95,14 +97,14 @@ function events.TICK()
 	end
 	
 	-- Target
-	tailScale.target  = tailTimer / modDryTimer
-	legsScale.target  = tailTimer / modDryTimer <= legsForm and 1 or 0
-	smallScale.target = small and 1 or 0
+	scale.tail.target  = tailTimer / modDryTimer
+	scale.legs.target  = tailTimer / modDryTimer <= legsForm and 1 or 0
+	scale.small.target = small and 1 or 0
 	
 	-- Play sound if conditions are met
-	if fallSound and wasInAir and ground() and tailScale.currPos >= legsForm and not player:getVehicle() and not player:isInWater() and not effects.cF then
+	if fallSound and wasInAir and ground() and scale.tail.currPos >= legsForm and not player:getVehicle() and not player:isInWater() and not effects.cF then
 		local vel    = math.abs(-player:getVelocity().y + 1)
-		local dry    = tailScale.currPos
+		local dry    = scale.tail.currPos
 		local volume = math.clamp((vel * dry) / 2, 0, 1)
 		
 		if volume ~= 0 then
@@ -116,8 +118,8 @@ end
 function events.RENDER(delta, context)
 	
 	-- Variables
-	local tailApply = tailScale.currPos * math.map(smallScale.currPos, 0, 1, 1, 0.4) + smallScale.currPos * 0.6
-	local legsApply = legsScale.currPos
+	local tailApply = scale.tail.currPos * math.map(scale.small.currPos, 0, 1, 1, 0.4) + scale.small.currPos * 0.6
+	local legsApply = scale.legs.currPos
 	
 	-- Apply tail
 	parts.group.Octopus:scale(tailApply)
@@ -128,9 +130,9 @@ function events.RENDER(delta, context)
 	
 	-- Update tail data
 	tailData.scale = tailApply
-	tailData.large = tailScale.currPos
-	tailData.small = smallScale.currPos
-	tailData.legs  = legsScale.currPos
+	tailData.large = scale.tail.currPos
+	tailData.small = scale.small.currPos
+	tailData.legs  = scale.legs.currPos
 	tailData.dry   = dryTimer
 	
 end
