@@ -60,7 +60,7 @@ local tail = squapi.tail:new(
 	0,     -- Seg Offset (0)
 	0.025, -- Stiffness (0.025)
 	0.975, -- Bounce (0.975)
-	15,    -- Fly Offset (25)
+	0,     -- Fly Offset (0)
 	-15,   -- Down Limit (-15)
 	25     -- Up Limit (25)
 )
@@ -69,7 +69,6 @@ local tail = squapi.tail:new(
 local tailXIntense  = tail.idleXMovement
 local tailXSpeed    = tail.idleXSpeed
 local tailStrength  = tail.bendStrength
-local tailFlyOffset = tail.flyingOffset
 
 -- Head table
 local headParts = {
@@ -146,7 +145,6 @@ function events.TICK()
 	tail.idleXMovement = scale * tailXIntense
 	tail.idleXSpeed    = scale * tailXSpeed
 	tail.bendStrength  = scale * tailStrength
-	tail.flyingOffset  = scale * tailFlyOffset
 	
 	bounce.target = math.clamp(player:getVelocity().y * 80 - (player:getPose() == "CROUCHING" and 20 or 0), -60, 30)
 	

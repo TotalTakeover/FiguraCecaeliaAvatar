@@ -95,7 +95,7 @@ function events.TICK()
 	
 	-- Animation variables
 	local largeTail = tail.large >= tail.swap
-	local smallTail = tail.small >= tail.swap or tail.large <= tail.swap
+	local smallTail = tail.small >= tail.swap and tail.large <= tail.swap
 	local groundAnim = (onGround or waterTimer == 0) and not (pose.swim or pose.crawl or pose.elytra or pose.spin or pose.sleep or player:getVehicle() or effects.cF)
 	
 	-- Directional velocity
@@ -164,15 +164,15 @@ function events.TICK()
 	end
 	
 	-- Animation states
-	local swim   = largeTail and not groundAnim and not (pose.elytra or pose.spin or pose.sleep or player:getVehicle())
+	local swim   = not (groundAnim or pose.elytra or pose.spin or pose.sleep or player:getVehicle())
 	local idle   = largeTail and groundAnim and fallTimer ~= 0
 	local walk   = largeTail and groundAnim and vel.xz:length() ~= 0
 	local elytra = largeTail and not groundAnim and pose.elytra
-	local fall   = largeTail and groundAnim and fallTimer == 0
+	local fall   = groundAnim and fallTimer == 0
 	local mount  = largeTail and player:getVehicle()
 	local spin   = largeTail and pose.spin
 	local sleep  = largeTail and pose.sleep
-	local small  = smallTail and not largeTail
+	local small  = smallTail and not swim
 	local sing   = isSing and not pose.sleep
 	
 	-- Animations
@@ -203,6 +203,10 @@ function events.RENDER(delta, context)
 	v.roll     = roll.currPos
 	
 	v.scale = math.map(math.max(tail.scale, tail.legs), 0, 1, 1, 0)
+	
+	-- Animation blending
+	anims.swim:blend(tail.scale * 0.5 + 0.5)
+	anims.small:blend(tail.smallSize * -0.2 + 1)
 	
 	-- Parrot rot offset
 	for _, parrot in pairs(parrots) do
