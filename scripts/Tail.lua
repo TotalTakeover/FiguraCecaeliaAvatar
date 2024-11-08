@@ -10,6 +10,7 @@ local tailType  = config:load("TailType") or 4
 local small     = config:load("TailSmall")
 local smallSize = config:load("TailSmallSize") or 0.6
 local dryTimer  = config:load("TailDryTimer") or 400
+local legsForm  = config:load("TailLegsForm") or 0.75
 local gradual   = config:load("TailGradual")
 local fallSound = config:load("TailFallSound")
 if small     == nil then small = true end
@@ -17,7 +18,6 @@ if gradual   == nil then gradual = true end
 if fallSound == nil then fallSound = true end
 
 -- Variables setup
-local legsForm  = 0.5
 local tailTimer = 0
 local wasInAir  = false
 
@@ -203,6 +203,14 @@ local function setSmallSize(x)
 	
 end
 
+-- Set small size
+local function setLegsForm(x)
+	
+	legsForm = math.clamp(legsForm + (x * 0.05), 0.25, 0.9)
+	config:save("TailLegsForm", legsForm)
+	
+end
+
 -- Set timer
 local function setDryTimer(x)
 	
@@ -231,14 +239,15 @@ function pings.setTailFallSound(boolean)
 end
 
 -- Sync variables
-function pings.syncTail(a, b, c, d, e, f)
+function pings.syncTail(a, b, c, d, e, f, g)
 	
 	tailType  = a
 	small     = b
 	smallSize = c
 	dryTimer  = d
-	gradual   = e
-	fallSound = f
+	legsForm  = e
+	gradual   = f
+	fallSound = g
 	
 end
 
@@ -278,7 +287,7 @@ end
 function events.TICK()
 	
 	if world.getTime() % 200 == 0 then
-		pings.syncTail(tailType, small, smallSize, dryTimer, gradual, fallSound)
+		pings.syncTail(tailType, small, smallSize, dryTimer, legsForm, gradual, fallSound)
 	end
 	
 end
@@ -300,6 +309,10 @@ t.smallAct = action_wheel:newAction()
 t.dryAct = action_wheel:newAction()
 	:onScroll(setDryTimer)
 	:onLeftClick(function() dryTimer = 400 config:save("TailDryTimer", dryTimer) end)
+
+t.legsAct = action_wheel:newAction()
+	:item(itemCheck("rabbit_foot"))
+	:onScroll(setLegsForm)
 
 t.gradualAct = action_wheel:newAction()
 	:item(itemCheck("sugar"))
@@ -416,6 +429,15 @@ function events.RENDER(delta, context)
 				{text = "Hint: Holding a dry sponge will increase drying rate by x10!", color = "gray"}}
 			)
 			:item(itemCheck((timers.tail ~= 0 or timers.ears ~= 0) and "wet_sponge" or "sponge"))
+		
+		t.legsAct
+			:title(toJson
+				{"",
+				{text = "Set Legs Threshold\n\n", bold = true, color = color.primary},
+				{text = "Scroll to adjust the threshold for when the legs should form.\n\n", color = color.secondary},
+				{text = "Legs threshold:\n", bold = true, color = color.secondary},
+				{text = math.round(legsForm * 100).."% Wet"}}
+			)
 		
 		t.gradualAct
 			:title(toJson

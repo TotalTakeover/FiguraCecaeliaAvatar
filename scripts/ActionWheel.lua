@@ -227,6 +227,7 @@ pages.octopus
 -- Dry actions
 pages.dry
 	:action( -1, tail.dryAct)
+	:action( -1, tail.legsAct)
 	:action( -1, tail.gradualAct)
 	:action( -1, tail.soundAct)
 	:action( -1, backAct)
