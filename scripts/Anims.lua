@@ -299,7 +299,7 @@ t.singAct = action_wheel:newAction()
 	:toggleItem(itemCheck("music_disc_cat"))
 	:onToggle(pings.setAnimSing)
 
--- Update actions
+-- Update action
 function events.RENDER(delta, context)
 	
 	if action_wheel:isEnabled() then
@@ -317,5 +317,5 @@ function events.RENDER(delta, context)
 	
 end
 
--- Returns actions
+-- Returns action
 return t

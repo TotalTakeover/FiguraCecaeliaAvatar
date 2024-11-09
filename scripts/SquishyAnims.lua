@@ -152,11 +152,13 @@ end
 
 function events.RENDER(delta, context)
 	
+	-- Adjust tail rotations
 	for _, part in ipairs(tailParts) do
 		local rot = part:getOffsetRot()
 		part:offsetRot(-rot.x, rot.y, rot.z)
 	end
 	
+	-- Apply all tail rotations to every other segment
 	for i = 2, 8 do
 		for j, part in ipairs(tailParts) do
 			parts.group["Ten"..i.."Seg"..j]:offsetRot(part:getOffsetRot())
