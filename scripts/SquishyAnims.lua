@@ -12,10 +12,6 @@ local effects   = require("scripts.SyncedVariables")
 -- Animation setup
 local anims = animations.Cecaelia
 
--- Force load before setting up animation variable
-require("scripts.Anims")
-v.bounce = 0
-
 -- Config setup
 config:name("Cecaelia")
 local armsMove = config:load("SquapiArmsMove") or false
@@ -107,6 +103,11 @@ local rightArm = squapi.arm:new(
 local leftArmStrength  = leftArm.strength
 local rightArmStrength = rightArm.strength
 
+-- Force load before setting up animation variable
+require("scripts.Anims")
+v.bounce = 0
+
+-- Animation variable
 local bounce = squAssets.BERP:new(0.05, 0.9)
 bounce.target = 0
 
