@@ -5,7 +5,7 @@
 		"box_uv": false
 	},
 	"visible_box": [1, 1, 0],
-	"variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -30, 30)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -30, 30)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)",
+	"variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -30, 30)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -30, 30)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)\nv.tail     = toggle(\"Tail\")",
 	"variable_placeholder_buttons": [
 		{
 			"type": "slider",
@@ -51,6 +51,12 @@
 			"step": 1,
 			"min": -50,
 			"max": 50
+		},
+		{
+			"type": "toggle",
+			"id": "Tail",
+			"value": 0,
+			"variable": "variable.tail"
 		}
 	],
 	"timeline_setups": [],
@@ -25867,7 +25873,7 @@
 							"data_points": [
 								{
 									"x": 0,
-									"y": -2,
+									"y": "-2*v.tail",
 									"z": 0
 								}
 							],
@@ -26026,86 +26032,6 @@
 								}
 							],
 							"uuid": "97d1c859-c5dd-67ab-8b5d-fcd271f41d55",
-							"time": 0,
-							"color": -1,
-							"interpolation": "linear"
-						}
-					]
-				},
-				"c32dbdaf-2e0d-9c5b-73ce-058b73f700a1": {
-					"name": "LeftParrotPivot",
-					"type": "bone",
-					"keyframes": [
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -25,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "0e3195e5-10de-5c9a-8783-87b351519f89",
-							"time": 0,
-							"color": -1,
-							"interpolation": "linear"
-						}
-					]
-				},
-				"f617c60f-12e5-bf07-fc23-c6b958a40252": {
-					"name": "RightParrotPivot",
-					"type": "bone",
-					"keyframes": [
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -25,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "dd2b9184-cfaf-3c05-3320-fa7308f72eed",
-							"time": 0,
-							"color": -1,
-							"interpolation": "linear"
-						}
-					]
-				},
-				"88caac0c-44bc-9582-d59e-b1cc031eec11": {
-					"name": "Cape",
-					"type": "bone",
-					"keyframes": [
-						{
-							"channel": "rotation",
-							"data_points": [
-								{
-									"x": -25,
-									"y": 0,
-									"z": 0
-								}
-							],
-							"uuid": "c9361fb8-c7a0-e3f3-081c-4a44af3553e2",
-							"time": 0,
-							"color": -1,
-							"interpolation": "linear"
-						}
-					]
-				},
-				"99560dfb-1364-b0ab-71ed-b34e1e8006dc": {
-					"name": "Spyglass",
-					"type": "bone",
-					"keyframes": [
-						{
-							"channel": "position",
-							"data_points": [
-								{
-									"x": 0,
-									"y": -4,
-									"z": 0
-								}
-							],
-							"uuid": "ce9ff3ea-ab7c-8b01-9011-d90c1c703ff5",
 							"time": 0,
 							"color": -1,
 							"interpolation": "linear"
@@ -27158,5 +27084,5 @@
 			}
 		}
 	],
-	"animation_variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -30, 30)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -30, 30)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)"
+	"animation_variable_placeholders": "v.strength = slider(\"Strength\", 0.05, 1,  2)\nv.pitch    = slider(\"Pitch\",    0.5, -30, 30)\nv.yaw      = slider(\"Yaw\",      1,   -45, 45)\nv.roll     = slider(\"Roll\",     0.5, -30, 30)\nv.headY    = slider(\"HeadY\",    1,   -50, 50)\nv.tail     = toggle(\"Tail\")"
 }

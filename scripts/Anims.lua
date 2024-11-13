@@ -202,6 +202,7 @@ function events.RENDER(delta, context)
 	v.yaw      = yaw.currPos
 	v.roll     = roll.currPos
 	
+	v.tail  = math.map(tail.legs, 0, 1, 1, 0)
 	v.scale = math.map(math.max(tail.scale, tail.legs), 0, 1, 1, 0)
 	
 	-- Animation blending
