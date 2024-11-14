@@ -173,6 +173,9 @@ function events.RENDER(delta, context)
 	local idleTimer   = world.getTime(delta)
 	local idleRot     = vec(math.deg(math.sin(idleTimer * 0.067) * 0.05), 0, math.deg(math.cos(idleTimer * 0.09) * 0.05 + 0.05))
 	local firstPerson = context == "FIRST_PERSON"
+	local vanLeftLeg  = vanilla_model.LEFT_LEG:getOriginRot().x  * tailScale.legs
+	local vanRightLeg = vanilla_model.RIGHT_LEG:getOriginRot().x * tailScale.legs
+	local legLimit    = 25 + tailScale.scale * 25
 	
 	-- Adjust arm strengths
 	leftArm.strength  = leftArmStrength  * leftArmLerp.currPos
@@ -208,6 +211,24 @@ function events.RENDER(delta, context)
 			group:rot(-calculateParentRot(group:getParent()))
 		end
 	end
+	
+	-- Tentacle adjustments
+	parts.group.Ten1Seg1:offsetRot(
+		parts.group.Ten1Seg1:getOffsetRot() +
+		vec(math.max(vanRightLeg, legLimit) - legLimit, 0, 0)
+	)
+	parts.group.Ten4Seg1:offsetRot(
+		parts.group.Ten4Seg1:getOffsetRot() -
+		vec(math.min(vanRightLeg, -legLimit) + legLimit, 0, 0)
+	)
+	parts.group.Ten8Seg1:offsetRot(
+		parts.group.Ten8Seg1:getOffsetRot() +
+		vec(math.max(vanLeftLeg, legLimit) - legLimit, 0, 0)
+	)
+	parts.group.Ten5Seg1:offsetRot(
+		parts.group.Ten5Seg1:getOffsetRot() -
+		vec(math.min(vanLeftLeg, -legLimit) + legLimit, 0, 0)
+	)
 	
 	-- Calculate bounce variable
 	v.bounce = bounce:berp(bounce.target, delta)
