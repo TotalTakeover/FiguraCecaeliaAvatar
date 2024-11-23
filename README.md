@@ -10,6 +10,7 @@ This Figura avatar is a template designed around turning the user into a Cecaeli
 
 ### Credits:
 - Irri
+- pigs_bane
 - InkGecko
 - Arber
 - Jimmy

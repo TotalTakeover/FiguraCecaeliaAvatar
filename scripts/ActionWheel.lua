@@ -19,6 +19,9 @@ if not s then tail = {} end
 local s, membrane = pcall(require, "scripts.Membrane")
 if not s then membrane = {} end
 
+local s, color, colorActs = pcall(require, "scripts.ColorProperties")
+if not s then color = {} colorActs = {} end
+
 local s, ink = pcall(require, "scripts.Ink")
 if not s then ink = {} end
 
@@ -36,9 +39,6 @@ if not s then anims = {} end
 
 local s, squapi = pcall(require, "scripts.SquishyAnims")
 if not s then squapi = {} end
-
-local s, color = pcall(require, "scripts.ColorProperties")
-if not s then color = {} end
 
 -- Logs pages for navigation
 local navigation = {}
@@ -70,6 +70,7 @@ local pages = {
 	whirlpool = action_wheel:newPage("Whirlpool"),
 	glow      = action_wheel:newPage("Glow"),
 	eyes      = action_wheel:newPage("Eyes"),
+	color     = action_wheel:newPage("Color"),
 	anims     = action_wheel:newPage("Anims")
 	
 }
@@ -88,6 +89,10 @@ local pageActs = {
 	glow = action_wheel:newAction()
 		:item(itemCheck("glow_ink_sac"))
 		:onLeftClick(function() descend(pages.glow) end),
+	
+	color = action_wheel:newAction()
+		:item(itemCheck("brewing_stand"))
+		:onLeftClick(function() descend(pages.color) end),
 	
 	anims = action_wheel:newAction()
 		:item(itemCheck("jukebox"))
@@ -132,6 +137,11 @@ function events.RENDER(delta, context)
 		pageActs.glow
 			:title(toJson
 				{text = "Glowing Settings", bold = true, color = color.primary}
+			)
+		
+		pageActs.color
+			:title(toJson
+				{text = "Color Settings", bold = true, color = color.primary}
 			)
 		
 		pageActs.anims
@@ -189,6 +199,7 @@ pages.main
 	:action( -1, pageActs.avatar)
 	:action( -1, pageActs.octopus)
 	:action( -1, pageActs.glow)
+	:action( -1, pageActs.color)
 	:action( -1, pageActs.anims)
 
 -- Avatar actions
@@ -253,6 +264,12 @@ pages.eyes
 	:action( -1, eyes.powerAct)
 	:action( -1, eyes.nightVisionAct)
 	:action( -1, eyes.waterAct)
+	:action( -1, backAct)
+
+-- Color actions
+pages.color
+	:action( -1, colorActs.camoAct)
+	:action( -1, colorActs.rainbowAct)
 	:action( -1, backAct)
 
 -- Animation actions
