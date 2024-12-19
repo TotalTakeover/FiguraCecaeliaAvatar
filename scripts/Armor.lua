@@ -1,42 +1,42 @@
 -- Required scripts
-local parts     = require("lib.PartsAPI")
-local kattArmor = require("lib.KattArmor")()
+local parts        = require("lib.PartsAPI")
+local octopusArmor = require("lib.KattArmor")()
 
 -- Setting the leggings to layer 1
-kattArmor.Armor.Leggings:setLayer(1)
+octopusArmor.Armor.Leggings:setLayer(1)
 
 -- Armor parts
-kattArmor.Armor.Leggings
+octopusArmor.Armor.Leggings
 	:addParts(table.unpack(parts:createTable(function(part) return part:getName() == "Leggings" end)))
 	:addTrimParts(table.unpack(parts:createTable(function(part) return part:getName() == "LeggingsTrim" end)))
-kattArmor.Armor.Boots
+octopusArmor.Armor.Boots
 	:addParts(table.unpack(parts:createTable(function(part) return part:getName() == "Boot" end)))
 	:addTrimParts(table.unpack(parts:createTable(function(part) return part:getName() == "BootTrim" end)))
 
 -- Leather armor
-kattArmor.Materials.leather
+octopusArmor.Materials.leather
 	:setTexture(textures["textures.armor.leatherOverlay"] or textures["Cecaelia.leatherOverlay"])
-	:addParts(kattArmor.Armor.Leggings, table.unpack(parts:createTable(function(part) return part:getName() == "LeggingsLeather" end)))
-	:addParts(kattArmor.Armor.Boots,    table.unpack(parts:createTable(function(part) return part:getName() == "BootLeather" end)))
+	:addParts(octopusArmor.Armor.Leggings, table.unpack(parts:createTable(function(part) return part:getName() == "LeggingsLeather" end)))
+	:addParts(octopusArmor.Armor.Boots,    table.unpack(parts:createTable(function(part) return part:getName() == "BootLeather" end)))
 
 -- Chainmail armor
-kattArmor.Materials.chainmail
+octopusArmor.Materials.chainmail
 	:setTexture(textures["textures.armor.chainmailArmor"] or textures["Cecaelia.chainmailArmor"])
 
 -- Iron armor
-kattArmor.Materials.iron
+octopusArmor.Materials.iron
 	:setTexture(textures["textures.armor.ironArmor"] or textures["Cecaelia.ironArmor"])
 
 -- Golden armor
-kattArmor.Materials.golden
+octopusArmor.Materials.golden
 	:setTexture(textures["textures.armor.goldenArmor"] or textures["Cecaelia.goldenArmor"])
 
 -- Diamond armor
-kattArmor.Materials.diamond
+octopusArmor.Materials.diamond
 	:setTexture(textures["textures.armor.diamondArmor"] or textures["Cecaelia.diamondArmor"])
 
 -- Netherite armor
-kattArmor.Materials.netherite
+octopusArmor.Materials.netherite
 	:setTexture(textures["textures.armor.netheriteArmor"] or textures["Cecaelia.netheriteArmor"])
 
 -- Config setup
