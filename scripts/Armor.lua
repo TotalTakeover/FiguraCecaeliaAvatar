@@ -40,6 +40,10 @@ octopusArmor.Materials.netherite
 	:setTexture(textures["textures.armor.netheriteArmor"] or textures["Cecaelia.netheriteArmor"])
 
 -- Trims
+-- Bolt
+octopusArmor.TrimPatterns.bolt
+	:setTexture(textures["textures.armor.trims.boltTrim"] or textures["Cecaelia.boltTrim"])
+
 -- Coast
 octopusArmor.TrimPatterns.coast
 	:setTexture(textures["textures.armor.trims.coastTrim"] or textures["Cecaelia.coastTrim"])
@@ -51,6 +55,10 @@ octopusArmor.TrimPatterns.dune
 -- Eye
 octopusArmor.TrimPatterns.eye
 	:setTexture(textures["textures.armor.trims.eyeTrim"] or textures["Cecaelia.eyeTrim"])
+
+-- Flow
+octopusArmor.TrimPatterns.flow
+	:setTexture(textures["textures.armor.trims.flowTrim"] or textures["Cecaelia.flowTrim"])
 
 -- Host
 octopusArmor.TrimPatterns.host
