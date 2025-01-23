@@ -214,8 +214,8 @@ function events.RENDER(delta, context)
 				{text = "Toggles the glowing sensitivity to water.\nThe eyes will only glow when underwater.", color = color.secondary}}
 			)
 		
-		for _, page in pairs(t) do
-			page:hoverColor(color.hover):toggleColor(color.active)
+		for _, act in pairs(t) do
+			act:hoverColor(color.hover):toggleColor(color.active)
 		end
 		
 	end

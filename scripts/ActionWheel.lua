@@ -174,8 +174,8 @@ function events.RENDER(delta, context)
 				{text = "Glowing Eyes Settings", bold = true, color = color.primary}
 			)
 		
-		for _, page in pairs(pageActs) do
-			page:hoverColor(color.hover)
+		for _, act in pairs(pageActs) do
+			act:hoverColor(color.hover)
 		end
 		
 	end

@@ -310,8 +310,8 @@ function events.RENDER(delta, context)
 			)
 			:toggled(isSing)
 		
-		for _, page in pairs(t) do
-			page:hoverColor(color.hover):toggleColor(color.active)
+		for _, act in pairs(t) do
+			act:hoverColor(color.hover):toggleColor(color.active)
 		end
 		
 	end

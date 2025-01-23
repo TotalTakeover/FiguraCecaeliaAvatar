@@ -454,8 +454,8 @@ function events.RENDER(delta, context)
 				{text = "Toggles flopping sound effects when landing on the ground.\nIf tail can dry, volume will gradually decrease over time until dry.", color = color.secondary}}
 			)
 		
-		for _, page in pairs(t) do
-			page:hoverColor(color.hover):toggleColor(color.active)
+		for _, act in pairs(t) do
+			act:hoverColor(color.hover):toggleColor(color.active)
 		end
 		
 	end

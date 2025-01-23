@@ -301,8 +301,8 @@ function events.RENDER(delta, context)
 				{text = "Toggles the individual glowing of each part.\nThis relies on the other settings to be noticeable.", color = color.secondary}}
 			)
 		
-		for _, page in pairs(t) do
-			page:hoverColor(color.hover):toggleColor(color.active)
+		for _, act in pairs(t) do
+			act:hoverColor(color.hover):toggleColor(color.active)
 		end
 		
 	end

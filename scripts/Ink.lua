@@ -308,8 +308,8 @@ function events.RENDER(delta, context)
 				{text = "Brighter colors glow. Glowing settings control glowing.", color = "yellow"}}
 			)
 		
-		for _, page in pairs(t) do
-			page:hoverColor(color.hover):toggleColor(color.active)
+		for _, act in pairs(t) do
+			act:hoverColor(color.hover):toggleColor(color.active)
 		end
 		
 	end
