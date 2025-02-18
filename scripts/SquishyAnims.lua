@@ -103,9 +103,6 @@ local rightArm = squapi.arm:new(
 local leftArmStrength  = leftArm.strength
 local rightArmStrength = rightArm.strength
 
--- Squishy crouch
-squapi.crouch(anims.crouch)
-
 -- Force load before setting up animation variable
 require("scripts.Anims")
 v.bounce = 0
