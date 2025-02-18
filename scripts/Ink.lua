@@ -72,7 +72,7 @@ function events.TICK()
 	maxInk = math.min(player:getExperienceLevel(), 50) * 15
 	
 	-- Tail scale
-	local largeTail = tail.large >= tail.swap
+	local largeTail = tail.isLarge
 	
 	if active and largeTail and not cooldown then
 		

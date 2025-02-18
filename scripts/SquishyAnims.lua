@@ -133,17 +133,17 @@ function events.TICK()
 	local crossR      = rightItem.tag and rightItem.tag["Charged"] == 1
 	
 	-- Arm movement overrides
-	local armShouldMove = tailScale.large <= tailScale.swap
+	local armShouldMove = tailScale.isLarge
 	
 	-- Control targets based on variables
 	leftArmLerp.target  = (armsMove or armShouldMove or leftSwing  or bow or ((crossL or crossR) or (using and usingL ~= "NONE"))) and 1 or 0
 	rightArmLerp.target = (armsMove or armShouldMove or rightSwing or bow or ((crossL or crossR) or (using and usingR ~= "NONE"))) and 1 or 0
 	
 	-- Control the intensity of the tail function based on its scale
-	local scale = tailScale.large <= tailScale.swap and 1 or 0
+	local scale = tailScale.isSmall and 1 or 0
 	
 	for i in ipairs(head.strength) do
-		head.strength[i] = (headStrength / #head.strength) * (1 - scale)
+		head.strength[i] = (headStrength / #head.strength) * (1 - tailScale.legs)
 	end
 	
 	tail.idleXMovement = scale * tailXIntense
