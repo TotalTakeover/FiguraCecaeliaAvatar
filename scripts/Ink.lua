@@ -8,15 +8,14 @@ local inkPart = table.unpack(parts:createTable(function(part) return part:getNam
 if not inkPart then return {} end
 
 -- Synced variables setup
-local inkColor = sync.add(config:load("InkColor"), vectors.hexToRGB("27D5AF"))
+local active   = sync.new("InkActive", false)
+local inkColor = sync.new("InkColor", "27D5AF"):config()
 
 -- Variables
-local active = false
 local cooldown = false
 local maxInk = 0
 local remainingInk = 0
 local cooldownTimer = 0
-local selectedRGB = 0
 
 -- Shoots ink
 local function shootInk(x)
@@ -28,7 +27,7 @@ local function shootInk(x)
 	if #blockPos:getFluidTags() == 0 then return end
 	
 	-- Find color
-	local calcColor = sync[inkColor] * inkPart:getSecondaryColor()
+	local calcColor = vectors.hexToRGB(inkColor.curr) * inkPart:getSecondaryColor()
 	
 	for i = 1, x do
 		
@@ -74,7 +73,7 @@ function events.TICK()
 	-- Tail scale
 	local largeTail = tail.isLarge
 	
-	if active and largeTail and not cooldown then
+	if active.curr and largeTail and not cooldown then
 		
 		-- Check if there is ink
 		if maxInk ~= 0 then
@@ -102,7 +101,7 @@ function events.TICK()
 	if remainingInk == 0 and maxInk ~= 0 and not cooldown then
 		
 		cooldown = true
-		active   = false
+		active:update(false)
 		
 		cooldownTimer = 100
 		
@@ -138,44 +137,20 @@ function events.ON_PLAY_SOUND(id, pos, vol, pitch, loop, cat, path)
 	
 end
 
--- Toggle ink
-function pings.inkKey(x)
-	
-	active = x
-	
-end
-
--- Choose color function
-local function pickColor(x)
-	
-	x = x/255
-	sync[inkColor][selectedRGB+1] = math.clamp(sync[inkColor][selectedRGB+1] + x, 0, 1)
-	
-	config:save("InkColor", sync[inkColor])
-	
-	if sync[inkColor] == vec(1, 1, 1) or sync[inkColor] == vec(1, 1, 0) then
-		host:setActionbar("Shame on you.")
-	end
-	
-end
-
--- Swaps selected rgb value
-local function selectRGB()
-	
-	selectedRGB = (selectedRGB + 1) % 3
-	
-end
-
 -- Host only instructions
 if not host:isHost() then return end
 
--- Keybinds
-local inkKeybind = keybinds:newKeybind("Ink", "key.keyboard.i")
-	:onPress(function() pings.inkKey(true) end)
-	:onRelease(function() pings.inkKey(false) end)
+-- Required script
+local keybound = require("lib.Keybound")
 
--- Sync config keybinds
-sync.keybind(inkKeybind, "InkKeybind")
+-- Setup keybind
+local inkKeybind = keybound.new(
+	keybinds
+		:newKeybind("Ink", "key.keyboard.i")
+		:onPress(function() active:update(true) end)
+		:onRelease(function() active:update(false) end),
+	"InkKeybind"
+)
 
 -- Required script
 local lerp = require("lib.LerpAPI")
@@ -184,36 +159,34 @@ local lerp = require("lib.LerpAPI")
 parts.group.Meter:visible(true)
 
 -- Lerp tables
-local fadeLerp = lerp:new()
-local barLerp  = lerp:new(0, 0.2, 0.2)
+local fadeLerp = lerp.new()
+local barLerp  = lerp.new(0, 0.2, 0.2)
 
 -- Variables
-local pMaxInk = maxInk
-local wasMax, isMax = true, true
-local pInkColor = sync[inkColor]:length()
+local _maxInk = maxInk
+local _atMax = true
 local fadeTimer = 100
 
 function events.TICK()
 	
-	-- Variables
-	isMax = remainingInk == maxInk
+	-- Variable
+	local atMax = remainingInk == maxInk
 	
-	-- Adjust timer based on active
-	fadeTimer = (
-		active
-		or pMaxInk ~= maxInk
-		or wasMax ~= isMax
-		or pInkColor ~= sync[inkColor]:length()
-		or cooldownTimer ~= 0
-	) and 0 or math.min(fadeTimer + 1, 100)
+	-- Decrement timer
+	fadeTimer = math.max(fadeTimer - 1, 0)
 	
-	-- If maxInk is 0, hide the meter
-	if maxInk == 0 then
+	-- Activate timer
+	if inkKeybind:isPressed() or _maxInk ~= maxInk or _atMax ~= atMax or cooldownTimer ~= 0 then
 		fadeTimer = 100
 	end
 	
+	-- If maxInk is 0, hide the meter
+	if maxInk == 0 then
+		fadeTimer = 0
+	end
+	
 	-- If timer reaches 100, fade out, otherwise fade in
-	fadeLerp.target = fadeTimer == 100 and 0 or 1
+	fadeLerp.target = fadeTimer == 0 and 0 or 1
 	
 	-- Lerp bar scale
 	barLerp.target = fadeLerp.target * (maxInk / 20)
@@ -224,9 +197,8 @@ function events.TICK()
 	end
 	
 	-- Store previous variables
-	pMaxInk   = maxInk
-	wasMax    = isMax
-	pInkColor = sync[inkColor]:length()
+	_maxInk = maxInk
+	_atMax  = atMax
 	
 end
 
@@ -254,7 +226,7 @@ function events.RENDER(delta, context)
 	
 	parts.group.Bar.Ink
 		:scale(1, inkLeft, 1)
-		:color(sync[inkColor])
+		:color(vectors.hexToRGB(inkColor.curr))
 		:setUVMatrix(matrices.mat3():scale(1, (barLerp.currPos + 1) * inkLeft, 1))
 	
 	-- Position cap to top
@@ -271,22 +243,48 @@ if not s then return end -- Kills script early if ActionWheel.lua isnt found
 pcall(require, "scripts.ColorChange") -- Tries to find script, not required
 pcall(require, "scripts.Tail") -- Tries to find script, not required
 
+-- Variable
+local selectedRGB = 1
+
 -- Pages
 local parentPage = action_wheel:getPage("Color") or action_wheel:getPage("Octopus") or action_wheel:getPage("Main")
 
 -- Actions table setup
 local a = {}
 
+-- Set color channel
+local function setColorRGB(x)
+	selectedRGB = ((selectedRGB + x - 1) % 3) + 1
+end
+
 -- Action
 a.colorAct = parentPage:newAction()
 	:item("ink_sac")
-	:onLeftClick(selectRGB)
-	:onScroll(pickColor)
+	:onLeftClick(function() setColorRGB(1) end)
+	:onRightClick(function() setColorRGB(-1) end)
+	:onScroll(function(x)
+		
+		-- Modify color
+		local color = vectors.hexToRGB(inkColor.curr)
+		color[selectedRGB] = math.clamp(color[selectedRGB] + x/255, 0, 1)
+		
+		-- Update color
+		inkColor:update(vectors.rgbToHex(color), 20)
+		fadeTimer = 0
+		
+		-- Gross check
+		if inkColor.curr == "ffffff" or inkColor.curr == "ffff00" then
+			host:setActionbar("Shame on you.")
+		end
+		
+	end)
 
 -- Update action
 function events.RENDER(delta, context)
 	
 	if action_wheel:isEnabled() then
+		
+		local rgbInkColor = vectors.hexToRGB(inkColor.curr) * 255
 		a.colorAct
 			:title(toJson(
 				{
@@ -294,11 +292,11 @@ function events.RENDER(delta, context)
 					{text = "Ink Color\n\n", bold = true, color = c.primary},
 					{text = "Scroll to set the color of your ink.\n\n", color = c.secondary},
 					{text = "Selected RGB: ", bold = true, color = c.secondary},
-					{text = (selectedRGB == 0 and "[%d] "  or "%d " ):format(sync[inkColor][1] * 255), color = "red"},
-					{text = (selectedRGB == 1 and "[%d] "  or "%d " ):format(sync[inkColor][2] * 255), color = "green"},
-					{text = (selectedRGB == 2 and "[%d]\n" or "%d\n"):format(sync[inkColor][3] * 255), color = "blue"},
+					{text = (selectedRGB == 1 and "[%d] "  or "%d " ):format(rgbInkColor.r), color = "red"},
+					{text = (selectedRGB == 2 and "[%d] "  or "%d " ):format(rgbInkColor.g), color = "green"},
+					{text = (selectedRGB == 3 and "[%d]\n" or "%d\n"):format(rgbInkColor.b), color = "blue"},
 					{text = "Selected Hex: ", bold = true, color = c.secondary},
-					{text = vectors.rgbToHex(sync[inkColor]).."\n\n", color = "#"..vectors.rgbToHex(sync[inkColor])},
+					{text = inkColor.curr.."\n\n", color = "#"..inkColor.curr},
 					{text = "Click to change selection.\n\n", color = c.secondary},
 					{text = "Notice:\n", bold = true, color = "gold"},
 					{text = "Brighter colors glow. Glowing settings control glowing.", color = "yellow"}

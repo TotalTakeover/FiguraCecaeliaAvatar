@@ -15,7 +15,7 @@ if avatar:getPermissionLevel() ~= "MAX" then
 end
 
 -- Synced variables setup
-local toggle = sync.add(config:load("MembraneToggle"), false)
+local toggle = sync.new("MembraneToggle", false):config()
 
 -- Variables
 local nTen = 8
@@ -54,21 +54,17 @@ function events.RENDER(delta, context)
 	
 	-- Visibility
 	for _, part in ipairs(membraneParts) do
-		part:visible(sync[toggle])
+		part:visible(toggle.curr)
 	end
 	
 end
 
--- Membrane toggle
-function pings.setMembraneToggle(boolean)
-	
-	sync[toggle] = boolean
-	config:save("MembraneToggle", sync[toggle])
+-- Apply sound function
+toggle:applyFunc(function()
 	if player:isLoaded() then
 		sounds:playSound("entity.phantom.flap", player:getPos())
 	end
-	
-end
+end)
 
 -- Host only instructions
 if not host:isHost() then return end
@@ -88,8 +84,10 @@ local a = {}
 a.toggleAct = parentPage:newAction()
 	:item("red_carpet")
 	:toggleItem("green_carpet")
-	:onToggle(pings.setMembraneToggle)
-	:toggled(sync[toggle])
+	:onToggle(function(bool)
+		toggle:update(bool)
+	end)
+	:toggled(toggle.curr)
 
 -- Update action
 function events.RENDER(delta, context)

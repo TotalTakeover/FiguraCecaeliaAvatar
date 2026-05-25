@@ -13,8 +13,8 @@ local effects = require("scripts.SyncedVariables")
 local anims = animations.Cecaelia
 
 -- Synced variables setup
-local armsMove = sync.add(config:load("ArmsMove"), false)
-local isSing = sync.add(false)
+local armsMove = sync.new("AnimsArms", false):config()
+local isSing   = sync.new("AnimsSing", false)
 
 -- Table setup
 v = {}
@@ -33,8 +33,8 @@ local waterTimer = 0
 local fallTimer = 0
 
 -- Arms setup
-local leftArmLerp  = lerp:new(sync[armsMove] and 1 or 0, 0.5)
-local rightArmLerp = lerp:new(sync[armsMove] and 1 or 0, 0.5)
+local leftArmLerp  = lerp.new(armsMove.curr and 1 or 0, 0.5)
+local rightArmLerp = lerp.new(armsMove.curr and 1 or 0, 0.5)
 
 -- Gets the origin rotation of a part, clamped
 local function getOriginRot(part, delta)
@@ -63,10 +63,10 @@ local function calculateParentRot(m)
 end
 
 -- Lerps
-local strength = lerp:new(1, 1)
-local pitch = lerp:new(0, 0.1)
-local yaw   = lerp:new(0, 1)
-local roll  = lerp:new(0, 0.1)
+local strength = lerp.new(1, 1)
+local pitch = lerp.new(0, 0.1)
+local yaw   = lerp.new(0, 1)
+local roll  = lerp.new(0, 0.1)
 
 -- Spawns notes around a model part
 local function notes(part, blocks)
@@ -189,7 +189,7 @@ function events.TICK()
 	local spin   = largeTail and pose.spin
 	local sleep  = largeTail and pose.sleep
 	local small  = smallTail and not swim
-	local sing   = sync[isSing] and not pose.sleep
+	local sing   = isSing.curr and not pose.sleep
 	
 	-- Animations
 	anims.swim:playing(swim)
@@ -204,7 +204,7 @@ function events.TICK()
 	anims.sing:playing(sing)
 	
 	-- Spawns notes around head while singing
-	if sync[isSing] and world.getTime() % 5 == 0 then
+	if sing and world.getTime() % 5 == 0 then
 		notes(parts.group.Head, 1)
 	end
 	
@@ -226,8 +226,8 @@ function events.TICK()
 	local armShouldMove = not largeTail
 	
 	-- Arms movement targets
-	leftArmLerp.target  = (sync[armsMove] or armShouldMove or swingL or usingL or bow) and 0 or -1
-	rightArmLerp.target = (sync[armsMove] or armShouldMove or swingR or usingR or bow) and 0 or -1
+	leftArmLerp.target  = (armsMove.curr or armShouldMove or swingL or usingL or bow) and 0 or -1
+	rightArmLerp.target = (armsMove.curr or armShouldMove or swingR or usingR or bow) and 0 or -1
 	
 end
 
@@ -294,30 +294,19 @@ for _, blend in ipairs(blendAnims) do
 	end
 end
 
--- Singing anim toggle
-function pings.setAnimSing(boolean)
-	
-	sync[isSing] = boolean
-	
-end
-
--- Arm movement toggle
-function pings.setAnimsArmsMove(boolean)
-	
-	sync[armsMove] = boolean
-	config:save("ArmsMove", sync[armsMove])
-	
-end
-
 -- Host only instructions
 if not host:isHost() then return end
 
--- Keybinds
-local singKeybind = keybinds:newKeybind("Singing Animation", "key.keyboard.keypad.5")
-	:onPress(function() pings.setAnimSing(not sync[isSing]) end)
+-- Required script
+local keybound = require("lib.Keybound")
 
--- Sync config keybinds
-sync.keybind(singKeybind, "AnimSingKeybind")
+-- Setup keybind
+local singKeybind = keybound.new(
+	keybinds
+		:newKeybind("Singing Animation", "key.keyboard.keypad.5")
+		:onPress(function() isSing:update(not isSing.curr) end),
+	"AnimsSingKeybind"
+)
 
 -- Required script
 local s, wheel, c = pcall(require, "scripts.ActionWheel")
@@ -343,13 +332,17 @@ end
 a.singAct = animsPage:newAction()
 	:item("music_disc_blocks")
 	:toggleItem("music_disc_cat")
-	:onToggle(pings.setAnimSing)
+	:onToggle(function(bool)
+		isSing:update(bool)
+	end)
 
 a.armsAct = animsPage:newAction()
 	:item("red_dye")
 	:toggleItem("rabbit_foot")
-	:onToggle(pings.setAnimsArmsMove)
-	:toggled(sync[armsMove])
+	:onToggle(function(bool)
+		armsMove:update(bool)
+	end)
+	:toggled(armsMove.curr)
 
 -- Update actions
 function events.RENDER(delta, context)
@@ -366,7 +359,7 @@ function events.RENDER(delta, context)
 			:title(toJson(
 				{text = "Play Singing animation", bold = true, color = c.primary}
 			))
-			:toggled(sync[isSing])
+			:toggled(isSing.curr)
 		
 		a.armsAct
 			:title(toJson(
