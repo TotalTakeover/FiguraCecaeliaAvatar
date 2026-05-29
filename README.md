@@ -22,7 +22,7 @@ This Figura avatar is a template designed around turning the user into a Cecaeli
 - Squishy (SquAPI)
 - Katt (OriginsAPI, KattArmor)
 - 4P5 (GroundCheck)
-- Manuel (Membranes, Molang Conversions)
+- Manuel (Membranes, Molang Conversions, OriginsAPI)
 - Auria (Molang Conversions)
 
 ### Origin Datapack:
