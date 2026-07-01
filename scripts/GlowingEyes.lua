@@ -65,7 +65,7 @@ function events.RENDER(delta, context)
 end
 
 -- Apply sound function
-toggle:applyFunc(function()
+local toggleSound = toggle:addFunc(function()
 	if player:isLoaded() and toggle.curr then
 		sounds:playSound("entity.glow_squid.ambient", player:getPos(), 0.75)
 	end
@@ -75,17 +75,17 @@ end)
 if not host:isHost() then return end
 
 -- Apply sound functions
-power:applyFunc(function()
+local powerSound = power:addFunc(function()
 	if player:isLoaded() and power.curr then
 		sounds:playSound("entity.puffer_fish.flop", player:getPos())
 	end
 end)
-nightVision:applyFunc(function()
+local nightVisionSound = nightVision:addFunc(function()
 	if player:isLoaded() and nightVision.curr then
 		sounds:playSound("entity.generic.drink", player:getPos(), 0.35)
 	end
 end)
-water:applyFunc(function()
+local waterSound = water:addFunc(function()
 	if player:isLoaded() and water.curr then
 		sounds:playSound("ambient.underwater.enter", player:getPos(), 0.35)
 	end

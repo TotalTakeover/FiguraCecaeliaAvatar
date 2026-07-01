@@ -143,11 +143,11 @@ local function equipSound()
 end
 
 -- Apply sound to sync updates
-helmet:applyFunc(equipSound)
-chestplate:applyFunc(equipSound)
-leggings:applyFunc(equipSound)
-boots:applyFunc(equipSound)
-octopus:applyFunc(equipSound)
+helmet:addFunc(equipSound)
+chestplate:addFunc(equipSound)
+leggings:addFunc(equipSound)
+boots:addFunc(equipSound)
+octopus:addFunc(equipSound)
 
 -- Host only instructions
 if not host:isHost() then return end

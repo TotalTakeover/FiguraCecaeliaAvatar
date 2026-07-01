@@ -9,7 +9,7 @@
 --          \|__|  \|_______|    \|__|  \|__|\|__|\|_______|
 --
 -- Special thanks: Grandpa Scout, Pool & Mangodev
--- Version: 1.1.4
+-- Version: 1.1.6
 
 -- Create API
 local syncAPI = {}
@@ -66,6 +66,7 @@ function syncAPI.new(id, ...)
 		{
 			prev = result,
 			curr = result,
+			funcs = {},
 			id = id
 		},
 		syncMeta
@@ -103,8 +104,10 @@ local function updateValues(obj, v)
 	-- If value changed, preform the update
 	if obj.curr ~= obj.prev then
 		
-		-- Preform optional function if it exists
-		if obj.fn then obj.fn() end
+		-- Preform optional functions if they exist
+		for k in pairs(obj.funcs) do
+			k()
+		end
 		
 		-- Update config if it exists
 		if obj.cfg ~= nil then config:save(obj.cfg, v) end
@@ -156,8 +159,8 @@ function syncInternal:update(v, buffer)
 			typeCheck(buffer, "number")
 			
 			-- Update on host only
-			-- Ping will instead be sent when timer is decreased below
-			self.timer = buffer
+			-- Ping will instead be sent when countdown reaches 0
+			self.countdown = buffer
 			updateValues(self, v)
 			
 			-- Return object
@@ -176,13 +179,27 @@ function syncInternal:update(v, buffer)
 end
 
 -- Apply a function
-function syncInternal:applyFunc(func)
+function syncInternal:addFunc(func)
 	
 	-- Checks if function is actually a function
 	typeCheck(func, "function")
 	
 	-- Apply function to sync
-	self.fn = func
+	self.funcs[func] = func
+	
+	-- Return function
+	return func
+	
+end
+
+-- Remove a function
+function syncInternal:removeFunc(func)
+	
+	-- Checks if function is actually a function
+	typeCheck(func, "function")
+	
+	-- Remove function from sync
+	self.funcs[func] = nil
 	
 	-- Return object
 	return self
@@ -220,10 +237,14 @@ end
 if not host:isHost() then return syncAPI end
 
 -- Sync on tick
+local _tick = 0
 events.TICK:register(function()
 	
+	-- Get time
+	local tick = world.getTime()
+	
 	-- Sync variables
-	if world.getTime() % 200 == 0 then
+	if tick % 200 == 0 and tick ~= _tick then
 		
 		-- Gather values
 		local syncTables = {} 
@@ -234,18 +255,22 @@ events.TICK:register(function()
 		-- Send values
 		pings.sendSyncUpdateAll(table.unpack(syncTables))
 		
+		-- Store prev tick
+		-- Helps prevent ping spam if world is paused on tick
+		_tick = tick
+		
 	end
 	
 	-- Countdown buffers
 	for k, v in ipairs(syncs) do
-		if v.timer then
+		if v.countdown then
 			
-			-- Decrement timer
-			v.timer = math.max(v.timer - 1, 0)
+			-- Decrement countdown
+			v.countdown = math.max(v.countdown - 1, 0)
 			
-			-- If timer is 0, send ping
-			if v.timer == 0 then
-				v.timer = nil
+			-- If countdown reaches 0, send ping
+			if v.countdown == 0 then
+				v.countdown = nil
 				pings.sendSyncUpdate(v.nid, v.curr)
 			end
 			

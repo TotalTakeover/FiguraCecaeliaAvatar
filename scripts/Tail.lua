@@ -149,12 +149,12 @@ end
 if not host:isHost() then return tailData end
 
 -- Apply sound functions
-tailType:applyFunc(function()
+local tailSound = tailType:addFunc(function()
 	if player:isLoaded() then
 		sounds:playSound("ambient.underwater.enter", player:getPos(), 0.35)
 	end
 end)
-fallSound:applyFunc(function()
+local fallToggleSound = fallSound:addFunc(function()
 	if player:isLoaded() and fallSound.curr then
 		sounds:playSound("entity.puffer_fish.flop", player:getPos(), 0.35, 0.6)
 	end

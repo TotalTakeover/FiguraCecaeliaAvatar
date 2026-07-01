@@ -60,7 +60,7 @@ function events.RENDER(delta, context)
 end
 
 -- Apply sound function
-toggle:applyFunc(function()
+local toggleSound = toggle:addFunc(function()
 	if player:isLoaded() then
 		sounds:playSound("entity.phantom.flap", player:getPos())
 	end
