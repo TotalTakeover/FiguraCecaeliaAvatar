@@ -116,6 +116,9 @@ end
 
 function events.RENDER(delta, context)
 	
+	-- Stops useless instructions
+	if client:isPaused() then return end
+	
 	-- Octopus textures
 	for _, tex in ipairs(octopusTextures) do
 		applyColor(tex, colorLerp.currPos)
