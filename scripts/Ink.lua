@@ -193,7 +193,7 @@ function events.TICK()
 	
 	-- Bounce bar back if below 0
 	if barLerp.currTick < 0 then
-		barLerp:bounce(0)
+		barLerp:bounce(0, 0.85)
 	end
 	
 	-- Store previous variables
