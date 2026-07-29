@@ -238,7 +238,7 @@ function events.RENDER(delta, context)
 end
 
 -- Required scripts
-local s, wheel, c = pcall(require, "scripts.ActionWheel")
+local s, pageNav, c = pcall(require, "scripts.ActionWheel")
 if not s then return end -- Kills script early if ActionWheel.lua isnt found
 pcall(require, "scripts.ColorChange") -- Tries to find script, not required
 pcall(require, "scripts.Tail") -- Tries to find script, not required

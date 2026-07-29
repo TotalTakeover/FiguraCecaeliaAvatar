@@ -178,7 +178,7 @@ local smallKeybind = keybound.new(
 )
 
 -- Required script
-local s, wheel, c = pcall(require, "scripts.ActionWheel")
+local s, pageNav, c = pcall(require, "scripts.ActionWheel")
 if not s then return tailData end -- Kills script early if ActionWheel.lua isnt found
 
 -- Pages
@@ -197,7 +197,7 @@ end
 -- Actions
 a.octopusPageAct = parentPage:newAction()
 	:item("ink_sac")
-	:onLeftClick(function() wheel:descend(octopusPage) end)
+	:onLeftClick(function() pageNav.descend(octopusPage) end)
 
 a.tailAct = octopusPage:newAction()
 	:onLeftClick(function() tailType:update(setTailType(1)) end)
@@ -215,7 +215,7 @@ a.smallAct = octopusPage:newAction()
 
 a.dryPageAct = octopusPage:newAction()
 	:item("sponge")
-	:onLeftClick(function() wheel:descend(dryPage) end)
+	:onLeftClick(function() pageNav.descend(dryPage) end)
 
 a.dryAct = dryPage:newAction()
 	:onScroll(function(x)
