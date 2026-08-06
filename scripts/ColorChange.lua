@@ -136,16 +136,16 @@ end
 if not host:isHost() then return end
 
 -- Required scripts
-local s, pageNav, acts, c = pcall(require, "scripts.ActionWheel")
+local s, pageNav, acts, colors = pcall(require, "scripts.ActionWheel")
 if not s then return end -- Kills script early if ActionWheel.lua isnt found
 pcall(require, "scripts.Tail") -- Tries to find script, not required
 
 -- Dont preform if color properties is empty
-if next(c) ~= nil then
+if next(colors) ~= nil then
 	
 	-- Store init colors
 	local initColors = {}
-	for k, v in pairs(c) do
+	for k, v in pairs(colors) do
 		initColors[k] = v
 	end
 	
@@ -161,8 +161,8 @@ if next(c) ~= nil then
 		}
 		
 		-- Update action wheel colors
-		for k in pairs(c) do
-			c[k] = appliedColors[k]
+		for k in pairs(colors) do
+			colors[k] = appliedColors[k]
 		end
 		
 	end
@@ -198,35 +198,35 @@ function events.RENDER(delta, context)
 	if action_wheel:isEnabled() then
 		acts.colorPage
 			:title(toJson(
-				{text = "Color Settings", bold = true, color = c.primary}
+				{text = "Color Settings", bold = true, color = colors.primary}
 			))
-			:hoverColor(c.hover)
+			:hoverColor(colors.hover)
 		
 		acts.colorCamoToggle
 			:title(toJson(
 				{
 					"",
-					{text = "Toggle Camo Mode\n\n", bold = true, color = c.primary},
-					{text = "Toggles changing your octopus color to match your surroundings.", color = c.secondary}
+					{text = "Toggle Camo Mode\n\n", bold = true, color = colors.primary},
+					{text = "Toggles changing your octopus color to match your surroundings.", color = colors.secondary}
 				}
 			))
 			:toggleItem("splash_potion{CustomPotionColor:" .. tostring(vectors.rgbToInt(colorLerp.currPos)) .. "}")
 			:toggled(camo.curr)
-			:hoverColor(c.hover)
-			:toggleColor(c.active)
+			:hoverColor(colors.hover)
+			:toggleColor(colors.active)
 		
 		acts.colorRainbowToggle
 			:title(toJson(
 				{
 					"",
-					{text = "Toggle Rainbow Mode\n\n", bold = true, color = c.primary},
-					{text = "Toggles on hue-shifting creating a rainbow effect.", color = c.secondary}
+					{text = "Toggle Rainbow Mode\n\n", bold = true, color = colors.primary},
+					{text = "Toggles on hue-shifting creating a rainbow effect.", color = colors.secondary}
 				}
 			))
 			:toggleItem("lingering_potion{CustomPotionColor:" .. tostring(vectors.rgbToInt(colorLerp.currPos)) .. "}")
 			:toggled(rainbow.curr)
-			:hoverColor(c.hover)
-			:toggleColor(c.active)
+			:hoverColor(colors.hover)
+			:toggleColor(colors.active)
 		
 	end
 	

@@ -307,7 +307,7 @@ local singKeybind = keybound.new(
 )
 
 -- Required script
-local s, pageNav, acts, c = pcall(require, "scripts.ActionWheel")
+local s, pageNav, acts, colors = pcall(require, "scripts.ActionWheel")
 if not s then return end -- Kills script early if ActionWheel.lua isnt found
 
 -- Check for if page already exists
@@ -346,29 +346,29 @@ function events.RENDER(delta, context)
 		if acts.animsPage then
 			acts.animsPage
 				:title(toJson(
-					{text = "Animation Settings", bold = true, color = c.primary}
+					{text = "Animation Settings", bold = true, color = colors.primary}
 				))
-				:hoverColor(c.hover)
+				:hoverColor(colors.hover)
 		end
 		
 		acts.animsSingToggle
 			:title(toJson(
-				{text = "Play Singing animation", bold = true, color = c.primary}
+				{text = "Play Singing animation", bold = true, color = colors.primary}
 			))
 			:toggled(isSing.curr)
-			:hoverColor(c.hover)
-			:toggleColor(c.active)
+			:hoverColor(colors.hover)
+			:toggleColor(colors.active)
 		
 		acts.animsArmsToggle
 			:title(toJson(
 				{
 					"",
-					{text = "Arm Movement Toggle\n\n", bold = true, color = c.primary},
-					{text = "Toggles the movement swing movement of the arms.\nActions are not effected.", color = c.secondary}
+					{text = "Arm Movement Toggle\n\n", bold = true, color = colors.primary},
+					{text = "Toggles the movement swing movement of the arms.\nActions are not effected.", color = colors.secondary}
 				}
 			))
-			:hoverColor(c.hover)
-			:toggleColor(c.active)
+			:hoverColor(colors.hover)
+			:toggleColor(colors.active)
 		
 	end
 	

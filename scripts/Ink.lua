@@ -238,7 +238,7 @@ function events.RENDER(delta, context)
 end
 
 -- Required scripts
-local s, pageNav, acts, c = pcall(require, "scripts.ActionWheel")
+local s, pageNav, acts, colors = pcall(require, "scripts.ActionWheel")
 if not s then return end -- Kills script early if ActionWheel.lua isnt found
 pcall(require, "scripts.ColorChange") -- Tries to find script, not required
 pcall(require, "scripts.Tail") -- Tries to find script, not required
@@ -286,20 +286,20 @@ function events.RENDER(delta, context)
 			:title(toJson(
 				{
 					"",
-					{text = "Ink Color\n\n", bold = true, color = c.primary},
-					{text = "Scroll to set the color of your ink.\n\n", color = c.secondary},
-					{text = "Selected RGB: ", bold = true, color = c.secondary},
+					{text = "Ink Color\n\n", bold = true, color = colors.primary},
+					{text = "Scroll to set the color of your ink.\n\n", color = colors.secondary},
+					{text = "Selected RGB: ", bold = true, color = colors.secondary},
 					{text = (selectedRGB == 1 and "[%d] "  or "%d " ):format(rgbInkColor.r), color = "red"},
 					{text = (selectedRGB == 2 and "[%d] "  or "%d " ):format(rgbInkColor.g), color = "green"},
 					{text = (selectedRGB == 3 and "[%d]\n" or "%d\n"):format(rgbInkColor.b), color = "blue"},
-					{text = "Selected Hex: ", bold = true, color = c.secondary},
+					{text = "Selected Hex: ", bold = true, color = colors.secondary},
 					{text = inkColor.curr.."\n\n", color = "#"..inkColor.curr},
-					{text = "Click to change selection.\n\n", color = c.secondary},
+					{text = "Click to change selection.\n\n", color = colors.secondary},
 					{text = "Notice:\n", bold = true, color = "gold"},
 					{text = "Brighter colors glow. Glowing settings control glowing.", color = "yellow"}
 				}
 			))
-			:hoverColor(c.hover)
+			:hoverColor(colors.hover)
 		
 	end
 	
