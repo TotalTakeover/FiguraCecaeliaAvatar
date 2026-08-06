@@ -238,7 +238,7 @@ function events.RENDER(delta, context)
 end
 
 -- Required scripts
-local s, pageNav, c = pcall(require, "scripts.ActionWheel")
+local s, pageNav, acts, c = pcall(require, "scripts.ActionWheel")
 if not s then return end -- Kills script early if ActionWheel.lua isnt found
 pcall(require, "scripts.ColorChange") -- Tries to find script, not required
 pcall(require, "scripts.Tail") -- Tries to find script, not required
@@ -249,16 +249,13 @@ local selectedRGB = 1
 -- Pages
 local parentPage = action_wheel:getPage("Color") or action_wheel:getPage("Octopus") or action_wheel:getPage("Main")
 
--- Actions table setup
-local a = {}
-
 -- Set color channel
 local function setColorRGB(x)
 	selectedRGB = ((selectedRGB + x - 1) % 3) + 1
 end
 
 -- Action
-a.colorAct = parentPage:newAction()
+acts.inkColor = parentPage:newAction()
 	:item("ink_sac")
 	:onLeftClick(function() setColorRGB(1) end)
 	:onRightClick(function() setColorRGB(-1) end)
@@ -285,7 +282,7 @@ function events.RENDER(delta, context)
 	if action_wheel:isEnabled() then
 		
 		local rgbInkColor = vectors.hexToRGB(inkColor.curr) * 255
-		a.colorAct
+		acts.inkColor
 			:title(toJson(
 				{
 					"",
@@ -302,10 +299,7 @@ function events.RENDER(delta, context)
 					{text = "Brighter colors glow. Glowing settings control glowing.", color = "yellow"}
 				}
 			))
-		
-		for _, act in pairs(a) do
-			act:hoverColor(c.hover):toggleColor(c.active)
-		end
+			:hoverColor(c.hover)
 		
 	end
 	

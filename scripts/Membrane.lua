@@ -70,18 +70,15 @@ end)
 if not host:isHost() then return end
 
 -- Required scripts
-local s, pageNav, c = pcall(require, "scripts.ActionWheel")
+local s, pageNav, acts, c = pcall(require, "scripts.ActionWheel")
 if not s then return end -- Kills script early if ActionWheel.lua isnt found
 pcall(require, "scripts.Tail") -- Tries to find script, not required
 
 -- Pages
 local parentPage = action_wheel:getPage("Octopus") or action_wheel:getPage("Main")
 
--- Actions table setup
-local a = {}
-
 -- Action
-a.toggleAct = parentPage:newAction()
+acts.membraneToggle = parentPage:newAction()
 	:item("red_carpet")
 	:toggleItem("green_carpet")
 	:onToggle(function(bool)
@@ -93,7 +90,7 @@ a.toggleAct = parentPage:newAction()
 function events.RENDER(delta, context)
 	
 	if action_wheel:isEnabled() then
-		a.toggleAct
+		acts.membraneToggle
 			:title(toJson(
 				{
 					"",
@@ -103,10 +100,8 @@ function events.RENDER(delta, context)
 					{text = "This feature requires MAX permission level to be viewed.", color = "yellow"}
 				}
 			))
-		
-		for _, act in pairs(a) do
-			act:hoverColor(c.hover):toggleColor(c.active)
-		end
+			:hoverColor(c.hover)
+			:toggleColor(c.active)
 		
 	end
 	

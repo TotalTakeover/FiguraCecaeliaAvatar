@@ -178,7 +178,7 @@ local smallKeybind = keybound.new(
 )
 
 -- Required script
-local s, pageNav, c = pcall(require, "scripts.ActionWheel")
+local s, pageNav, acts, c = pcall(require, "scripts.ActionWheel")
 if not s then return tailData end -- Kills script early if ActionWheel.lua isnt found
 
 -- Pages
@@ -186,25 +186,22 @@ local parentPage  = action_wheel:getPage("Main")
 local octopusPage = action_wheel:newPage("Octopus")
 local dryPage     = action_wheel:newPage("Dry")
 
--- Actions table setup
-local a = {}
-
 -- Set tail type
 local function setTailType(x)
 	return ((tailType.curr + x - 1) % #waterTypes) + 1
 end
 
 -- Actions
-a.octopusPageAct = parentPage:newAction()
+acts.octopusPage = parentPage:newAction()
 	:item("ink_sac")
 	:onLeftClick(function() pageNav.descend(octopusPage) end)
 
-a.tailAct = octopusPage:newAction()
+acts.tailStyle = octopusPage:newAction()
 	:onLeftClick(function() tailType:update(setTailType(1)) end)
 	:onRightClick(function() tailType:update(setTailType(-1)) end)
 	:onScroll(function(x) tailType:update(setTailType(x), 20) end)
 
-a.smallAct = octopusPage:newAction()
+acts.tailSmallToggle = octopusPage:newAction()
 	:item("small_amethyst_bud")
 	:onToggle(function(bool)
 		small:update(bool)
@@ -213,23 +210,23 @@ a.smallAct = octopusPage:newAction()
 		smallSize:update(math.clamp(smallSize.curr + (x * 0.05), 0.4, 1), 20)
 	end)
 
-a.dryPageAct = octopusPage:newAction()
+acts.dryPage = octopusPage:newAction()
 	:item("sponge")
 	:onLeftClick(function() pageNav.descend(dryPage) end)
 
-a.dryAct = dryPage:newAction()
+acts.dryTimer = dryPage:newAction()
 	:onScroll(function(x)
 		dryTimer:update(math.clamp(dryTimer.curr + (x * 20), 0, 72000), 20)
 	end)
 	:onLeftClick(function() dryTimer:update(400) end)
 
-a.legsAct = dryPage:newAction()
+acts.dryLegsTimer = dryPage:newAction()
 	:item("rabbit_foot")
 	:onScroll(function(x)
 		legsForm:update(math.clamp(legsForm.curr + (x * 0.05), 0.25, 0.9), 20)
 	end)
 
-a.gradualAct = dryPage:newAction()
+acts.dryGradualToggle = dryPage:newAction()
 	:item("sugar")
 	:toggleItem("fermented_spider_eye")
 	:onToggle(function(bool)
@@ -237,7 +234,7 @@ a.gradualAct = dryPage:newAction()
 	end)
 	:toggled(gradual.curr)
 
-a.soundAct = dryPage:newAction()
+acts.drySoundToggle = dryPage:newAction()
 	:item("bucket")
 	:toggleItem("water_bucket")
 	:onToggle(function(bool)
@@ -291,13 +288,14 @@ end
 function events.RENDER(delta, context)
 	
 	if action_wheel:isEnabled() then
-		a.octopusPageAct
+		acts.octopusPage
 			:title(toJson(
 				{text = "Octopus Settings", bold = true, color = c.primary}
 			))
+			:hoverColor(c.hover)
 		
 		local actionSetup = waterInfo[tailType.curr]
-		a.tailAct
+		acts.tailStyle
 			:title(toJson(
 				{
 					"",
@@ -309,10 +307,11 @@ function events.RENDER(delta, context)
 					{text = actionSetup.title.text, color = c.secondary}
 				}
 			))
-			:color(vectors.hexToRGB(actionSetup.color))
 			:item(actionSetup.item.."{CustomPotionColor:"..tostring(0x0094FF).."}")
+			:color(vectors.hexToRGB(actionSetup.color))
+			:hoverColor(c.hover)
 		
-		a.smallAct
+		acts.tailSmallToggle
 			:title(toJson(
 				{
 					"",
@@ -328,11 +327,14 @@ function events.RENDER(delta, context)
 				"medium_amethyst_bud"
 			)
 			:toggled(small.curr)
+			:hoverColor(c.hover)
+			:toggleColor(c.active)
 		
-		a.dryPageAct
+		acts.dryPage
 			:title(toJson(
 				{text = "Drying Settings", bold = true, color = c.primary}
 			))
+			:hoverColor(c.hover)
 		
 		-- Timers
 		local timers = {
@@ -347,7 +349,7 @@ function events.RENDER(delta, context)
 			cD[k] = timeStr(v)
 		end
 		
-		a.dryAct
+		acts.dryTimer
 			:title(toJson(
 				{
 					"",
@@ -363,8 +365,9 @@ function events.RENDER(delta, context)
 				}
 			))
 			:item((timers.tail ~= 0 or timers.ears ~= 0) and "wet_sponge" or "sponge")
+			:hoverColor(c.hover)
 		
-		a.legsAct
+		acts.dryLegsTimer
 			:title(toJson(
 				{
 					"",
@@ -374,8 +377,9 @@ function events.RENDER(delta, context)
 					{text = math.round(legsForm.curr * 100).."% Wet"}
 				}
 			))
+			:hoverColor(c.hover)
 		
-		a.gradualAct
+		acts.dryGradualToggle
 			:title(toJson(
 				{
 					"",
@@ -384,8 +388,10 @@ function events.RENDER(delta, context)
 				}
 			))
 			:toggled(gradual.curr)
+			:hoverColor(c.hover)
+			:toggleColor(c.active)
 		
-		a.soundAct
+		acts.drySoundToggle
 			:title(toJson(
 				{
 					"",
@@ -393,10 +399,8 @@ function events.RENDER(delta, context)
 					{text = "Toggles flopping sound effects when landing on the ground.\nIf tail can dry, volume will gradually decrease over time until dry.", color = c.secondary}
 				}
 			))
-		
-		for _, act in pairs(a) do
-			act:hoverColor(c.hover):toggleColor(c.active)
-		end
+			:hoverColor(c.hover)
+			:toggleColor(c.active)
 		
 	end
 	

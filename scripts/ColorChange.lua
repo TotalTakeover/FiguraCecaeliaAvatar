@@ -136,7 +136,7 @@ end
 if not host:isHost() then return end
 
 -- Required scripts
-local s, pageNav, c = pcall(require, "scripts.ActionWheel")
+local s, pageNav, acts, c = pcall(require, "scripts.ActionWheel")
 if not s then return end -- Kills script early if ActionWheel.lua isnt found
 pcall(require, "scripts.Tail") -- Tries to find script, not required
 
@@ -173,22 +173,19 @@ end
 local parentPage = action_wheel:getPage("Octopus") or action_wheel:getPage("Main")
 local colorPage  = action_wheel:newPage("Color")
 
--- Actions table setup
-local a = {}
-
 -- Actions
-a.pageAct = parentPage:newAction()
+acts.colorPage = parentPage:newAction()
 	:item("brewing_stand")
 	:onLeftClick(function() pageNav.descend(colorPage) end)
 
-a.camoAct = colorPage:newAction()
+acts.colorCamoToggle = colorPage:newAction()
 	:item("glass_bottle")
 	:onToggle(function(bool)
 		camo:update(bool)
 		rainbow:update(false)
 	end)
 
-a.rainbowAct = colorPage:newAction()
+acts.colorRainbowToggle = colorPage:newAction()
 	:item("glass_bottle")
 	:onToggle(function(bool)
 		rainbow:update(bool)
@@ -199,12 +196,13 @@ a.rainbowAct = colorPage:newAction()
 function events.RENDER(delta, context)
 	
 	if action_wheel:isEnabled() then
-		a.pageAct
+		acts.colorPage
 			:title(toJson(
 				{text = "Color Settings", bold = true, color = c.primary}
 			))
+			:hoverColor(c.hover)
 		
-		a.camoAct
+		acts.colorCamoToggle
 			:title(toJson(
 				{
 					"",
@@ -214,8 +212,10 @@ function events.RENDER(delta, context)
 			))
 			:toggleItem("splash_potion{CustomPotionColor:" .. tostring(vectors.rgbToInt(colorLerp.currPos)) .. "}")
 			:toggled(camo.curr)
+			:hoverColor(c.hover)
+			:toggleColor(c.active)
 		
-		a.rainbowAct
+		acts.colorRainbowToggle
 			:title(toJson(
 				{
 					"",
@@ -225,10 +225,8 @@ function events.RENDER(delta, context)
 			))
 			:toggleItem("lingering_potion{CustomPotionColor:" .. tostring(vectors.rgbToInt(colorLerp.currPos)) .. "}")
 			:toggled(rainbow.curr)
-		
-		for _, act in pairs(a) do
-			act:hoverColor(c.hover):toggleColor(c.active)
-		end
+			:hoverColor(c.hover)
+			:toggleColor(c.active)
 		
 	end
 	
