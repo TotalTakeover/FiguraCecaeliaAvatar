@@ -9,7 +9,7 @@
 --          \|__|  \|_______|    \|__|  \|__|\|__|\|_______|
 --
 -- Special thanks: Grandpa Scout, Pool & Mangodev
--- Version: 1.1.6
+-- Version: 1.1.7
 
 -- Create API
 local syncAPI = {}
@@ -28,11 +28,11 @@ local syncMeta = {
 
 -- Type checker that errors if type isnt what's needed
 local errorOverride = false -- Unique ID error message likes to fight the typeCheck error message for some reason, this prevents that
-local function typeCheck(v, t)
+local function typeCheck(value, typeStr)
 	
-	if type(v) ~= t then
+	if type(value) ~= typeStr then
 		errorOverride = true
-		error("\n\n§6Argument must be a "..t.."!\n§c", 3)
+		error("\n\n§6Argument must be a "..typeStr.."!\n§c", 3)
 	end
 	
 end
@@ -44,8 +44,8 @@ function syncAPI.new(id, ...)
 	typeCheck(id, "string")
 	
 	-- Check if the id already exists
-	for k, v in ipairs(syncs) do
-		if v.id == id then
+	for _, obj in ipairs(syncs) do
+		if obj.id == id then
 			if not errorOverride then
 				error("\n\n§6ID must be unique!\n§c", 2)
 			end
@@ -55,19 +55,19 @@ function syncAPI.new(id, ...)
 	-- Determine which value should be applied, checking for nil before returning
 	local result
 	for i = 1, select("#", ...) do
-		local v = select(i, ...)
-		if v ~= nil then
-			result = v
+		local value = select(i, ...)
+		if value ~= nil then
+			result = value
 		end
 	end
 	
 	-- Create object
 	local obj = setmetatable(
 		{
-			prev = result,
-			curr = result,
+			id = id,
 			funcs = {},
-			id = id
+			prev = result,
+			curr = result
 		},
 		syncMeta
 	)
@@ -89,68 +89,66 @@ function events.ENTITY_INIT()
 	end)
 	
 	-- Grants each object a numerical id to be used when pinging
-	for k, v in ipairs(syncs) do
-		v.nid = k
+	for id, obj in ipairs(syncs) do
+		obj.nid = id
 	end
 	
 end
 
 -- Updates sync values
-local function updateValues(obj, v)
+local function updateValues(obj, value)
 	
 	-- Update current value
-	obj.curr = v
+	obj.curr = value
 	
 	-- If value changed, preform the update
 	if obj.curr ~= obj.prev then
 		
-		-- Preform optional functions if they exist
-		for k in pairs(obj.funcs) do
-			k()
-		end
+		-- Preform optional function (if it exists)
+		for _, func in pairs(obj.funcs) do func() end
 		
 		-- Update config if it exists
-		if obj.cfg ~= nil then config:save(obj.cfg, v) end
+		if obj.cfg ~= nil then config:save(obj.cfg, value) end
 		
 		-- Update previous value
-		obj.prev = v
+		obj.prev = value
 		
 	end
 	
 end
 
 -- Sync variable via ping
-function pings.sendSyncUpdate(k, v)
+function pings.sendSyncUpdate(key, value)
 	
 	-- Find sync object
-	local obj = syncs[k]
+	local obj = syncs[key]
 	
 	-- Update values
-	updateValues(obj, v)
+	updateValues(obj, value)
 	
 end
 
 -- Sync ALL variables via ping
 function pings.sendSyncUpdateAll(...)
 	
-	for k, v in ipairs({...}) do
+	for i, value in ipairs({...}) do
 		
 		-- Find sync object
-		local obj = syncs[k]
+		local obj = syncs[i]
 		
 		-- Update values
-		updateValues(obj, v)
+		updateValues(obj, value)
 		
 	end
 	
 end
 
 -- Update a sync object
-function syncInternal:update(v, buffer)
+function syncInternal:update(value, buffer)
 	
 	-- Check if change occured, and send ping
 	-- Prevents spam caused by user
-	if v ~= self.prev then
+	if value ~= self.prev then
 		
 		-- If a buffer is provided
 		if buffer ~= nil then
@@ -161,7 +159,7 @@ function syncInternal:update(v, buffer)
 			-- Update on host only
 			-- Ping will instead be sent when countdown reaches 0
 			self.countdown = buffer
-			updateValues(self, v)
+			updateValues(self, value)
 			
 			-- Return object
 			return self
@@ -169,7 +167,7 @@ function syncInternal:update(v, buffer)
 		end
 		
 		-- Send ping
-		pings.sendSyncUpdate(self.nid, v)
+		pings.sendSyncUpdate(self.nid, value)
 		
 	end
 	
@@ -187,8 +185,8 @@ function syncInternal:addFunc(func)
 	-- Apply function to sync
 	self.funcs[func] = func
 	
-	-- Return function
-	return func
+	-- Return object and function (incase you need it)
+	return self, func
 	
 end
 
@@ -248,8 +246,8 @@ events.TICK:register(function()
 		
 		-- Gather values
 		local syncTables = {} 
-		for k, v in ipairs(syncs) do
-			syncTables[k] = v.curr
+		for i, obj in ipairs(syncs) do
+			syncTables[i] = obj.curr
 		end
 		
 		-- Send values
@@ -262,16 +260,16 @@ events.TICK:register(function()
 	end
 	
 	-- Countdown buffers
-	for k, v in ipairs(syncs) do
-		if v.countdown then
+	for _, obj in ipairs(syncs) do
+		if obj.countdown then
 			
 			-- Decrement countdown
-			v.countdown = math.max(v.countdown - 1, 0)
+			obj.countdown = math.max(obj.countdown - 1, 0)
 			
 			-- If countdown reaches 0, send ping
-			if v.countdown == 0 then
-				v.countdown = nil
-				pings.sendSyncUpdate(v.nid, v.curr)
+			if obj.countdown == 0 then
+				obj.countdown = nil
+				pings.sendSyncUpdate(obj.nid, obj.curr)
 			end
 			
 		end
