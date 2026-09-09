@@ -25,7 +25,7 @@ for i = 1, #glowingParts do
 end
 
 -- Check if a splash potion is broken near a part
-function events.ON_PLAY_SOUND(id, pos, vol, pitch, loop, category, path)
+function events.ON_PLAY_SOUND(id, pos, _, _, _, _, path)
 	
 	if player:isLoaded() then
 		for i = 1, #glowingParts do
@@ -143,7 +143,7 @@ function events.TICK()
 	
 end
 
-function events.RENDER(delta, context)
+function events.RENDER(_, context)
 	
 	-- Check render type
 	local renderType = context == "RENDER" and "EMISSIVE" or "EYES"
@@ -162,7 +162,7 @@ function events.RENDER(delta, context)
 end
 
 -- Apply sound function
-local toggleSound = toggle:addFunc(function()
+toggle:addFunc(function()
 	if player:isLoaded() and toggle.curr then
 		sounds:playSound("entity.glow_squid.ambient", player:getPos(), 0.75)
 	end
@@ -172,12 +172,12 @@ end)
 if not host:isHost() then return end
 
 -- Apply sound functions
-local dynamicSound = dynamic:addFunc(function()
+dynamic:addFunc(function()
 	if player:isLoaded() and dynamic.curr then
 		sounds:playSound("entity.generic.drink", player:getPos(), 0.35)
 	end
 end)
-local waterSound = water:addFunc(function()
+water:addFunc(function()
 	if player:isLoaded() and water.curr then
 		sounds:playSound("ambient.underwater.enter", player:getPos(), 0.35)
 	end
@@ -187,7 +187,7 @@ end)
 local keybound = require("lib.Keybound")
 
 -- Setup keybind
-local toggleKeybind = keybound.new(
+keybound.new(
 	keybinds
 		:newKeybind("Glow Toggle", "key.keyboard.keypad.3")
 		:onPress(function() toggle:update(not toggle.curr) end),
@@ -238,7 +238,7 @@ acts.glowUnique = glowPage:newAction()
 	:toggled(unique.curr)
 
 -- Update actions
-function events.RENDER(delta, context)
+function events.RENDER()
 	
 	if action_wheel:isEnabled() then
 		acts.glowPage

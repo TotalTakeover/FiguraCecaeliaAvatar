@@ -145,7 +145,7 @@ end
 if not host:isHost() then return end
 
 -- Save server to config
-local saveServer = allowEye:addFunc(function()
+allowEye:addFunc(function()
 	savedServers[serverId] = allowEye.curr
 	config:save("CameraServers", savedServers)
 end)
@@ -181,7 +181,7 @@ acts.cameraEyeToggle = cameraPage:newAction()
 	:toggled(allowEye.curr)
 
 -- Update actions
-function events.RENDER(delta, context)
+function events.RENDER()
 	
 	if action_wheel:isEnabled() then
 		acts.cameraPage

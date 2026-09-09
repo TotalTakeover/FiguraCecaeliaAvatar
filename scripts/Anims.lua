@@ -229,7 +229,7 @@ function events.TICK()
 	
 end
 
-function events.RENDER(delta, context)
+function events.RENDER(delta)
 	
 	-- Store animation variables
 	v.strength = strength.currPos
@@ -301,7 +301,7 @@ if not host:isHost() then return end
 local keybound = require("lib.Keybound")
 
 -- Setup keybind
-local singKeybind = keybound.new(
+keybound.new(
 	keybinds
 		:newKeybind("Singing Animation", "key.keyboard.keypad.5")
 		:onPress(function() isSing:update(not isSing.curr) end),
@@ -342,7 +342,7 @@ acts.animsArmsToggle = animsPage:newAction()
 	:toggled(armsMove.curr)
 
 -- Update actions
-function events.RENDER(delta, context)
+function events.RENDER()
 	
 	if action_wheel:isEnabled() then
 		if acts.animsPage then
