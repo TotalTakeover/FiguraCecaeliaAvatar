@@ -13,10 +13,10 @@ local unique  = sync.new("GlowUnique", false):config()
 -- Glowing parts
 local glowingParts = parts:createTable(function(part) return part:getName():find("_[gG]low") end)
 
-for i, part in ipairs(glowingParts) do
+for i = 1, #glowingParts do
 	
 	glowingParts[i] = {
-		part   = part,
+		part   = glowingParts[i],
 		splash = false,
 		timer  = 0,
 		glow   = lerp.new(toggle.curr and 1 or 0)
@@ -28,7 +28,8 @@ end
 function events.ON_PLAY_SOUND(id, pos, vol, pitch, loop, category, path)
 	
 	if player:isLoaded() then
-		for _, index in ipairs(glowingParts) do
+		for i = 1, #glowingParts do
+			local index = glowingParts[i]
 			local partPos  = index.part:getParent():partToWorldMatrix():apply()
 			local atPos    = pos < partPos + 1.5 and pos > partPos - 1.5
 			local splashID = id == "minecraft:entity.splash_potion.break" or id == "minecraft:entity.lingering_potion.break"
@@ -60,7 +61,10 @@ function events.TICK()
 	
 	-- Set glow target
 	-- Toggle check
-	for _, index in ipairs(glowingParts) do
+	for i = 1, #glowingParts do
+		
+		-- Get index
+		local index = glowingParts[i]
 		
 		if toggle.curr and index.part:getVisible() then
 			
@@ -90,9 +94,9 @@ function events.TICK()
 				if unique.curr then
 					
 					-- Check fluid tags
-					local block = world.getBlockState(pos)
-					for _, tag in ipairs(block:getFluidTags()) do
-						if tag then
+					local tags = world.getBlockState(pos):getFluidTags()
+					for j = 1, #tags do
+						if tags[j] then
 							wet = true
 							break
 						end
@@ -144,7 +148,9 @@ function events.RENDER(delta, context)
 	-- Check render type
 	local renderType = context == "RENDER" and "EMISSIVE" or "EYES"
 	
-	for _, index in ipairs(glowingParts) do
+	for i = 1, #glowingParts do
+		
+		local index = glowingParts[i]
 		
 		-- Apply
 		index.part

@@ -88,7 +88,7 @@ function events.TICK()
 	-- Control the intensity of the tail function based on its scale
 	local scale = tailScale.isSmall and 1 or 0
 	
-	for i in ipairs(head.strength) do
+	for i = 1, #head.strength do
 		head.strength[i] = (headStrength / #head.strength) * (1 - tailScale.legs)
 	end
 	
@@ -103,14 +103,16 @@ end
 function events.RENDER(delta, context)
 	
 	-- Adjust tail rotations
-	for _, part in ipairs(tailParts) do
+	for i = 1, #tailParts do
+		local part = tailParts[i]
 		local rot = part:getOffsetRot()
 		part:offsetRot(-rot.x, rot.y, rot.z)
 	end
 	
 	-- Apply all tail rotations to every other segment
 	for i = 2, 8 do
-		for j, part in ipairs(tailParts) do
+		for j = 1, #tailParts do
+		local part = tailParts[j]
 			parts.group["Ten"..i.."Seg"..j]:offsetRot(part:getOffsetRot())
 		end
 	end
@@ -122,9 +124,11 @@ function events.RENDER(delta, context)
 	
 	-- Offset smooth torso in various parts
 	-- Note: acts strangely with `parts.group.body`
-	for _, group in ipairs(parts.group.UpperBody:getChildren()) do
-		if group ~= parts.group.Body then
-			group:rot(-calculateParentRot(group:getParent()))
+	local bodyChildren = parts.group.UpperBody:getChildren()
+	for i = 1, #bodyChildren do
+		local part = bodyChildren[i]
+		if part ~= parts.group.Body then
+			part:rot(-calculateParentRot(part:getParent()))
 		end
 	end
 	
