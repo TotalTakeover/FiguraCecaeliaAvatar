@@ -310,7 +310,7 @@ local singKeybind = keybound.new(
 
 -- Required script
 local s, pageNav, acts, colors = pcall(require, "scripts.ActionWheel")
-if not s then return end -- Kills script early if ActionWheel.lua isnt found
+if not s then return end -- Kills script early if ActionWheel.lua isn't found
 
 -- Check for if page already exists
 local pageExists = action_wheel:getPage("Anims")
